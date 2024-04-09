@@ -1,0 +1,44 @@
+﻿<UserControl x:Class="Cw3_Product.UserControlSanXuat.GcEnCheckUC"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:Cw3_Product.UserControlSanXuat"
+             mc:Ignorable="d" 
+             
+             xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+            TextElement.Foreground="{DynamicResource MaterialDesignBody}"            
+            TextElement.FontWeight="Medium"
+            TextElement.FontSize="14"
+             
+             DataContext="{StaticResource GcEnChiTietVM}"
+             
+             d:DesignHeight="720" d:DesignWidth="1500">
+    <Grid>
+
+        <materialDesign:Card materialDesign:ShadowAssist.ShadowEdges="All"
+                             materialDesign:ShadowAssist.ShadowDepth="Depth3"
+                             UniformCornerRadius="10">
+            <DataGrid AutoGenerateColumns="False" ItemsSource="{Binding CheckList}" SelectedItem="{Binding SelectedItemCheck, Mode=TwoWay}" Background="White" CanUserAddRows="False" CanUserDeleteRows="False">
+                <DataGrid.Columns>
+                    <DataGridTextColumn Header="STT" Binding="{Binding IdEnKiemTra}" Width="80"/>
+                    <DataGridTextColumn Header="Mã phiếu" Binding="{Binding MaPhieu}" Width="120"/>
+                    <DataGridTextColumn Header="Ngày" Binding="{Binding Ngay, StringFormat=dd/MM/yyyy}" Width="120"/>
+                    <DataGridTextColumn Header="Ca lv" Binding="{Binding CaLv}" Width="80"/>
+                    <DataGridTextColumn Header="Mã máy" Binding="{Binding MaMay}" Width="100"/>
+                    <DataGridTextColumn Header="Nhân viên" Binding="{Binding NhanVien}" Width="170"/>
+                    <DataGridTextColumn Header="Thời gian" Binding="{Binding ThoiGian}" Width="120"/>
+                    <DataGridTextColumn Header="Số họa" Binding="{Binding SoHoa}" Width="120"/>
+                    <DataGridCheckBoxColumn Header="Hụt nhựa"  Binding="{Binding KhongHutNhua}" Width="120"/>
+                    <DataGridCheckBoxColumn Header="Màu sắc" Binding="{Binding DongMau}" Width="120"/>
+                    <DataGridCheckBoxColumn Header="Bavia" Binding="{Binding Bavia}" Width="120"/>
+                    <DataGridCheckBoxColumn Header="Gợn sóng" Binding="{Binding GonSong}" Width="120"/>
+                    <DataGridTextColumn Header="Đường kính" Binding="{Binding DuongKinh, StringFormat=\{0:#\,#.\}}" Width="120"/>
+                    <DataGridTextColumn Header="Trục giữa" Binding="{Binding TrucGiua, StringFormat=\{0:#\,#.\}}" Width="120"/>
+                    <DataGridCheckBoxColumn Header="Tháo lắp" Binding="{Binding ThaoLap}" Width="120"/>
+                    <DataGridTextColumn Header="Cân nặng" Binding="{Binding CanNang, StringFormat=\{0:#\,#.\}}" Width="120"/>
+                </DataGrid.Columns>
+            </DataGrid>
+        </materialDesign:Card>
+    </Grid>
+</UserControl>

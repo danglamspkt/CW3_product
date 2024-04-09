@@ -1,0 +1,62 @@
+﻿<UserControl x:Class="Cw3_Product.UserControlNhanSu.BoPhanUC"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:Cw3_Product.UserControlNhanSu"
+             mc:Ignorable="d"
+             
+             xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+            TextElement.Foreground="{DynamicResource MaterialDesignBody}"            
+            TextElement.FontWeight="Medium"
+            TextElement.FontSize="14"
+             
+             DataContext="{StaticResource NhanSuVM}"
+             
+             d:DesignHeight="720" d:DesignWidth="1500">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="auto"></RowDefinition>
+            <RowDefinition Height="auto"></RowDefinition>
+            <RowDefinition Height="auto"></RowDefinition>
+            <RowDefinition></RowDefinition>
+        </Grid.RowDefinitions>
+
+        <StackPanel Grid.Row="0" Orientation="Horizontal" Margin="30 5 0 5">
+            <ComboBox DisplayMemberPath="MaBp" ItemsSource="{Binding BoPhanList}" Text="{Binding bpMaBp}" VerticalAlignment="Center" materialDesign:HintAssist.Hint="Mã bộ phận" Width="140" materialDesign:ComboBoxAssist.MaxLength="10" materialDesign:HintAssist.HintOpacity=".26" IsEditable="True" Style="{StaticResource MaterialDesignFloatingHintComboBox}" Margin="5 0 5 0"/>
+            <TextBox Text="{Binding bpTenBp, UpdateSourceTrigger=PropertyChanged, Mode=TwoWay}" VerticalAlignment="Center" materialDesign:HintAssist.Hint="Tên Bộ Phận" Width="140" Style="{StaticResource MaterialDesignFloatingHintTextBox}" materialDesign:ComboBoxAssist.MaxLength="50"/>
+        </StackPanel>
+
+        <Grid Grid.Row="1">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition></ColumnDefinition>
+                <ColumnDefinition></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+            <StackPanel Grid.Column="0" Orientation="Horizontal" Margin="0 5 0 5">
+                <Button Content="Thêm" Command="{Binding addcommandbp}" VerticalAlignment="Center" Margin="20 0 20 0"></Button>
+                <Button Content="Sửa" Command="{Binding editcommandbp}" VerticalAlignment="Center" Margin="20 0 20 0"></Button>
+                <Button Content="Xóa" Command="{Binding deletecommandbp}" VerticalAlignment="Center" Margin="20 0 20 0"></Button>
+            </StackPanel>
+            <StackPanel Grid.Column="1" Orientation="Horizontal" Margin="0 5 0 5" HorizontalAlignment="Right">
+                <Button Content="Clear" Command="{Binding Clearbp}" VerticalAlignment="Center" Margin="20 0 20 0"></Button>
+            </StackPanel>
+        </Grid>
+
+        <Separator Grid.Row="2"></Separator>
+
+        <materialDesign:Card Grid.Row="3"
+                                 materialDesign:ShadowAssist.ShadowEdges="All"
+                                 materialDesign:ShadowAssist.ShadowDepth="Depth3"
+                                 UniformCornerRadius="10">
+            <ListView  ItemsSource="{Binding BoPhanList}" SelectedItem="{Binding SelectedItembp, Mode=OneWayToSource}">
+                <ListView.View>
+                    <GridView>
+                        <GridViewColumn Header="Mã Bộ Phận" DisplayMemberBinding="{Binding MaBp}" Width="150"></GridViewColumn>
+                        <GridViewColumn Header="Tên Bộ Phận" DisplayMemberBinding="{Binding TenBp}" Width="150"></GridViewColumn>
+                    </GridView>
+                </ListView.View>
+            </ListView>
+        </materialDesign:Card>
+
+    </Grid>
+</UserControl>

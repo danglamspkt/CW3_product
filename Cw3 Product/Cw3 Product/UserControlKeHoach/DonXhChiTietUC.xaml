@@ -1,0 +1,84 @@
+﻿<UserControl x:Class="Cw3_Product.UserControlKeHoach.DonXhChiTietUC"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:Cw3_Product.UserControlKeHoach"
+             mc:Ignorable="d"
+             
+             xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+            TextElement.Foreground="{DynamicResource MaterialDesignBody}"            
+            TextElement.FontWeight="Medium"
+            TextElement.FontSize="14"
+             
+             DataContext="{StaticResource KehoachVM}"
+             
+             d:DesignHeight="720" d:DesignWidth="1500">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="auto"></RowDefinition>
+            <RowDefinition Height="auto"></RowDefinition>
+            <RowDefinition Height="auto"></RowDefinition>
+            <RowDefinition></RowDefinition>
+        </Grid.RowDefinitions>
+
+        <StackPanel Grid.Row="0" Orientation="Horizontal" Margin="25 5 0 5">
+            <TextBox Text="{Binding XhSTT, UpdateSourceTrigger=PropertyChanged, Mode=TwoWay}" VerticalAlignment="Center" materialDesign:HintAssist.Hint="STT" Width="90" Style="{StaticResource MaterialDesignFloatingHintTextBox}" Margin="5 0 5 0" materialDesign:ComboBoxAssist.MaxLength="7"/>
+            <DatePicker SelectedDate="{Binding xhNgay, UpdateSourceTrigger=PropertyChanged, Mode=TwoWay, StringFormat='dd/MM/yyyy>'}" materialDesign:HintAssist.Hint="Ngày xuất hàng" Width="140" materialDesign:TextFieldAssist.HasClearButton="True" Style="{StaticResource MaterialDesignFloatingHintDatePicker}" Margin="5 0 5 0"/>
+            <ComboBox DisplayMemberPath="MaTp" ItemsSource="{Binding Matpss}" Text="{Binding xhMaTp}" VerticalAlignment="Center" materialDesign:HintAssist.Hint="Mã bánh xe" Width="140" materialDesign:ComboBoxAssist.MaxLength="20" IsEditable="True" materialDesign:HintAssist.HintOpacity=".26" Style="{StaticResource MaterialDesignFloatingHintComboBox}" Margin="5 0 5 0"/>
+            <ComboBox DisplayMemberPath="IdU" ItemsSource="{Binding cbDonVi}" Text="{Binding xhDonVi}" VerticalAlignment="Center" materialDesign:HintAssist.Hint="Đơn vị" Width="140" materialDesign:ComboBoxAssist.MaxLength="10" materialDesign:HintAssist.HintOpacity=".26" Style="{StaticResource MaterialDesignFloatingHintComboBox}" Margin="5 0 5 0"/>
+            <TextBox Text="{Binding xhSoLuong, UpdateSourceTrigger=PropertyChanged, Mode=TwoWay, StringFormat='{}{0:#,#.}'}" VerticalAlignment="Center" materialDesign:HintAssist.Hint="Số lượng cần" Width="190" Style="{StaticResource MaterialDesignFloatingHintTextBox}" Margin="5 0 5 0"  materialDesign:ComboBoxAssist.MaxLength="10"/>
+        </StackPanel>
+
+        <Grid Grid.Row="1">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition></ColumnDefinition>
+                <ColumnDefinition></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+            <StackPanel Grid.Column="0" Orientation="Horizontal" Margin="0 5 0 5">
+                <Button Content="Thêm" Command="{Binding addcommandxh}" VerticalAlignment="Center" Margin="20 0 20 0"></Button>
+                <Button Content="Sửa" Command="{Binding editcommandxh}" VerticalAlignment="Center" Margin="20 0 20 0"></Button>
+                <Button Content="Xóa" Command="{Binding deletecommandxh}" VerticalAlignment="Center" Margin="20 0 20 0"></Button>
+            </StackPanel>
+            <StackPanel Grid.Column="1" Orientation="Horizontal" Margin="0 5 0 5" HorizontalAlignment="Right">
+                <Button Content="Clear" Command="{Binding Clearxh}" VerticalAlignment="Center" Margin="20 0 20 0"></Button>
+            </StackPanel>
+        </Grid>
+
+        <Separator Grid.Row="2"></Separator>
+
+        <materialDesign:Card Grid.Row="3"
+                             materialDesign:ShadowAssist.ShadowEdges="All"
+                             materialDesign:ShadowAssist.ShadowDepth="Depth3"
+                             UniformCornerRadius="10">
+            <DataGrid AutoGenerateColumns="False" ItemsSource="{Binding DonXHList}" SelectedItem="{Binding SelectedItemxh, Mode=OneWayToSource}" IsReadOnly="True" Background="White">
+                <DataGrid.Columns>
+                    <DataGridTextColumn Header="STT" Binding="{Binding STT}" Width="100"></DataGridTextColumn>
+                    <DataGridTextColumn Header="Ngày xuất hàng" Binding="{Binding Ngaylendon, StringFormat='dd/MM/yyyy'}" Width="150"></DataGridTextColumn>
+                    <DataGridTextColumn Header="Mã bánh xe" Binding="{Binding MaTp}" Width="150"></DataGridTextColumn>
+                    <DataGridTextColumn Header="Đơn vị" Binding="{Binding Donvi}" Width="150"></DataGridTextColumn>
+                    <DataGridTextColumn Header="Số lượng cần" Binding="{Binding Soluongxuat, StringFormat='{}{0:#,#.}'}" Width="200"></DataGridTextColumn>
+                    <DataGridTextColumn Header="Đã xuất" Binding="{Binding DaXuat, StringFormat='{}{0:#,#.}'}" Width="140"></DataGridTextColumn>
+                    <DataGridTextColumn Header="Còn lại" Binding="{Binding ConLai, StringFormat='{}{0:#,#.}'}" Width="140"></DataGridTextColumn>
+                    <DataGridTextColumn Header="Tồn kho" Binding="{Binding TonKho, StringFormat='{}{0:#,#.}'}" Width="140"></DataGridTextColumn>
+                </DataGrid.Columns>
+            </DataGrid>
+
+
+            <!--<ListView  ItemsSource="{Binding DonXHList}" SelectedItem="{Binding SelectedItemxh, Mode=OneWayToSource}">
+                <ListView.View>
+                    <GridView>
+                        <GridViewColumn Header="STT" DisplayMemberBinding="{Binding STT}" Width="100"></GridViewColumn>
+                        <GridViewColumn Header="Ngày xuất hàng" DisplayMemberBinding="{Binding Ngaylendon, StringFormat='dd/MM/yyyy'}" Width="150"></GridViewColumn>
+                        <GridViewColumn Header="Mã bánh xe" DisplayMemberBinding="{Binding MaTp}" Width="150"></GridViewColumn>
+                        <GridViewColumn Header="Đơn vị" DisplayMemberBinding="{Binding Donvi}" Width="150"></GridViewColumn>
+                        <GridViewColumn Header="Số lượng cần" DisplayMemberBinding="{Binding Soluongxuat, StringFormat='{}{0:#,#.}'}" Width="200"></GridViewColumn>
+                        <GridViewColumn Header="Đã xuất" DisplayMemberBinding="{Binding DaXuat, StringFormat='{}{0:#,#.}'}" Width="140"></GridViewColumn>
+                        <GridViewColumn Header="Còn lại" DisplayMemberBinding="{Binding ConLai, StringFormat='{}{0:#,#.}'}" Width="140"></GridViewColumn>
+                        <GridViewColumn Header="Tồn kho" DisplayMemberBinding="{Binding TonKho, StringFormat='{}{0:#,#.}'}" Width="140"></GridViewColumn>
+                    </GridView>
+                </ListView.View>
+            </ListView>-->
+        </materialDesign:Card>
+    </Grid>
+</UserControl>

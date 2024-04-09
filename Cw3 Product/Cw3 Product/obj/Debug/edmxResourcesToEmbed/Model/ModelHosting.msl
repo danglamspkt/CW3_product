@@ -1,0 +1,1546 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="gla43158_QLSXCW3ModelStoreContainer" CdmEntityContainer="gla43158_QLSXCW3Entities">
+    <EntitySetMapping Name="BaoDuong">
+      <EntityTypeMapping TypeName="gla43158_QLSXCW3Model.BaoDuong">
+        <MappingFragment StoreEntitySet="BaoDuong">
+          <ScalarProperty Name="UserName" ColumnName="UserName" />
+          <ScalarProperty Name="IdBaoduong" ColumnName="IdBaoduong" />
+          <ScalarProperty Name="Ngay" ColumnName="Ngay" />
+          <ScalarProperty Name="IdKHBaoDuong" ColumnName="IdKHBaoDuong" />
+          <ScalarProperty Name="MaMay" ColumnName="MaMay" />
+          <ScalarProperty Name="TinhTrang" ColumnName="TinhTrang" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="BaoTri">
+      <EntityTypeMapping TypeName="gla43158_QLSXCW3Model.BaoTri">
+        <MappingFragment StoreEntitySet="BaoTri">
+          <ScalarProperty Name="UserName" ColumnName="UserName" />
+          <ScalarProperty Name="IdBaotri" ColumnName="IdBaotri" />
+          <ScalarProperty Name="Ngay" ColumnName="Ngay" />
+          <ScalarProperty Name="MaMay" ColumnName="MaMay" />
+          <ScalarProperty Name="TinhTrang" ColumnName="TinhTrang" />
+          <ScalarProperty Name="XuLy" ColumnName="XuLy" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="BomLk">
+      <EntityTypeMapping TypeName="gla43158_QLSXCW3Model.BomLk">
+        <MappingFragment StoreEntitySet="BomLk">
+          <ScalarProperty Name="UserName" ColumnName="UserName" />
+          <ScalarProperty Name="LapRap" ColumnName="LapRap" />
+          <ScalarProperty Name="Son" ColumnName="Son" />
+          <ScalarProperty Name="Han" ColumnName="Han" />
+          <ScalarProperty Name="EpNhua" ColumnName="EpNhua" />
+          <ScalarProperty Name="DapKhuon" ColumnName="DapKhuon" />
+          <ScalarProperty Name="SoHoa" ColumnName="SoHoa" />
+          <ScalarProperty Name="DisplayName" ColumnName="DisplayName" />
+          <ScalarProperty Name="QuyCach" ColumnName="QuyCach" />
+          <ScalarProperty Name="IdU" ColumnName="IdU" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="BomLkTp">
+      <EntityTypeMapping TypeName="gla43158_QLSXCW3Model.BomLkTp">
+        <MappingFragment StoreEntitySet="BomLkTp">
+          <ScalarProperty Name="UserName" ColumnName="UserName" />
+          <ScalarProperty Name="LapRap" ColumnName="LapRap" />
+          <ScalarProperty Name="Son" ColumnName="Son" />
+          <ScalarProperty Name="Han" ColumnName="Han" />
+          <ScalarProperty Name="EpNhua" ColumnName="EpNhua" />
+          <ScalarProperty Name="DapKhuon" ColumnName="DapKhuon" />
+          <ScalarProperty Name="IdLkTp" ColumnName="IdLkTp" />
+          <ScalarProperty Name="MaTp" ColumnName="MaTp" />
+          <ScalarProperty Name="SoHoa" ColumnName="SoHoa" />
+          <ScalarProperty Name="MaMuaHang" ColumnName="MaMuaHang" />
+          <ScalarProperty Name="HeSo" ColumnName="HeSo" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="BomNl">
+      <EntityTypeMapping TypeName="gla43158_QLSXCW3Model.BomNl">
+        <MappingFragment StoreEntitySet="BomNl">
+          <ScalarProperty Name="UserName" ColumnName="UserName" />
+          <ScalarProperty Name="LapRap" ColumnName="LapRap" />
+          <ScalarProperty Name="Son" ColumnName="Son" />
+          <ScalarProperty Name="Han" ColumnName="Han" />
+          <ScalarProperty Name="EpNhua" ColumnName="EpNhua" />
+          <ScalarProperty Name="DapKhuon" ColumnName="DapKhuon" />
+          <ScalarProperty Name="MaMuaHang" ColumnName="MaMuaHang" />
+          <ScalarProperty Name="DisplayName" ColumnName="DisplayName" />
+          <ScalarProperty Name="ChatLieu" ColumnName="ChatLieu" />
+          <ScalarProperty Name="QuyCach" ColumnName="QuyCach" />
+          <ScalarProperty Name="IdU" ColumnName="IdU" />
+          <ScalarProperty Name="PhanLoaiBom" ColumnName="PhanLoaiBom" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="BomTp">
+      <EntityTypeMapping TypeName="gla43158_QLSXCW3Model.BomTp">
+        <MappingFragment StoreEntitySet="BomTp">
+          <ScalarProperty Name="QuyCach" ColumnName="QuyCach" />
+          <ScalarProperty Name="SoLuongBanh" ColumnName="SoLuongBanh" />
+          <ScalarProperty Name="UserName" ColumnName="UserName" />
+          <ScalarProperty Name="MaTp" ColumnName="MaTp" />
+          <ScalarProperty Name="DisplayName" ColumnName="DisplayName" />
+          <ScalarProperty Name="IdU" ColumnName="IdU" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="BoPhan">
+      <EntityTypeMapping TypeName="gla43158_QLSXCW3Model.BoPhan">
+        <MappingFragment StoreEntitySet="BoPhan">
+          <ScalarProperty Name="UserName" ColumnName="UserName" />
+          <ScalarProperty Name="MaBp" ColumnName="MaBp" />
+          <ScalarProperty Name="TenBp" ColumnName="TenBp" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Customer">
+      <EntityTypeMapping TypeName="gla43158_QLSXCW3Model.Customer">
+        <MappingFragment StoreEntitySet="Customer">
+          <ScalarProperty Name="UserName" ColumnName="UserName" />
+          <ScalarProperty Name="IdCus" ColumnName="IdCus" />
+          <ScalarProperty Name="DisplayName" ColumnName="DisplayName" />
+          <ScalarProperty Name="DiaChi" ColumnName="DiaChi" />
+          <ScalarProperty Name="Phone" ColumnName="Phone" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="MoreInfo" ColumnName="MoreInfo" />
+          <ScalarProperty Name="DateContract" ColumnName="DateContract" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="DKNguyenLieu">
+      <EntityTypeMapping TypeName="gla43158_QLSXCW3Model.DKNguyenLieu">
+        <MappingFragment StoreEntitySet="DKNguyenLieu">
+          <ScalarProperty Name="SoLo" ColumnName="SoLo" />
+          <ScalarProperty Name="UserName" ColumnName="UserName" />
+          <ScalarProperty Name="IdNlDk" ColumnName="IdNlDk" />
+          <ScalarProperty Name="Ngay" ColumnName="Ngay" />
+          <ScalarProperty Name="MaMuaHang" ColumnName="MaMuaHang" />
+          <ScalarProperty Name="SoLuong" ColumnName="SoLuong" />
+          <ScalarProperty Name="NhapXuat" ColumnName="NhapXuat" />
+          <ScalarProperty Name="IdU" ColumnName="IdU" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="DKSanXuat">
+      <EntityTypeMapping TypeName="gla43158_QLSXCW3Model.DKSanXuat">
+        <MappingFragment StoreEntitySet="DKSanXuat">
+          <ScalarProperty Name="UserName" ColumnName="UserName" />
+          <ScalarProperty Name="TpBtp" ColumnName="TpBtp" />
+          <ScalarProperty Name="MaNguyenLieu" ColumnName="MaNguyenLieu" />
+          <ScalarProperty Name="CaLv" ColumnName="CaLv" />
+          <ScalarProperty Name="SoLo" ColumnName="SoLo" />
+          <ScalarProperty Name="IdSxDk" ColumnName="IdSxDk" />
+          <ScalarProperty Name="Ngay" ColumnName="Ngay" />
+          <ScalarProperty Name="MaMay" ColumnName="MaMay" />
+          <ScalarProperty Name="NhanVien" ColumnName="NhanVien" />
+          <ScalarProperty Name="SoHoa" ColumnName="SoHoa" />
+          <ScalarProperty Name="SoLuong" ColumnName="SoLuong" />
+          <ScalarProperty Name="IdU" ColumnName="IdU" />
+          <ScalarProperty Name="Phe" ColumnName="Phe" />
+          <ScalarProperty Name="NguyenNhan" ColumnName="NguyenNhan" />
+          <ScalarProperty Name="hourstart" ColumnName="hourstart" />
+          <ScalarProperty Name="hourend" ColumnName="hourend" />
+          <ScalarProperty Name="MaPhieu" ColumnName="MaPhieu" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="DonHangTp">
+      <EntityTypeMapping TypeName="gla43158_QLSXCW3Model.DonHangTp">
+        <MappingFragment StoreEntitySet="DonHangTp">
+          <ScalarProperty Name="UserName" ColumnName="UserName" />
+          <ScalarProperty Name="TinhTrang" ColumnName="TinhTrang" />
+          <ScalarProperty Name="SoLo" ColumnName="SoLo" />
+          <ScalarProperty Name="NgayLenDon" ColumnName="NgayLenDon" />
+          <ScalarProperty Name="MaTp" ColumnName="MaTp" />
+          <ScalarProperty Name="SoLuong" ColumnName="SoLuong" />
+          <ScalarProperty Name="IdU" ColumnName="IdU" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="DonXuatHangTP">
+      <EntityTypeMapping TypeName="gla43158_QLSXCW3Model.DonXuatHangTP">
+        <MappingFragment StoreEntitySet="DonXuatHangTP">
+          <ScalarProperty Name="UserName" ColumnName="UserName" />
+          <ScalarProperty Name="IdDonXuatTp" ColumnName="IdDonXuatTp" />
+          <ScalarProperty Name="NgayDuKien" ColumnName="NgayDuKien" />
+          <ScalarProperty Name="MaTp" ColumnName="MaTp" />
+          <ScalarProperty Name="SoluongXuat" ColumnName="SoluongXuat" />
+          <ScalarProperty Name="IdU" ColumnName="IdU" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="EPNguyenLieu">
+      <EntityTypeMapping TypeName="gla43158_QLSXCW3Model.EPNguyenLieu">
+        <MappingFragment StoreEntitySet="EPNguyenLieu">
+          <ScalarProperty Name="UserName" ColumnName="UserName" />
+          <ScalarProperty Name="IdNlEn" ColumnName="IdNlEn" />
+          <ScalarProperty Name="Ngay" ColumnName="Ngay" />
+          <ScalarProperty Name="MaMuaHang" ColumnName="MaMuaHang" />
+          <ScalarProperty Name="SoLuong" ColumnName="SoLuong" />
+          <ScalarProperty Name="NhapXuat" ColumnName="NhapXuat" />
+          <ScalarProperty Name="IdU" ColumnName="IdU" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="EPSanXuat">
+      <EntityTypeMapping TypeName="gla43158_QLSXCW3Model.EPSanXuat">
+        <MappingFragment StoreEntitySet="EPSanXuat">
+          <ScalarProperty Name="UserName" ColumnName="UserName" />
+          <ScalarProperty Name="TimeChuKy" ColumnName="TimeChuKy" />
+          <ScalarProperty Name="SoLuongChuKy" ColumnName="SoLuongChuKy" />
+          <ScalarProperty Name="SoLuongMay" ColumnName="SoLuongMay" />
+          <ScalarProperty Name="MaPhieu" ColumnName="MaPhieu" />
+          <ScalarProperty Name="CaLv" ColumnName="CaLv" />
+          <ScalarProperty Name="IdSxEn" ColumnName="IdSxEn" />
+          <ScalarProperty Name="Ngay" ColumnName="Ngay" />
+          <ScalarProperty Name="MaMay" ColumnName="MaMay" />
+          <ScalarProperty Name="NhanVien" ColumnName="NhanVien" />
+          <ScalarProperty Name="SoHoa" ColumnName="SoHoa" />
+          <ScalarProperty Name="SoLuong" ColumnName="SoLuong" />
+          <ScalarProperty Name="IdU" ColumnName="IdU" />
+          <ScalarProperty Name="Phe" ColumnName="Phe" />
+          <ScalarProperty Name="NguyenNhan" ColumnName="NguyenNhan" />
+          <ScalarProperty Name="hourstart" ColumnName="hourstart" />
+          <ScalarProperty Name="hourend" ColumnName="hourend" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="HanNguyenLieu">
+      <EntityTypeMapping TypeName="gla43158_QLSXCW3Model.HanNguyenLieu">
+        <MappingFragment StoreEntitySet="HanNguyenLieu">
+          <ScalarProperty Name="UserName" ColumnName="UserName" />
+          <ScalarProperty Name="IdNlHan" ColumnName="IdNlHan" />
+          <ScalarProperty Name="Ngay" ColumnName="Ngay" />
+          <ScalarProperty Name="MaMuaHang" ColumnName="MaMuaHang" />
+          <ScalarProperty Name="SoLuong" ColumnName="SoLuong" />
+          <ScalarProperty Name="NhapXuat" ColumnName="NhapXuat" />
+          <ScalarProperty Name="IdU" ColumnName="IdU" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="HanSanXuat">
+      <EntityTypeMapping TypeName="gla43158_QLSXCW3Model.HanSanXuat">
+        <MappingFragment StoreEntitySet="HanSanXuat">
+          <ScalarProperty Name="UserName" ColumnName="UserName" />
+          <ScalarProperty Name="IdSxHan" ColumnName="IdSxHan" />
+          <ScalarProperty Name="Ngay" ColumnName="Ngay" />
+          <ScalarProperty Name="MaMay" ColumnName="MaMay" />
+          <ScalarProperty Name="NhanVien" ColumnName="NhanVien" />
+          <ScalarProperty Name="SoHoa" ColumnName="SoHoa" />
+          <ScalarProperty Name="SoLuong" ColumnName="SoLuong" />
+          <ScalarProperty Name="IdU" ColumnName="IdU" />
+          <ScalarProperty Name="Phe" ColumnName="Phe" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="KHBaoDuong">
+      <EntityTypeMapping TypeName="gla43158_QLSXCW3Model.KHBaoDuong">
+        <MappingFragment StoreEntitySet="KHBaoDuong">
+          <ScalarProperty Name="UserName" ColumnName="UserName" />
+          <ScalarProperty Name="IdKHBaoduong" ColumnName="IdKHBaoduong" />
+          <ScalarProperty Name="NgayDuKien" ColumnName="NgayDuKien" />
+          <ScalarProperty Name="IdNhomMay" ColumnName="IdNhomMay" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Kho">
+      <EntityTypeMapping TypeName="gla43158_QLSXCW3Model.Kho">
+        <MappingFragment StoreEntitySet="Kho">
+          <ScalarProperty Name="MaBp" ColumnName="MaBp" />
+          <ScalarProperty Name="UserName" ColumnName="UserName" />
+          <ScalarProperty Name="MaKho" ColumnName="MaKho" />
+          <ScalarProperty Name="DisplayName" ColumnName="DisplayName" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="LrNguyenLieu">
+      <EntityTypeMapping TypeName="gla43158_QLSXCW3Model.LrNguyenLieu">
+        <MappingFragment StoreEntitySet="LrNguyenLieu">
+          <ScalarProperty Name="SoLo" ColumnName="SoLo" />
+          <ScalarProperty Name="UserName" ColumnName="UserName" />
+          <ScalarProperty Name="IdNlLr" ColumnName="IdNlLr" />
+          <ScalarProperty Name="Ngay" ColumnName="Ngay" />
+          <ScalarProperty Name="MaMuaHang" ColumnName="MaMuaHang" />
+          <ScalarProperty Name="SoLuong" ColumnName="SoLuong" />
+          <ScalarProperty Name="NhapXuat" ColumnName="NhapXuat" />
+          <ScalarProperty Name="IdU" ColumnName="IdU" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="LrSanXuat">
+      <EntityTypeMapping TypeName="gla43158_QLSXCW3Model.LrSanXuat">
+        <MappingFragment StoreEntitySet="LrSanXuat">
+          <ScalarProperty Name="UserName" ColumnName="UserName" />
+          <ScalarProperty Name="CaLv" ColumnName="CaLv" />
+          <ScalarProperty Name="IdSxLr" ColumnName="IdSxLr" />
+          <ScalarProperty Name="Ngay" ColumnName="Ngay" />
+          <ScalarProperty Name="ChuyenLr" ColumnName="ChuyenLr" />
+          <ScalarProperty Name="SoLo" ColumnName="SoLo" />
+          <ScalarProperty Name="MaTp" ColumnName="MaTp" />
+          <ScalarProperty Name="SoLuong" ColumnName="SoLuong" />
+          <ScalarProperty Name="IdU" ColumnName="IdU" />
+          <ScalarProperty Name="Phe" ColumnName="Phe" />
+          <ScalarProperty Name="hourstart" ColumnName="hourstart" />
+          <ScalarProperty Name="hourend" ColumnName="hourend" />
+          <ScalarProperty Name="MaPhieu" ColumnName="MaPhieu" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="NhanSu">
+      <EntityTypeMapping TypeName="gla43158_QLSXCW3Model.NhanSu">
+        <MappingFragment StoreEntitySet="NhanSu">
+          <ScalarProperty Name="NgayCapNhat" ColumnName="NgayCapNhat" />
+          <ScalarProperty Name="TinhTrang" ColumnName="TinhTrang" />
+          <ScalarProperty Name="UserName" ColumnName="UserName" />
+          <ScalarProperty Name="GioiTinh" ColumnName="GioiTinh" />
+          <ScalarProperty Name="IDMayChamCong" ColumnName="IDMayChamCong" />
+          <ScalarProperty Name="ChucVu" ColumnName="ChucVu" />
+          <ScalarProperty Name="HinhAnh" ColumnName="HinhAnh" />
+          <ScalarProperty Name="IdNhanSu" ColumnName="IdNhanSu" />
+          <ScalarProperty Name="MSNV" ColumnName="MSNV" />
+          <ScalarProperty Name="NhanVien" ColumnName="NhanVien" />
+          <ScalarProperty Name="NgaySinh" ColumnName="NgaySinh" />
+          <ScalarProperty Name="QueQuan" ColumnName="QueQuan" />
+          <ScalarProperty Name="Phone" ColumnName="Phone" />
+          <ScalarProperty Name="MaBp" ColumnName="MaBp" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="NhomMay">
+      <EntityTypeMapping TypeName="gla43158_QLSXCW3Model.NhomMay">
+        <MappingFragment StoreEntitySet="NhomMay">
+          <ScalarProperty Name="UserName" ColumnName="UserName" />
+          <ScalarProperty Name="IdNhomMay" ColumnName="IdNhomMay" />
+          <ScalarProperty Name="DisplayName" ColumnName="DisplayName" />
+          <ScalarProperty Name="MaBp" ColumnName="MaBp" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="OutputInfo">
+      <EntityTypeMapping TypeName="gla43158_QLSXCW3Model.OutputInfo">
+        <MappingFragment StoreEntitySet="OutputInfo">
+          <ScalarProperty Name="UserName" ColumnName="UserName" />
+          <ScalarProperty Name="IdOutput" ColumnName="IdOutput" />
+          <ScalarProperty Name="IdPhieuXuat" ColumnName="IdPhieuXuat" />
+          <ScalarProperty Name="MaMuaHang" ColumnName="MaMuaHang" />
+          <ScalarProperty Name="SoLuong" ColumnName="SoLuong" />
+          <ScalarProperty Name="IdU" ColumnName="IdU" />
+          <ScalarProperty Name="MaKho" ColumnName="MaKho" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Outputt">
+      <EntityTypeMapping TypeName="gla43158_QLSXCW3Model.Outputt">
+        <MappingFragment StoreEntitySet="Outputt">
+          <ScalarProperty Name="UserName" ColumnName="UserName" />
+          <ScalarProperty Name="IdPhieuXuat" ColumnName="IdPhieuXuat" />
+          <ScalarProperty Name="DateXuat" ColumnName="DateXuat" />
+          <ScalarProperty Name="IdCus" ColumnName="IdCus" />
+          <ScalarProperty Name="MaPhieu" ColumnName="MaPhieu" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="SonNguyenLieu">
+      <EntityTypeMapping TypeName="gla43158_QLSXCW3Model.SonNguyenLieu">
+        <MappingFragment StoreEntitySet="SonNguyenLieu">
+          <ScalarProperty Name="UserName" ColumnName="UserName" />
+          <ScalarProperty Name="IdNlSon" ColumnName="IdNlSon" />
+          <ScalarProperty Name="Ngay" ColumnName="Ngay" />
+          <ScalarProperty Name="MaMuaHang" ColumnName="MaMuaHang" />
+          <ScalarProperty Name="SoLuong" ColumnName="SoLuong" />
+          <ScalarProperty Name="NhapXuat" ColumnName="NhapXuat" />
+          <ScalarProperty Name="IdU" ColumnName="IdU" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Supplier">
+      <EntityTypeMapping TypeName="gla43158_QLSXCW3Model.Supplier">
+        <MappingFragment StoreEntitySet="Supplier">
+          <ScalarProperty Name="UserName" ColumnName="UserName" />
+          <ScalarProperty Name="IdSup" ColumnName="IdSup" />
+          <ScalarProperty Name="DisplayName" ColumnName="DisplayName" />
+          <ScalarProperty Name="DiaChi" ColumnName="DiaChi" />
+          <ScalarProperty Name="Phone" ColumnName="Phone" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="MoreInfo" ColumnName="MoreInfo" />
+          <ScalarProperty Name="DateContract" ColumnName="DateContract" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TaiSanCoDinh">
+      <EntityTypeMapping TypeName="gla43158_QLSXCW3Model.TaiSanCoDinh">
+        <MappingFragment StoreEntitySet="TaiSanCoDinh">
+          <ScalarProperty Name="UserName" ColumnName="UserName" />
+          <ScalarProperty Name="MaMay" ColumnName="MaMay" />
+          <ScalarProperty Name="DisplayName" ColumnName="DisplayName" />
+          <ScalarProperty Name="MaBp" ColumnName="MaBp" />
+          <ScalarProperty Name="ViTri" ColumnName="ViTri" />
+          <ScalarProperty Name="IdNhomMay" ColumnName="IdNhomMay" />
+          <ScalarProperty Name="TinhTrang" ColumnName="TinhTrang" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Unit">
+      <EntityTypeMapping TypeName="gla43158_QLSXCW3Model.Unit">
+        <MappingFragment StoreEntitySet="Unit">
+          <ScalarProperty Name="UserName" ColumnName="UserName" />
+          <ScalarProperty Name="IdU" ColumnName="IdU" />
+          <ScalarProperty Name="DisplayName" ColumnName="DisplayName" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="XuatTp">
+      <EntityTypeMapping TypeName="gla43158_QLSXCW3Model.XuatTp">
+        <MappingFragment StoreEntitySet="XuatTp">
+          <ScalarProperty Name="UserName" ColumnName="UserName" />
+          <ScalarProperty Name="IdOutput" ColumnName="IdOutput" />
+          <ScalarProperty Name="DateXuat" ColumnName="DateXuat" />
+          <ScalarProperty Name="MaTp" ColumnName="MaTp" />
+          <ScalarProperty Name="SoLo" ColumnName="SoLo" />
+          <ScalarProperty Name="SoluongXuat" ColumnName="SoluongXuat" />
+          <ScalarProperty Name="IdU" ColumnName="IdU" />
+          <ScalarProperty Name="MaKho" ColumnName="MaKho" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="DKKiemTra">
+      <EntityTypeMapping TypeName="gla43158_QLSXCW3Model.DKKiemTra">
+        <MappingFragment StoreEntitySet="DKKiemTra">
+          <ScalarProperty Name="UserName" ColumnName="UserName" />
+          <ScalarProperty Name="MaPhieu" ColumnName="MaPhieu" />
+          <ScalarProperty Name="ThoiGian" ColumnName="ThoiGian" />
+          <ScalarProperty Name="Kichthuoc6" ColumnName="Kichthuoc6" />
+          <ScalarProperty Name="Kichthuoc5" ColumnName="Kichthuoc5" />
+          <ScalarProperty Name="Kichthuoc4" ColumnName="Kichthuoc4" />
+          <ScalarProperty Name="Kichthuoc3" ColumnName="Kichthuoc3" />
+          <ScalarProperty Name="Kichthuoc2" ColumnName="Kichthuoc2" />
+          <ScalarProperty Name="Kichthuoc1" ColumnName="Kichthuoc1" />
+          <ScalarProperty Name="SoHoa" ColumnName="SoHoa" />
+          <ScalarProperty Name="NhanVien" ColumnName="NhanVien" />
+          <ScalarProperty Name="MaMay" ColumnName="MaMay" />
+          <ScalarProperty Name="CaLv" ColumnName="CaLv" />
+          <ScalarProperty Name="Ngay" ColumnName="Ngay" />
+          <ScalarProperty Name="IdSxCheck" ColumnName="IdSxCheck" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="DkThoiGian">
+      <EntityTypeMapping TypeName="gla43158_QLSXCW3Model.DkThoiGian">
+        <MappingFragment StoreEntitySet="DkThoiGian">
+          <ScalarProperty Name="UserName" ColumnName="UserName" />
+          <ScalarProperty Name="LyDo" ColumnName="LyDo" />
+          <ScalarProperty Name="KetThuc" ColumnName="KetThuc" />
+          <ScalarProperty Name="BatDau" ColumnName="BatDau" />
+          <ScalarProperty Name="MaPhieu" ColumnName="MaPhieu" />
+          <ScalarProperty Name="NhanVien" ColumnName="NhanVien" />
+          <ScalarProperty Name="MaMay" ColumnName="MaMay" />
+          <ScalarProperty Name="CaLv" ColumnName="CaLv" />
+          <ScalarProperty Name="Ngay" ColumnName="Ngay" />
+          <ScalarProperty Name="IdDkTime" ColumnName="IdDkTime" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="EPNhietDo">
+      <EntityTypeMapping TypeName="gla43158_QLSXCW3Model.EPNhietDo">
+        <MappingFragment StoreEntitySet="EPNhietDo">
+          <ScalarProperty Name="UserName" ColumnName="UserName" />
+          <ScalarProperty Name="TimeBom" ColumnName="TimeBom" />
+          <ScalarProperty Name="PPhunKeoMax" ColumnName="PPhunKeoMax" />
+          <ScalarProperty Name="PPhunKeoMin" ColumnName="PPhunKeoMin" />
+          <ScalarProperty Name="VPhunKeoMax" ColumnName="VPhunKeoMax" />
+          <ScalarProperty Name="VPhunKeoMin" ColumnName="VPhunKeoMin" />
+          <ScalarProperty Name="NhietDoSay" ColumnName="NhietDoSay" />
+          <ScalarProperty Name="NhietDo5" ColumnName="NhietDo5" />
+          <ScalarProperty Name="NhietDo4" ColumnName="NhietDo4" />
+          <ScalarProperty Name="NhietDo3" ColumnName="NhietDo3" />
+          <ScalarProperty Name="NhietDo2" ColumnName="NhietDo2" />
+          <ScalarProperty Name="NhietDo1" ColumnName="NhietDo1" />
+          <ScalarProperty Name="TimeWrite" ColumnName="TimeWrite" />
+          <ScalarProperty Name="SoHoa" ColumnName="SoHoa" />
+          <ScalarProperty Name="TimeStart" ColumnName="TimeStart" />
+          <ScalarProperty Name="MaPhieu" ColumnName="MaPhieu" />
+          <ScalarProperty Name="NhanVien" ColumnName="NhanVien" />
+          <ScalarProperty Name="MaMay" ColumnName="MaMay" />
+          <ScalarProperty Name="CaLv" ColumnName="CaLv" />
+          <ScalarProperty Name="Ngay" ColumnName="Ngay" />
+          <ScalarProperty Name="IdEnNhietDo" ColumnName="IdEnNhietDo" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="EPThemNL">
+      <EntityTypeMapping TypeName="gla43158_QLSXCW3Model.EPThemNL">
+        <MappingFragment StoreEntitySet="EPThemNL">
+          <ScalarProperty Name="UserName" ColumnName="UserName" />
+          <ScalarProperty Name="GhiChu" ColumnName="GhiChu" />
+          <ScalarProperty Name="KhoiLuongCu" ColumnName="KhoiLuongCu" />
+          <ScalarProperty Name="KhoiLuongMoi" ColumnName="KhoiLuongMoi" />
+          <ScalarProperty Name="MaNVL" ColumnName="MaNVL" />
+          <ScalarProperty Name="ThoiGian" ColumnName="ThoiGian" />
+          <ScalarProperty Name="MaPhieu" ColumnName="MaPhieu" />
+          <ScalarProperty Name="NhanVien" ColumnName="NhanVien" />
+          <ScalarProperty Name="MaMay" ColumnName="MaMay" />
+          <ScalarProperty Name="CaLv" ColumnName="CaLv" />
+          <ScalarProperty Name="Ngay" ColumnName="Ngay" />
+          <ScalarProperty Name="IdEnThemNL" ColumnName="IdEnThemNL" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="EPThoiGian">
+      <EntityTypeMapping TypeName="gla43158_QLSXCW3Model.EPThoiGian">
+        <MappingFragment StoreEntitySet="EPThoiGian">
+          <ScalarProperty Name="UserName" ColumnName="UserName" />
+          <ScalarProperty Name="LyDo" ColumnName="LyDo" />
+          <ScalarProperty Name="KetThuc" ColumnName="KetThuc" />
+          <ScalarProperty Name="BatDau" ColumnName="BatDau" />
+          <ScalarProperty Name="MaPhieu" ColumnName="MaPhieu" />
+          <ScalarProperty Name="NhanVien" ColumnName="NhanVien" />
+          <ScalarProperty Name="MaMay" ColumnName="MaMay" />
+          <ScalarProperty Name="CaLv" ColumnName="CaLv" />
+          <ScalarProperty Name="Ngay" ColumnName="Ngay" />
+          <ScalarProperty Name="IdEnTime" ColumnName="IdEnTime" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="EPKiemTra">
+      <EntityTypeMapping TypeName="gla43158_QLSXCW3Model.EPKiemTra">
+        <MappingFragment StoreEntitySet="EPKiemTra">
+          <ScalarProperty Name="UserName" ColumnName="UserName" />
+          <ScalarProperty Name="CanNang" ColumnName="CanNang" />
+          <ScalarProperty Name="ThaoLap" ColumnName="ThaoLap" />
+          <ScalarProperty Name="TrucGiua" ColumnName="TrucGiua" />
+          <ScalarProperty Name="DuongKinh" ColumnName="DuongKinh" />
+          <ScalarProperty Name="GonSong" ColumnName="GonSong" />
+          <ScalarProperty Name="Bavia" ColumnName="Bavia" />
+          <ScalarProperty Name="DongMau" ColumnName="DongMau" />
+          <ScalarProperty Name="KhongHutNhua" ColumnName="KhongHutNhua" />
+          <ScalarProperty Name="SoHoa" ColumnName="SoHoa" />
+          <ScalarProperty Name="ThoiGian" ColumnName="ThoiGian" />
+          <ScalarProperty Name="MaPhieu" ColumnName="MaPhieu" />
+          <ScalarProperty Name="NhanVien" ColumnName="NhanVien" />
+          <ScalarProperty Name="MaMay" ColumnName="MaMay" />
+          <ScalarProperty Name="CaLv" ColumnName="CaLv" />
+          <ScalarProperty Name="Ngay" ColumnName="Ngay" />
+          <ScalarProperty Name="IdEnKiemTra" ColumnName="IdEnKiemTra" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="EPBaoDuong">
+      <EntityTypeMapping TypeName="gla43158_QLSXCW3Model.EPBaoDuong">
+        <MappingFragment StoreEntitySet="EPBaoDuong">
+          <ScalarProperty Name="UserName" ColumnName="UserName" />
+          <ScalarProperty Name="VeSinhMay" ColumnName="VeSinhMay" />
+          <ScalarProperty Name="SapXepDungCu" ColumnName="SapXepDungCu" />
+          <ScalarProperty Name="MayBinhThuong" ColumnName="MayBinhThuong" />
+          <ScalarProperty Name="NuocLamMatDau" ColumnName="NuocLamMatDau" />
+          <ScalarProperty Name="QuatLamMat" ColumnName="QuatLamMat" />
+          <ScalarProperty Name="BulongConTan" ColumnName="BulongConTan" />
+          <ScalarProperty Name="MayHut" ColumnName="MayHut" />
+          <ScalarProperty Name="MaySay" ColumnName="MaySay" />
+          <ScalarProperty Name="Robot" ColumnName="Robot" />
+          <ScalarProperty Name="DauThuyLuc" ColumnName="DauThuyLuc" />
+          <ScalarProperty Name="BoiTron" ColumnName="BoiTron" />
+          <ScalarProperty Name="OngNuoc" ColumnName="OngNuoc" />
+          <ScalarProperty Name="KhiNen" ColumnName="KhiNen" />
+          <ScalarProperty Name="DauDotNhiet" ColumnName="DauDotNhiet" />
+          <ScalarProperty Name="CongTacHanhTrinh" ColumnName="CongTacHanhTrinh" />
+          <ScalarProperty Name="AnToanThietBi" ColumnName="AnToanThietBi" />
+          <ScalarProperty Name="MaPhieu" ColumnName="MaPhieu" />
+          <ScalarProperty Name="NhanVien" ColumnName="NhanVien" />
+          <ScalarProperty Name="MaMay" ColumnName="MaMay" />
+          <ScalarProperty Name="CaLv" ColumnName="CaLv" />
+          <ScalarProperty Name="Ngay" ColumnName="Ngay" />
+          <ScalarProperty Name="IdEnVeSinh" ColumnName="IdEnVeSinh" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="UserRole">
+      <EntityTypeMapping TypeName="gla43158_QLSXCW3Model.UserRole">
+        <MappingFragment StoreEntitySet="UserRole">
+          <ScalarProperty Name="DisplayName" ColumnName="DisplayName" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Users">
+      <EntityTypeMapping TypeName="gla43158_QLSXCW3Model.Users">
+        <MappingFragment StoreEntitySet="Users">
+          <ScalarProperty Name="IdRole" ColumnName="IdRole" />
+          <ScalarProperty Name="Password" ColumnName="Password" />
+          <ScalarProperty Name="UserName" ColumnName="UserName" />
+          <ScalarProperty Name="DisplayName" ColumnName="DisplayName" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="KhoLinhKienInputInfo">
+      <EntityTypeMapping TypeName="gla43158_QLSXCW3Model.KhoLinhKienInputInfo">
+        <MappingFragment StoreEntitySet="KhoLinhKienInputInfo">
+          <ScalarProperty Name="TinhTrang" ColumnName="TinhTrang" />
+          <ScalarProperty Name="QRimg" ColumnName="QRimg" />
+          <ScalarProperty Name="QRcode" ColumnName="QRcode" />
+          <ScalarProperty Name="UserName" ColumnName="UserName" />
+          <ScalarProperty Name="ViTri" ColumnName="ViTri" />
+          <ScalarProperty Name="GhiChu" ColumnName="GhiChu" />
+          <ScalarProperty Name="MaKho" ColumnName="MaKho" />
+          <ScalarProperty Name="KhoiLuongKien" ColumnName="KhoiLuongKien" />
+          <ScalarProperty Name="IdU" ColumnName="IdU" />
+          <ScalarProperty Name="SoLuongNhap" ColumnName="SoLuongNhap" />
+          <ScalarProperty Name="SoHoa" ColumnName="SoHoa" />
+          <ScalarProperty Name="MaPhieu" ColumnName="MaPhieu" />
+          <ScalarProperty Name="STT" ColumnName="STT" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="KhoLinhKienOutput">
+      <EntityTypeMapping TypeName="gla43158_QLSXCW3Model.KhoLinhKienOutput">
+        <MappingFragment StoreEntitySet="KhoLinhKienOutput">
+          <ScalarProperty Name="UserName" ColumnName="UserName" />
+          <ScalarProperty Name="GhiChu" ColumnName="GhiChu" />
+          <ScalarProperty Name="POMuaHang" ColumnName="POMuaHang" />
+          <ScalarProperty Name="DisplayName" ColumnName="DisplayName" />
+          <ScalarProperty Name="IdCus" ColumnName="IdCus" />
+          <ScalarProperty Name="DateXuat" ColumnName="DateXuat" />
+          <ScalarProperty Name="DateCT" ColumnName="DateCT" />
+          <ScalarProperty Name="MaPhieu" ColumnName="MaPhieu" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="KhoLinhKienOutputInfo">
+      <EntityTypeMapping TypeName="gla43158_QLSXCW3Model.KhoLinhKienOutputInfo">
+        <MappingFragment StoreEntitySet="KhoLinhKienOutputInfo">
+          <ScalarProperty Name="SoLo" ColumnName="SoLo" />
+          <ScalarProperty Name="QuyCach" ColumnName="QuyCach" />
+          <ScalarProperty Name="ChatLieu" ColumnName="ChatLieu" />
+          <ScalarProperty Name="DisplayName" ColumnName="DisplayName" />
+          <ScalarProperty Name="QRcode" ColumnName="QRcode" />
+          <ScalarProperty Name="UserName" ColumnName="UserName" />
+          <ScalarProperty Name="ViTri" ColumnName="ViTri" />
+          <ScalarProperty Name="GhiChu" ColumnName="GhiChu" />
+          <ScalarProperty Name="MaKho" ColumnName="MaKho" />
+          <ScalarProperty Name="KhoiLuongKien" ColumnName="KhoiLuongKien" />
+          <ScalarProperty Name="IdU" ColumnName="IdU" />
+          <ScalarProperty Name="SoLuongNhap" ColumnName="SoLuongNhap" />
+          <ScalarProperty Name="SoHoa" ColumnName="SoHoa" />
+          <ScalarProperty Name="MaPhieu" ColumnName="MaPhieu" />
+          <ScalarProperty Name="STT" ColumnName="STT" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="KhoNgoaiSXInput">
+      <EntityTypeMapping TypeName="gla43158_QLSXCW3Model.KhoNgoaiSXInput">
+        <MappingFragment StoreEntitySet="KhoNgoaiSXInput">
+          <ScalarProperty Name="UserName" ColumnName="UserName" />
+          <ScalarProperty Name="GhiChu" ColumnName="GhiChu" />
+          <ScalarProperty Name="POMuaHang" ColumnName="POMuaHang" />
+          <ScalarProperty Name="TenNCC" ColumnName="TenNCC" />
+          <ScalarProperty Name="IdSup" ColumnName="IdSup" />
+          <ScalarProperty Name="DateNhap" ColumnName="DateNhap" />
+          <ScalarProperty Name="DateCT" ColumnName="DateCT" />
+          <ScalarProperty Name="MaPhieu" ColumnName="MaPhieu" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="KhoNgoaiSXInputInfo">
+      <EntityTypeMapping TypeName="gla43158_QLSXCW3Model.KhoNgoaiSXInputInfo">
+        <MappingFragment StoreEntitySet="KhoNgoaiSXInputInfo">
+          <ScalarProperty Name="QRimg" ColumnName="QRimg" />
+          <ScalarProperty Name="QRcode" ColumnName="QRcode" />
+          <ScalarProperty Name="UserName" ColumnName="UserName" />
+          <ScalarProperty Name="ViTri" ColumnName="ViTri" />
+          <ScalarProperty Name="GhiChu" ColumnName="GhiChu" />
+          <ScalarProperty Name="MaKho" ColumnName="MaKho" />
+          <ScalarProperty Name="IdU" ColumnName="IdU" />
+          <ScalarProperty Name="SoLuongNhap" ColumnName="SoLuongNhap" />
+          <ScalarProperty Name="QuyCach" ColumnName="QuyCach" />
+          <ScalarProperty Name="TenVatTu" ColumnName="TenVatTu" />
+          <ScalarProperty Name="MaPhieu" ColumnName="MaPhieu" />
+          <ScalarProperty Name="STT" ColumnName="STT" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="KhoNgoaiSXOutput">
+      <EntityTypeMapping TypeName="gla43158_QLSXCW3Model.KhoNgoaiSXOutput">
+        <MappingFragment StoreEntitySet="KhoNgoaiSXOutput">
+          <ScalarProperty Name="UserName" ColumnName="UserName" />
+          <ScalarProperty Name="GhiChu" ColumnName="GhiChu" />
+          <ScalarProperty Name="POMuaHang" ColumnName="POMuaHang" />
+          <ScalarProperty Name="DisplayName" ColumnName="DisplayName" />
+          <ScalarProperty Name="IdCus" ColumnName="IdCus" />
+          <ScalarProperty Name="DateXuat" ColumnName="DateXuat" />
+          <ScalarProperty Name="DateCT" ColumnName="DateCT" />
+          <ScalarProperty Name="MaPhieu" ColumnName="MaPhieu" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="KhoNgoaiSXOutputInfo">
+      <EntityTypeMapping TypeName="gla43158_QLSXCW3Model.KhoNgoaiSXOutputInfo">
+        <MappingFragment StoreEntitySet="KhoNgoaiSXOutputInfo">
+          <ScalarProperty Name="QRcode" ColumnName="QRcode" />
+          <ScalarProperty Name="UserName" ColumnName="UserName" />
+          <ScalarProperty Name="ViTri" ColumnName="ViTri" />
+          <ScalarProperty Name="GhiChu" ColumnName="GhiChu" />
+          <ScalarProperty Name="MaKho" ColumnName="MaKho" />
+          <ScalarProperty Name="IdU" ColumnName="IdU" />
+          <ScalarProperty Name="SoLuongNhap" ColumnName="SoLuongNhap" />
+          <ScalarProperty Name="QuyCach" ColumnName="QuyCach" />
+          <ScalarProperty Name="TenVatTu" ColumnName="TenVatTu" />
+          <ScalarProperty Name="MaPhieu" ColumnName="MaPhieu" />
+          <ScalarProperty Name="STT" ColumnName="STT" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="KhoNguyenLieuInput">
+      <EntityTypeMapping TypeName="gla43158_QLSXCW3Model.KhoNguyenLieuInput">
+        <MappingFragment StoreEntitySet="KhoNguyenLieuInput">
+          <ScalarProperty Name="UserName" ColumnName="UserName" />
+          <ScalarProperty Name="GhiChu" ColumnName="GhiChu" />
+          <ScalarProperty Name="POMuaHang" ColumnName="POMuaHang" />
+          <ScalarProperty Name="TenNCC" ColumnName="TenNCC" />
+          <ScalarProperty Name="IdSup" ColumnName="IdSup" />
+          <ScalarProperty Name="DateNhap" ColumnName="DateNhap" />
+          <ScalarProperty Name="DateCT" ColumnName="DateCT" />
+          <ScalarProperty Name="MaPhieu" ColumnName="MaPhieu" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="KhoNguyenLieuInputInfo">
+      <EntityTypeMapping TypeName="gla43158_QLSXCW3Model.KhoNguyenLieuInputInfo">
+        <MappingFragment StoreEntitySet="KhoNguyenLieuInputInfo">
+          <ScalarProperty Name="TinhTrang" ColumnName="TinhTrang" />
+          <ScalarProperty Name="QRimg" ColumnName="QRimg" />
+          <ScalarProperty Name="QRcode" ColumnName="QRcode" />
+          <ScalarProperty Name="UserName" ColumnName="UserName" />
+          <ScalarProperty Name="ViTri" ColumnName="ViTri" />
+          <ScalarProperty Name="GhiChu" ColumnName="GhiChu" />
+          <ScalarProperty Name="MaKho" ColumnName="MaKho" />
+          <ScalarProperty Name="KhoiLuongKien" ColumnName="KhoiLuongKien" />
+          <ScalarProperty Name="IdU" ColumnName="IdU" />
+          <ScalarProperty Name="SoLuongNhap" ColumnName="SoLuongNhap" />
+          <ScalarProperty Name="MaMuaHang" ColumnName="MaMuaHang" />
+          <ScalarProperty Name="MaPhieu" ColumnName="MaPhieu" />
+          <ScalarProperty Name="STT" ColumnName="STT" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="KhoNguyenLieuOutput">
+      <EntityTypeMapping TypeName="gla43158_QLSXCW3Model.KhoNguyenLieuOutput">
+        <MappingFragment StoreEntitySet="KhoNguyenLieuOutput">
+          <ScalarProperty Name="UserName" ColumnName="UserName" />
+          <ScalarProperty Name="GhiChu" ColumnName="GhiChu" />
+          <ScalarProperty Name="POMuaHang" ColumnName="POMuaHang" />
+          <ScalarProperty Name="DisplayName" ColumnName="DisplayName" />
+          <ScalarProperty Name="IdCus" ColumnName="IdCus" />
+          <ScalarProperty Name="DateXuat" ColumnName="DateXuat" />
+          <ScalarProperty Name="DateCT" ColumnName="DateCT" />
+          <ScalarProperty Name="MaPhieu" ColumnName="MaPhieu" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="KhoNguyenLieuOutputInfo">
+      <EntityTypeMapping TypeName="gla43158_QLSXCW3Model.KhoNguyenLieuOutputInfo">
+        <MappingFragment StoreEntitySet="KhoNguyenLieuOutputInfo">
+          <ScalarProperty Name="SoLo" ColumnName="SoLo" />
+          <ScalarProperty Name="QuyCach" ColumnName="QuyCach" />
+          <ScalarProperty Name="ChatLieu" ColumnName="ChatLieu" />
+          <ScalarProperty Name="DisplayName" ColumnName="DisplayName" />
+          <ScalarProperty Name="QRcode" ColumnName="QRcode" />
+          <ScalarProperty Name="UserName" ColumnName="UserName" />
+          <ScalarProperty Name="ViTri" ColumnName="ViTri" />
+          <ScalarProperty Name="GhiChu" ColumnName="GhiChu" />
+          <ScalarProperty Name="MaKho" ColumnName="MaKho" />
+          <ScalarProperty Name="KhoiLuongKien" ColumnName="KhoiLuongKien" />
+          <ScalarProperty Name="IdU" ColumnName="IdU" />
+          <ScalarProperty Name="SoLuongNhap" ColumnName="SoLuongNhap" />
+          <ScalarProperty Name="MaMuaHang" ColumnName="MaMuaHang" />
+          <ScalarProperty Name="MaPhieu" ColumnName="MaPhieu" />
+          <ScalarProperty Name="STT" ColumnName="STT" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="KhoThanhPhamInput">
+      <EntityTypeMapping TypeName="gla43158_QLSXCW3Model.KhoThanhPhamInput">
+        <MappingFragment StoreEntitySet="KhoThanhPhamInput">
+          <ScalarProperty Name="UserName" ColumnName="UserName" />
+          <ScalarProperty Name="GhiChu" ColumnName="GhiChu" />
+          <ScalarProperty Name="POMuaHang" ColumnName="POMuaHang" />
+          <ScalarProperty Name="TenNCC" ColumnName="TenNCC" />
+          <ScalarProperty Name="IdSup" ColumnName="IdSup" />
+          <ScalarProperty Name="DateNhap" ColumnName="DateNhap" />
+          <ScalarProperty Name="DateCT" ColumnName="DateCT" />
+          <ScalarProperty Name="MaPhieu" ColumnName="MaPhieu" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="KhoThanhPhamOutput">
+      <EntityTypeMapping TypeName="gla43158_QLSXCW3Model.KhoThanhPhamOutput">
+        <MappingFragment StoreEntitySet="KhoThanhPhamOutput">
+          <ScalarProperty Name="UserName" ColumnName="UserName" />
+          <ScalarProperty Name="GhiChu" ColumnName="GhiChu" />
+          <ScalarProperty Name="POMuaHang" ColumnName="POMuaHang" />
+          <ScalarProperty Name="DisplayName" ColumnName="DisplayName" />
+          <ScalarProperty Name="IdCus" ColumnName="IdCus" />
+          <ScalarProperty Name="DateXuat" ColumnName="DateXuat" />
+          <ScalarProperty Name="DateCT" ColumnName="DateCT" />
+          <ScalarProperty Name="MaPhieu" ColumnName="MaPhieu" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="MaHangSame">
+      <EntityTypeMapping TypeName="gla43158_QLSXCW3Model.MaHangSame">
+        <MappingFragment StoreEntitySet="MaHangSame">
+          <ScalarProperty Name="UserName" ColumnName="UserName" />
+          <ScalarProperty Name="MaHang2" ColumnName="MaHang2" />
+          <ScalarProperty Name="MaHang1" ColumnName="MaHang1" />
+          <ScalarProperty Name="IdSame" ColumnName="IdSame" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="KhoLinhKienInput">
+      <EntityTypeMapping TypeName="gla43158_QLSXCW3Model.KhoLinhKienInput">
+        <MappingFragment StoreEntitySet="KhoLinhKienInput">
+          <ScalarProperty Name="UserName" ColumnName="UserName" />
+          <ScalarProperty Name="GhiChu" ColumnName="GhiChu" />
+          <ScalarProperty Name="POMuaHang" ColumnName="POMuaHang" />
+          <ScalarProperty Name="TenNCC" ColumnName="TenNCC" />
+          <ScalarProperty Name="IdSup" ColumnName="IdSup" />
+          <ScalarProperty Name="DateNhap" ColumnName="DateNhap" />
+          <ScalarProperty Name="DateCT" ColumnName="DateCT" />
+          <ScalarProperty Name="MaPhieu" ColumnName="MaPhieu" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="DKNguyenLieuLK">
+      <EntityTypeMapping TypeName="gla43158_QLSXCW3Model.DKNguyenLieuLK">
+        <MappingFragment StoreEntitySet="DKNguyenLieuLK">
+          <ScalarProperty Name="SoLo" ColumnName="SoLo" />
+          <ScalarProperty Name="UserName" ColumnName="UserName" />
+          <ScalarProperty Name="IdU" ColumnName="IdU" />
+          <ScalarProperty Name="NhapXuat" ColumnName="NhapXuat" />
+          <ScalarProperty Name="SoLuong" ColumnName="SoLuong" />
+          <ScalarProperty Name="SoHoa" ColumnName="SoHoa" />
+          <ScalarProperty Name="Ngay" ColumnName="Ngay" />
+          <ScalarProperty Name="IdNlDk" ColumnName="IdNlDk" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="KhoThanhPhamInputInfo">
+      <EntityTypeMapping TypeName="gla43158_QLSXCW3Model.KhoThanhPhamInputInfo">
+        <MappingFragment StoreEntitySet="KhoThanhPhamInputInfo">
+          <ScalarProperty Name="DisplayName2" ColumnName="DisplayName2" />
+          <ScalarProperty Name="DisplayName1" ColumnName="DisplayName1" />
+          <ScalarProperty Name="TinhTrang" ColumnName="TinhTrang" />
+          <ScalarProperty Name="QRimg" ColumnName="QRimg" />
+          <ScalarProperty Name="QRcode" ColumnName="QRcode" />
+          <ScalarProperty Name="UserName" ColumnName="UserName" />
+          <ScalarProperty Name="ViTri" ColumnName="ViTri" />
+          <ScalarProperty Name="GhiChu" ColumnName="GhiChu" />
+          <ScalarProperty Name="MaKho" ColumnName="MaKho" />
+          <ScalarProperty Name="KhoiLuongKien" ColumnName="KhoiLuongKien" />
+          <ScalarProperty Name="IdU2" ColumnName="IdU2" />
+          <ScalarProperty Name="SoLuongNhap2" ColumnName="SoLuongNhap2" />
+          <ScalarProperty Name="MaTp2" ColumnName="MaTp2" />
+          <ScalarProperty Name="SoLo2" ColumnName="SoLo2" />
+          <ScalarProperty Name="IdU1" ColumnName="IdU1" />
+          <ScalarProperty Name="SoLuongNhap1" ColumnName="SoLuongNhap1" />
+          <ScalarProperty Name="MaTp1" ColumnName="MaTp1" />
+          <ScalarProperty Name="SoLo1" ColumnName="SoLo1" />
+          <ScalarProperty Name="MaPhieu" ColumnName="MaPhieu" />
+          <ScalarProperty Name="STT" ColumnName="STT" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="LrNguyenLieuLk">
+      <EntityTypeMapping TypeName="gla43158_QLSXCW3Model.LrNguyenLieuLk">
+        <MappingFragment StoreEntitySet="LrNguyenLieuLk">
+          <ScalarProperty Name="SoLo" ColumnName="SoLo" />
+          <ScalarProperty Name="UserName" ColumnName="UserName" />
+          <ScalarProperty Name="IdU" ColumnName="IdU" />
+          <ScalarProperty Name="NhapXuat" ColumnName="NhapXuat" />
+          <ScalarProperty Name="SoLuong" ColumnName="SoLuong" />
+          <ScalarProperty Name="SoHoa" ColumnName="SoHoa" />
+          <ScalarProperty Name="Ngay" ColumnName="Ngay" />
+          <ScalarProperty Name="IdNlDk" ColumnName="IdNlDk" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="EPPhatLieu">
+      <EntityTypeMapping TypeName="gla43158_QLSXCW3Model.EPPhatLieu">
+        <MappingFragment StoreEntitySet="EPPhatLieu">
+          <ScalarProperty Name="MaBp" ColumnName="MaBp" />
+          <ScalarProperty Name="UserName" ColumnName="UserName" />
+          <ScalarProperty Name="IdU" ColumnName="IdU" />
+          <ScalarProperty Name="SoLuong" ColumnName="SoLuong" />
+          <ScalarProperty Name="SoHoa" ColumnName="SoHoa" />
+          <ScalarProperty Name="MaPhieu" ColumnName="MaPhieu" />
+          <ScalarProperty Name="Ngay" ColumnName="Ngay" />
+          <ScalarProperty Name="IdSxEn" ColumnName="IdSxEn" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="KhoThanhPhamOutputInfo">
+      <EntityTypeMapping TypeName="gla43158_QLSXCW3Model.KhoThanhPhamOutputInfo">
+        <MappingFragment StoreEntitySet="KhoThanhPhamOutputInfo">
+          <ScalarProperty Name="DisplayName2" ColumnName="DisplayName2" />
+          <ScalarProperty Name="DisplayName1" ColumnName="DisplayName1" />
+          <ScalarProperty Name="QRcode" ColumnName="QRcode" />
+          <ScalarProperty Name="UserName" ColumnName="UserName" />
+          <ScalarProperty Name="ViTri" ColumnName="ViTri" />
+          <ScalarProperty Name="GhiChu" ColumnName="GhiChu" />
+          <ScalarProperty Name="MaKho" ColumnName="MaKho" />
+          <ScalarProperty Name="KhoiLuongKien" ColumnName="KhoiLuongKien" />
+          <ScalarProperty Name="IdU2" ColumnName="IdU2" />
+          <ScalarProperty Name="SoLuongNhap2" ColumnName="SoLuongNhap2" />
+          <ScalarProperty Name="MaTp2" ColumnName="MaTp2" />
+          <ScalarProperty Name="SoLo2" ColumnName="SoLo2" />
+          <ScalarProperty Name="IdU1" ColumnName="IdU1" />
+          <ScalarProperty Name="SoLuongNhap1" ColumnName="SoLuongNhap1" />
+          <ScalarProperty Name="MaTp1" ColumnName="MaTp1" />
+          <ScalarProperty Name="SoLo1" ColumnName="SoLo1" />
+          <ScalarProperty Name="MaPhieu" ColumnName="MaPhieu" />
+          <ScalarProperty Name="STT" ColumnName="STT" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="SonKiemTra">
+      <EntityTypeMapping TypeName="gla43158_QLSXCW3Model.SonKiemTra">
+        <MappingFragment StoreEntitySet="SonKiemTra">
+          <ScalarProperty Name="UserName" ColumnName="UserName" />
+          <ScalarProperty Name="NongDoDungMoi" ColumnName="NongDoDungMoi" />
+          <ScalarProperty Name="DoDanDien" ColumnName="DoDanDien" />
+          <ScalarProperty Name="KhucXaBe" ColumnName="KhucXaBe" />
+          <ScalarProperty Name="NhietDoSon" ColumnName="NhietDoSon" />
+          <ScalarProperty Name="pHSon" ColumnName="pHSon" />
+          <ScalarProperty Name="NongDoSon" ColumnName="NongDoSon" />
+          <ScalarProperty Name="pHTaoMang" ColumnName="pHTaoMang" />
+          <ScalarProperty Name="NhietDoTaoMang" ColumnName="NhietDoTaoMang" />
+          <ScalarProperty Name="NongDoTaoMang" ColumnName="NongDoTaoMang" />
+          <ScalarProperty Name="NhietDoTayDau2" ColumnName="NhietDoTayDau2" />
+          <ScalarProperty Name="NongDoTayDau2" ColumnName="NongDoTayDau2" />
+          <ScalarProperty Name="NhietDoTayDau1" ColumnName="NhietDoTayDau1" />
+          <ScalarProperty Name="NongDoTayDau1" ColumnName="NongDoTayDau1" />
+          <ScalarProperty Name="ThoiGian" ColumnName="ThoiGian" />
+          <ScalarProperty Name="MaPhieu" ColumnName="MaPhieu" />
+          <ScalarProperty Name="NhanVien" ColumnName="NhanVien" />
+          <ScalarProperty Name="CaLv" ColumnName="CaLv" />
+          <ScalarProperty Name="Ngay" ColumnName="Ngay" />
+          <ScalarProperty Name="IdSonKiemTra" ColumnName="IdSonKiemTra" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="SonSanXuat">
+      <EntityTypeMapping TypeName="gla43158_QLSXCW3Model.SonSanXuat">
+        <MappingFragment StoreEntitySet="SonSanXuat">
+          <ScalarProperty Name="UserName" ColumnName="UserName" />
+          <ScalarProperty Name="MaPhieu" ColumnName="MaPhieu" />
+          <ScalarProperty Name="hourend" ColumnName="hourend" />
+          <ScalarProperty Name="hourstart" ColumnName="hourstart" />
+          <ScalarProperty Name="Phe" ColumnName="Phe" />
+          <ScalarProperty Name="IdU" ColumnName="IdU" />
+          <ScalarProperty Name="SoLuong" ColumnName="SoLuong" />
+          <ScalarProperty Name="SoHoa" ColumnName="SoHoa" />
+          <ScalarProperty Name="SoLo" ColumnName="SoLo" />
+          <ScalarProperty Name="CaLv" ColumnName="CaLv" />
+          <ScalarProperty Name="ChuyenSon" ColumnName="ChuyenSon" />
+          <ScalarProperty Name="Ngay" ColumnName="Ngay" />
+          <ScalarProperty Name="IdSxSon" ColumnName="IdSxSon" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ACGroup">
+      <EntityTypeMapping TypeName="gla43158_QLSXCW3Model.ACGroup">
+        <MappingFragment StoreEntitySet="ACGroup">
+          <ScalarProperty Name="verifystyle" ColumnName="verifystyle" />
+          <ScalarProperty Name="holidayvaild" ColumnName="holidayvaild" />
+          <ScalarProperty Name="TimeZone3" ColumnName="TimeZone3" />
+          <ScalarProperty Name="TimeZone2" ColumnName="TimeZone2" />
+          <ScalarProperty Name="TimeZone1" ColumnName="TimeZone1" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="GroupID" ColumnName="GroupID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ACTimeZones">
+      <EntityTypeMapping TypeName="gla43158_QLSXCW3Model.ACTimeZones">
+        <MappingFragment StoreEntitySet="ACTimeZones">
+          <ScalarProperty Name="SatEnd" ColumnName="SatEnd" />
+          <ScalarProperty Name="SatStart" ColumnName="SatStart" />
+          <ScalarProperty Name="FriEnd" ColumnName="FriEnd" />
+          <ScalarProperty Name="FriStart" ColumnName="FriStart" />
+          <ScalarProperty Name="ThursEnd" ColumnName="ThursEnd" />
+          <ScalarProperty Name="ThursStart" ColumnName="ThursStart" />
+          <ScalarProperty Name="WedEnd" ColumnName="WedEnd" />
+          <ScalarProperty Name="WedStart" ColumnName="WedStart" />
+          <ScalarProperty Name="TuesEnd" ColumnName="TuesEnd" />
+          <ScalarProperty Name="TuesStart" ColumnName="TuesStart" />
+          <ScalarProperty Name="MonEnd" ColumnName="MonEnd" />
+          <ScalarProperty Name="MonStart" ColumnName="MonStart" />
+          <ScalarProperty Name="SunEnd" ColumnName="SunEnd" />
+          <ScalarProperty Name="SunStart" ColumnName="SunStart" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="TimeZoneID" ColumnName="TimeZoneID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ACUnlockComb">
+      <EntityTypeMapping TypeName="gla43158_QLSXCW3Model.ACUnlockComb">
+        <MappingFragment StoreEntitySet="ACUnlockComb">
+          <ScalarProperty Name="Group05" ColumnName="Group05" />
+          <ScalarProperty Name="Group04" ColumnName="Group04" />
+          <ScalarProperty Name="Group03" ColumnName="Group03" />
+          <ScalarProperty Name="Group02" ColumnName="Group02" />
+          <ScalarProperty Name="Group01" ColumnName="Group01" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="UnlockCombID" ColumnName="UnlockCombID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="AlarmLog">
+      <EntityTypeMapping TypeName="gla43158_QLSXCW3Model.AlarmLog">
+        <MappingFragment StoreEntitySet="AlarmLog">
+          <ScalarProperty Name="AlarmType" ColumnName="AlarmType" />
+          <ScalarProperty Name="MachineAlias" ColumnName="MachineAlias" />
+          <ScalarProperty Name="LogTime" ColumnName="LogTime" />
+          <ScalarProperty Name="EnrollNumber" ColumnName="EnrollNumber" />
+          <ScalarProperty Name="Operator" ColumnName="Operator" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="AttParam">
+      <EntityTypeMapping TypeName="gla43158_QLSXCW3Model.AttParam">
+        <MappingFragment StoreEntitySet="AttParam">
+          <ScalarProperty Name="PARAVALUE" ColumnName="PARAVALUE" />
+          <ScalarProperty Name="PARATYPE" ColumnName="PARATYPE" />
+          <ScalarProperty Name="PARANAME" ColumnName="PARANAME" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="AuditedExc">
+      <EntityTypeMapping TypeName="gla43158_QLSXCW3Model.AuditedExc">
+        <MappingFragment StoreEntitySet="AuditedExc">
+          <ScalarProperty Name="UTime" ColumnName="UTime" />
+          <ScalarProperty Name="UName" ColumnName="UName" />
+          <ScalarProperty Name="IsLeave" ColumnName="IsLeave" />
+          <ScalarProperty Name="NewExcID" ColumnName="NewExcID" />
+          <ScalarProperty Name="CheckTime" ColumnName="CheckTime" />
+          <ScalarProperty Name="UserId" ColumnName="UserId" />
+          <ScalarProperty Name="AEID" ColumnName="AEID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="AUTHDEVICE">
+      <EntityTypeMapping TypeName="gla43158_QLSXCW3Model.AUTHDEVICE">
+        <MappingFragment StoreEntitySet="AUTHDEVICE">
+          <ScalarProperty Name="MachineID" ColumnName="MachineID" />
+          <ScalarProperty Name="USERID" ColumnName="USERID" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CHECKEXACT">
+      <EntityTypeMapping TypeName="gla43158_QLSXCW3Model.CHECKEXACT">
+        <MappingFragment StoreEntitySet="CHECKEXACT">
+          <ScalarProperty Name="DATE" ColumnName="DATE" />
+          <ScalarProperty Name="MODIFYBY" ColumnName="MODIFYBY" />
+          <ScalarProperty Name="ISCOUNT" ColumnName="ISCOUNT" />
+          <ScalarProperty Name="INCOUNT" ColumnName="INCOUNT" />
+          <ScalarProperty Name="ISDELETE" ColumnName="ISDELETE" />
+          <ScalarProperty Name="ISMODIFY" ColumnName="ISMODIFY" />
+          <ScalarProperty Name="YUYIN" ColumnName="YUYIN" />
+          <ScalarProperty Name="ISADD" ColumnName="ISADD" />
+          <ScalarProperty Name="CHECKTYPE" ColumnName="CHECKTYPE" />
+          <ScalarProperty Name="CHECKTIME" ColumnName="CHECKTIME" />
+          <ScalarProperty Name="USERID" ColumnName="USERID" />
+          <ScalarProperty Name="EXACTID" ColumnName="EXACTID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CHECKINOUT">
+      <EntityTypeMapping TypeName="gla43158_QLSXCW3Model.CHECKINOUT">
+        <MappingFragment StoreEntitySet="CHECKINOUT">
+          <ScalarProperty Name="UserExtFmt" ColumnName="UserExtFmt" />
+          <ScalarProperty Name="sn" ColumnName="sn" />
+          <ScalarProperty Name="WorkCode" ColumnName="WorkCode" />
+          <ScalarProperty Name="Memoinfo" ColumnName="Memoinfo" />
+          <ScalarProperty Name="SENSORID" ColumnName="SENSORID" />
+          <ScalarProperty Name="VERIFYCODE" ColumnName="VERIFYCODE" />
+          <ScalarProperty Name="CHECKTYPE" ColumnName="CHECKTYPE" />
+          <ScalarProperty Name="CHECKTIME" ColumnName="CHECKTIME" />
+          <ScalarProperty Name="USERID" ColumnName="USERID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="DEPARTMENTS">
+      <EntityTypeMapping TypeName="gla43158_QLSXCW3Model.DEPARTMENTS">
+        <MappingFragment StoreEntitySet="DEPARTMENTS">
+          <ScalarProperty Name="OverTime" ColumnName="OverTime" />
+          <ScalarProperty Name="Holiday" ColumnName="Holiday" />
+          <ScalarProperty Name="ATT" ColumnName="ATT" />
+          <ScalarProperty Name="DefaultSchId" ColumnName="DefaultSchId" />
+          <ScalarProperty Name="RegisterOT" ColumnName="RegisterOT" />
+          <ScalarProperty Name="MinAutoSchInterval" ColumnName="MinAutoSchInterval" />
+          <ScalarProperty Name="InheritDeptRule" ColumnName="InheritDeptRule" />
+          <ScalarProperty Name="OutEarly" ColumnName="OutEarly" />
+          <ScalarProperty Name="InLate" ColumnName="InLate" />
+          <ScalarProperty Name="AutoSchPlan" ColumnName="AutoSchPlan" />
+          <ScalarProperty Name="InheritDeptSchClass" ColumnName="InheritDeptSchClass" />
+          <ScalarProperty Name="InheritDeptSch" ColumnName="InheritDeptSch" />
+          <ScalarProperty Name="InheritParentSch" ColumnName="InheritParentSch" />
+          <ScalarProperty Name="SUPDEPTID" ColumnName="SUPDEPTID" />
+          <ScalarProperty Name="DEPTNAME" ColumnName="DEPTNAME" />
+          <ScalarProperty Name="DEPTID" ColumnName="DEPTID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="DeptUsedSchs">
+      <EntityTypeMapping TypeName="gla43158_QLSXCW3Model.DeptUsedSchs">
+        <MappingFragment StoreEntitySet="DeptUsedSchs">
+          <ScalarProperty Name="SchId" ColumnName="SchId" />
+          <ScalarProperty Name="DeptId" ColumnName="DeptId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="FaceTemp">
+      <EntityTypeMapping TypeName="gla43158_QLSXCW3Model.FaceTemp">
+        <MappingFragment StoreEntitySet="FaceTemp">
+          <ScalarProperty Name="UserID" ColumnName="UserID" />
+          <ScalarProperty Name="TEMPLATE" ColumnName="TEMPLATE" />
+          <ScalarProperty Name="VFCOUNT" ColumnName="VFCOUNT" />
+          <ScalarProperty Name="ACTIVETIME" ColumnName="ACTIVETIME" />
+          <ScalarProperty Name="RESERVE" ColumnName="RESERVE" />
+          <ScalarProperty Name="VALID" ColumnName="VALID" />
+          <ScalarProperty Name="FACEID" ColumnName="FACEID" />
+          <ScalarProperty Name="pin" ColumnName="pin" />
+          <ScalarProperty Name="SIZE" ColumnName="SIZE" />
+          <ScalarProperty Name="USERNO" ColumnName="USERNO" />
+          <ScalarProperty Name="TEMPLATEID" ColumnName="TEMPLATEID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="HOLIDAYS">
+      <EntityTypeMapping TypeName="gla43158_QLSXCW3Model.HOLIDAYS">
+        <MappingFragment StoreEntitySet="HOLIDAYS">
+          <ScalarProperty Name="timezone" ColumnName="timezone" />
+          <ScalarProperty Name="DeptID" ColumnName="DeptID" />
+          <ScalarProperty Name="MINZU" ColumnName="MINZU" />
+          <ScalarProperty Name="XINBIE" ColumnName="XINBIE" />
+          <ScalarProperty Name="HOLIDAYTYPE" ColumnName="HOLIDAYTYPE" />
+          <ScalarProperty Name="DURATION" ColumnName="DURATION" />
+          <ScalarProperty Name="STARTTIME" ColumnName="STARTTIME" />
+          <ScalarProperty Name="HOLIDAYDAY" ColumnName="HOLIDAYDAY" />
+          <ScalarProperty Name="HOLIDAYMONTH" ColumnName="HOLIDAYMONTH" />
+          <ScalarProperty Name="HOLIDAYYEAR" ColumnName="HOLIDAYYEAR" />
+          <ScalarProperty Name="HOLIDAYNAME" ColumnName="HOLIDAYNAME" />
+          <ScalarProperty Name="HOLIDAYID" ColumnName="HOLIDAYID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="LeaveClass">
+      <EntityTypeMapping TypeName="gla43158_QLSXCW3Model.LeaveClass">
+        <MappingFragment StoreEntitySet="LeaveClass">
+          <ScalarProperty Name="Classify" ColumnName="Classify" />
+          <ScalarProperty Name="Color" ColumnName="Color" />
+          <ScalarProperty Name="Deduct" ColumnName="Deduct" />
+          <ScalarProperty Name="ReportSymbol" ColumnName="ReportSymbol" />
+          <ScalarProperty Name="RemaindCount" ColumnName="RemaindCount" />
+          <ScalarProperty Name="RemaindProc" ColumnName="RemaindProc" />
+          <ScalarProperty Name="Unit" ColumnName="Unit" />
+          <ScalarProperty Name="MinUnit" ColumnName="MinUnit" />
+          <ScalarProperty Name="LeaveName" ColumnName="LeaveName" />
+          <ScalarProperty Name="LeaveId" ColumnName="LeaveId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="LeaveClass1">
+      <EntityTypeMapping TypeName="gla43158_QLSXCW3Model.LeaveClass1">
+        <MappingFragment StoreEntitySet="LeaveClass1">
+          <ScalarProperty Name="Calc" ColumnName="Calc" />
+          <ScalarProperty Name="Classify" ColumnName="Classify" />
+          <ScalarProperty Name="Color" ColumnName="Color" />
+          <ScalarProperty Name="LeaveType" ColumnName="LeaveType" />
+          <ScalarProperty Name="Deduct" ColumnName="Deduct" />
+          <ScalarProperty Name="ReportSymbol" ColumnName="ReportSymbol" />
+          <ScalarProperty Name="RemaindCount" ColumnName="RemaindCount" />
+          <ScalarProperty Name="RemaindProc" ColumnName="RemaindProc" />
+          <ScalarProperty Name="Unit" ColumnName="Unit" />
+          <ScalarProperty Name="MinUnit" ColumnName="MinUnit" />
+          <ScalarProperty Name="LeaveName" ColumnName="LeaveName" />
+          <ScalarProperty Name="LeaveId" ColumnName="LeaveId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Machines">
+      <EntityTypeMapping TypeName="gla43158_QLSXCW3Model.Machines">
+        <MappingFragment StoreEntitySet="Machines">
+          <ScalarProperty Name="IsAndroid" ColumnName="IsAndroid" />
+          <ScalarProperty Name="IsIfChangeConfigServer2" ColumnName="IsIfChangeConfigServer2" />
+          <ScalarProperty Name="PhotoStamp" ColumnName="PhotoStamp" />
+          <ScalarProperty Name="sn" ColumnName="sn" />
+          <ScalarProperty Name="ProduceKind" ColumnName="ProduceKind" />
+          <ScalarProperty Name="Purpose" ColumnName="Purpose" />
+          <ScalarProperty Name="LockControl" ColumnName="LockControl" />
+          <ScalarProperty Name="ProductType" ColumnName="ProductType" />
+          <ScalarProperty Name="FirmwareVersion" ColumnName="FirmwareVersion" />
+          <ScalarProperty Name="SecretCount" ColumnName="SecretCount" />
+          <ScalarProperty Name="fingercount" ColumnName="fingercount" />
+          <ScalarProperty Name="usercount" ColumnName="usercount" />
+          <ScalarProperty Name="managercount" ColumnName="managercount" />
+          <ScalarProperty Name="Voice" ColumnName="Voice" />
+          <ScalarProperty Name="Idle" ColumnName="Idle" />
+          <ScalarProperty Name="InOutRecordWarn" ColumnName="InOutRecordWarn" />
+          <ScalarProperty Name="DateFormat" ColumnName="DateFormat" />
+          <ScalarProperty Name="UILanguage" ColumnName="UILanguage" />
+          <ScalarProperty Name="CommPassword" ColumnName="CommPassword" />
+          <ScalarProperty Name="Enabled" ColumnName="Enabled" />
+          <ScalarProperty Name="IsHost" ColumnName="IsHost" />
+          <ScalarProperty Name="MachineNumber" ColumnName="MachineNumber" />
+          <ScalarProperty Name="Baudrate" ColumnName="Baudrate" />
+          <ScalarProperty Name="Port" ColumnName="Port" />
+          <ScalarProperty Name="SerialPort" ColumnName="SerialPort" />
+          <ScalarProperty Name="IP" ColumnName="IP" />
+          <ScalarProperty Name="ConnectType" ColumnName="ConnectType" />
+          <ScalarProperty Name="MachineAlias" ColumnName="MachineAlias" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="NUM_RUN">
+      <EntityTypeMapping TypeName="gla43158_QLSXCW3Model.NUM_RUN">
+        <MappingFragment StoreEntitySet="NUM_RUN">
+          <ScalarProperty Name="UNITS" ColumnName="UNITS" />
+          <ScalarProperty Name="CYLE" ColumnName="CYLE" />
+          <ScalarProperty Name="ENDDATE" ColumnName="ENDDATE" />
+          <ScalarProperty Name="STARTDATE" ColumnName="STARTDATE" />
+          <ScalarProperty Name="NAME" ColumnName="NAME" />
+          <ScalarProperty Name="OLDID" ColumnName="OLDID" />
+          <ScalarProperty Name="NUM_RUNID" ColumnName="NUM_RUNID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="NUM_RUN_DEIL">
+      <EntityTypeMapping TypeName="gla43158_QLSXCW3Model.NUM_RUN_DEIL">
+        <MappingFragment StoreEntitySet="NUM_RUN_DEIL">
+          <ScalarProperty Name="OverTime" ColumnName="OverTime" />
+          <ScalarProperty Name="SCHCLASSID" ColumnName="SCHCLASSID" />
+          <ScalarProperty Name="EDAYS" ColumnName="EDAYS" />
+          <ScalarProperty Name="SDAYS" ColumnName="SDAYS" />
+          <ScalarProperty Name="ENDTIME" ColumnName="ENDTIME" />
+          <ScalarProperty Name="STARTTIME" ColumnName="STARTTIME" />
+          <ScalarProperty Name="NUM_RUNID" ColumnName="NUM_RUNID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ReportItem">
+      <EntityTypeMapping TypeName="gla43158_QLSXCW3Model.ReportItem">
+        <MappingFragment StoreEntitySet="ReportItem">
+          <ScalarProperty Name="Notes" ColumnName="Notes" />
+          <ScalarProperty Name="CalcLast" ColumnName="CalcLast" />
+          <ScalarProperty Name="StatisticMethod" ColumnName="StatisticMethod" />
+          <ScalarProperty Name="CalcBySchClass" ColumnName="CalcBySchClass" />
+          <ScalarProperty Name="Formula" ColumnName="Formula" />
+          <ScalarProperty Name="UnitName" ColumnName="UnitName" />
+          <ScalarProperty Name="RIName" ColumnName="RIName" />
+          <ScalarProperty Name="ShowIt" ColumnName="ShowIt" />
+          <ScalarProperty Name="RIIndex" ColumnName="RIIndex" />
+          <ScalarProperty Name="RIID" ColumnName="RIID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="SchClass">
+      <EntityTypeMapping TypeName="gla43158_QLSXCW3Model.SchClass">
+        <MappingFragment StoreEntitySet="SchClass">
+          <ScalarProperty Name="WorkMins" ColumnName="WorkMins" />
+          <ScalarProperty Name="SensorID" ColumnName="SensorID" />
+          <ScalarProperty Name="WorkDay" ColumnName="WorkDay" />
+          <ScalarProperty Name="AutoBind" ColumnName="AutoBind" />
+          <ScalarProperty Name="Color" ColumnName="Color" />
+          <ScalarProperty Name="CheckOutTime2" ColumnName="CheckOutTime2" />
+          <ScalarProperty Name="CheckOutTime1" ColumnName="CheckOutTime1" />
+          <ScalarProperty Name="CheckInTime2" ColumnName="CheckInTime2" />
+          <ScalarProperty Name="CheckInTime1" ColumnName="CheckInTime1" />
+          <ScalarProperty Name="CheckOut" ColumnName="CheckOut" />
+          <ScalarProperty Name="CheckIn" ColumnName="CheckIn" />
+          <ScalarProperty Name="EarlyMinutes" ColumnName="EarlyMinutes" />
+          <ScalarProperty Name="LateMinutes" ColumnName="LateMinutes" />
+          <ScalarProperty Name="EndTime" ColumnName="EndTime" />
+          <ScalarProperty Name="StartTime" ColumnName="StartTime" />
+          <ScalarProperty Name="schName" ColumnName="schName" />
+          <ScalarProperty Name="schClassid" ColumnName="schClassid" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="SECURITYDETAILS">
+      <EntityTypeMapping TypeName="gla43158_QLSXCW3Model.SECURITYDETAILS">
+        <MappingFragment StoreEntitySet="SECURITYDETAILS">
+          <ScalarProperty Name="FullControl" ColumnName="FullControl" />
+          <ScalarProperty Name="ReadOnly" ColumnName="ReadOnly" />
+          <ScalarProperty Name="REPORT" ColumnName="REPORT" />
+          <ScalarProperty Name="REPORTVIEW" ColumnName="REPORTVIEW" />
+          <ScalarProperty Name="ENROLLFINGERS" ColumnName="ENROLLFINGERS" />
+          <ScalarProperty Name="USERINFO" ColumnName="USERINFO" />
+          <ScalarProperty Name="SCHEDULE" ColumnName="SCHEDULE" />
+          <ScalarProperty Name="DEPTID" ColumnName="DEPTID" />
+          <ScalarProperty Name="USERID" ColumnName="USERID" />
+          <ScalarProperty Name="SECURITYDETAILID" ColumnName="SECURITYDETAILID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="SHIFT">
+      <EntityTypeMapping TypeName="gla43158_QLSXCW3Model.SHIFT">
+        <MappingFragment StoreEntitySet="SHIFT">
+          <ScalarProperty Name="UNITS" ColumnName="UNITS" />
+          <ScalarProperty Name="CYCLE" ColumnName="CYCLE" />
+          <ScalarProperty Name="SCH12" ColumnName="SCH12" />
+          <ScalarProperty Name="SCH11" ColumnName="SCH11" />
+          <ScalarProperty Name="SCH10" ColumnName="SCH10" />
+          <ScalarProperty Name="SCH9" ColumnName="SCH9" />
+          <ScalarProperty Name="SCH8" ColumnName="SCH8" />
+          <ScalarProperty Name="SCH7" ColumnName="SCH7" />
+          <ScalarProperty Name="SCH6" ColumnName="SCH6" />
+          <ScalarProperty Name="SCH5" ColumnName="SCH5" />
+          <ScalarProperty Name="SCH4" ColumnName="SCH4" />
+          <ScalarProperty Name="SCH3" ColumnName="SCH3" />
+          <ScalarProperty Name="SCH2" ColumnName="SCH2" />
+          <ScalarProperty Name="SCH1" ColumnName="SCH1" />
+          <ScalarProperty Name="RUNNUM" ColumnName="RUNNUM" />
+          <ScalarProperty Name="ENDDATE" ColumnName="ENDDATE" />
+          <ScalarProperty Name="STARTDATE" ColumnName="STARTDATE" />
+          <ScalarProperty Name="USHIFTID" ColumnName="USHIFTID" />
+          <ScalarProperty Name="NAME" ColumnName="NAME" />
+          <ScalarProperty Name="SHIFTID" ColumnName="SHIFTID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="SystemLog">
+      <EntityTypeMapping TypeName="gla43158_QLSXCW3Model.SystemLog">
+        <MappingFragment StoreEntitySet="SystemLog">
+          <ScalarProperty Name="LogDescr" ColumnName="LogDescr" />
+          <ScalarProperty Name="LogTag" ColumnName="LogTag" />
+          <ScalarProperty Name="MachineAlias" ColumnName="MachineAlias" />
+          <ScalarProperty Name="LogTime" ColumnName="LogTime" />
+          <ScalarProperty Name="Operator" ColumnName="Operator" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TBSMSALLOT">
+      <EntityTypeMapping TypeName="gla43158_QLSXCW3Model.TBSMSALLOT">
+        <MappingFragment StoreEntitySet="TBSMSALLOT">
+          <ScalarProperty Name="GENTM" ColumnName="GENTM" />
+          <ScalarProperty Name="USERREF" ColumnName="USERREF" />
+          <ScalarProperty Name="SMSREF" ColumnName="SMSREF" />
+          <ScalarProperty Name="REFERENCE" ColumnName="REFERENCE" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TBSMSINFO">
+      <EntityTypeMapping TypeName="gla43158_QLSXCW3Model.TBSMSINFO">
+        <MappingFragment StoreEntitySet="TBSMSINFO">
+          <ScalarProperty Name="GENTM" ColumnName="GENTM" />
+          <ScalarProperty Name="SMSTMLENG" ColumnName="SMSTMLENG" />
+          <ScalarProperty Name="SMSSTARTTM" ColumnName="SMSSTARTTM" />
+          <ScalarProperty Name="SMSCONTENT" ColumnName="SMSCONTENT" />
+          <ScalarProperty Name="SMSTYPE" ColumnName="SMSTYPE" />
+          <ScalarProperty Name="SMSINDEX" ColumnName="SMSINDEX" />
+          <ScalarProperty Name="SMSID" ColumnName="SMSID" />
+          <ScalarProperty Name="REFERENCE" ColumnName="REFERENCE" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TEMPLATE">
+      <EntityTypeMapping TypeName="gla43158_QLSXCW3Model.TEMPLATE">
+        <MappingFragment StoreEntitySet="TEMPLATE">
+          <ScalarProperty Name="TEMPLATE4" ColumnName="TEMPLATE4" />
+          <ScalarProperty Name="DivisionFP" ColumnName="DivisionFP" />
+          <ScalarProperty Name="Flag" ColumnName="Flag" />
+          <ScalarProperty Name="TEMPLATE11" ColumnName="TEMPLATE1" />
+          <ScalarProperty Name="EMACHINENUM" ColumnName="EMACHINENUM" />
+          <ScalarProperty Name="USETYPE" ColumnName="USETYPE" />
+          <ScalarProperty Name="BITMAPPICTURE4" ColumnName="BITMAPPICTURE4" />
+          <ScalarProperty Name="BITMAPPICTURE3" ColumnName="BITMAPPICTURE3" />
+          <ScalarProperty Name="BITMAPPICTURE2" ColumnName="BITMAPPICTURE2" />
+          <ScalarProperty Name="BITMAPPICTURE" ColumnName="BITMAPPICTURE" />
+          <ScalarProperty Name="TEMPLATE3" ColumnName="TEMPLATE3" />
+          <ScalarProperty Name="TEMPLATE2" ColumnName="TEMPLATE2" />
+          <ScalarProperty Name="TEMPLATE1" ColumnName="TEMPLATE" />
+          <ScalarProperty Name="FINGERID" ColumnName="FINGERID" />
+          <ScalarProperty Name="USERID" ColumnName="USERID" />
+          <ScalarProperty Name="TEMPLATEID" ColumnName="TEMPLATEID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="USER_OF_RUN">
+      <EntityTypeMapping TypeName="gla43158_QLSXCW3Model.USER_OF_RUN">
+        <MappingFragment StoreEntitySet="USER_OF_RUN">
+          <ScalarProperty Name="ORDER_RUN" ColumnName="ORDER_RUN" />
+          <ScalarProperty Name="ISNOTOF_RUN" ColumnName="ISNOTOF_RUN" />
+          <ScalarProperty Name="ENDDATE" ColumnName="ENDDATE" />
+          <ScalarProperty Name="STARTDATE" ColumnName="STARTDATE" />
+          <ScalarProperty Name="NUM_OF_RUN_ID" ColumnName="NUM_OF_RUN_ID" />
+          <ScalarProperty Name="USERID" ColumnName="USERID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="USER_SPEDAY">
+      <EntityTypeMapping TypeName="gla43158_QLSXCW3Model.USER_SPEDAY">
+        <MappingFragment StoreEntitySet="USER_SPEDAY">
+          <ScalarProperty Name="DATE" ColumnName="DATE" />
+          <ScalarProperty Name="YUANYING" ColumnName="YUANYING" />
+          <ScalarProperty Name="DATEID" ColumnName="DATEID" />
+          <ScalarProperty Name="ENDSPECDAY" ColumnName="ENDSPECDAY" />
+          <ScalarProperty Name="STARTSPECDAY" ColumnName="STARTSPECDAY" />
+          <ScalarProperty Name="USERID" ColumnName="USERID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="USER_TEMP_SCH">
+      <EntityTypeMapping TypeName="gla43158_QLSXCW3Model.USER_TEMP_SCH">
+        <MappingFragment StoreEntitySet="USER_TEMP_SCH">
+          <ScalarProperty Name="SCHCLASSID" ColumnName="SCHCLASSID" />
+          <ScalarProperty Name="FLAG" ColumnName="FLAG" />
+          <ScalarProperty Name="TYPE" ColumnName="TYPE" />
+          <ScalarProperty Name="OVERTIME" ColumnName="OVERTIME" />
+          <ScalarProperty Name="LEAVETIME" ColumnName="LEAVETIME" />
+          <ScalarProperty Name="COMETIME" ColumnName="COMETIME" />
+          <ScalarProperty Name="USERID" ColumnName="USERID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="UserACMachines">
+      <EntityTypeMapping TypeName="gla43158_QLSXCW3Model.UserACMachines">
+        <MappingFragment StoreEntitySet="UserACMachines">
+          <ScalarProperty Name="Deviceid" ColumnName="Deviceid" />
+          <ScalarProperty Name="UserID" ColumnName="UserID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="UserACPrivilege">
+      <EntityTypeMapping TypeName="gla43158_QLSXCW3Model.UserACPrivilege">
+        <MappingFragment StoreEntitySet="UserACPrivilege">
+          <ScalarProperty Name="verifystyle" ColumnName="verifystyle" />
+          <ScalarProperty Name="TimeZone3" ColumnName="TimeZone3" />
+          <ScalarProperty Name="TimeZone2" ColumnName="TimeZone2" />
+          <ScalarProperty Name="TimeZone1" ColumnName="TimeZone1" />
+          <ScalarProperty Name="IsUseGroup" ColumnName="IsUseGroup" />
+          <ScalarProperty Name="ACGroupID" ColumnName="ACGroupID" />
+          <ScalarProperty Name="DeviceID" ColumnName="DeviceID" />
+          <ScalarProperty Name="UserID" ColumnName="UserID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="USERINFO">
+      <EntityTypeMapping TypeName="gla43158_QLSXCW3Model.USERINFO">
+        <MappingFragment StoreEntitySet="USERINFO">
+          <ScalarProperty Name="TimeZone3" ColumnName="TimeZone3" />
+          <ScalarProperty Name="TimeZone2" ColumnName="TimeZone2" />
+          <ScalarProperty Name="TimeZone1" ColumnName="TimeZone1" />
+          <ScalarProperty Name="ValidTimeEnd" ColumnName="ValidTimeEnd" />
+          <ScalarProperty Name="ValidTimeBegin" ColumnName="ValidTimeBegin" />
+          <ScalarProperty Name="ValidCount" ColumnName="ValidCount" />
+          <ScalarProperty Name="Expires" ColumnName="Expires" />
+          <ScalarProperty Name="VerifyCode" ColumnName="VerifyCode" />
+          <ScalarProperty Name="UseAccGroupTZ" ColumnName="UseAccGroupTZ" />
+          <ScalarProperty Name="AccGroup" ColumnName="AccGroup" />
+          <ScalarProperty Name="FaceGroup" ColumnName="FaceGroup" />
+          <ScalarProperty Name="CardNo" ColumnName="CardNo" />
+          <ScalarProperty Name="EMPRIVILEGE" ColumnName="EMPRIVILEGE" />
+          <ScalarProperty Name="InheritDeptRule" ColumnName="InheritDeptRule" />
+          <ScalarProperty Name="RegisterOT" ColumnName="RegisterOT" />
+          <ScalarProperty Name="MinAutoSchInterval" ColumnName="MinAutoSchInterval" />
+          <ScalarProperty Name="AutoSchPlan" ColumnName="AutoSchPlan" />
+          <ScalarProperty Name="InheritDeptSchClass" ColumnName="InheritDeptSchClass" />
+          <ScalarProperty Name="InheritDeptSch" ColumnName="InheritDeptSch" />
+          <ScalarProperty Name="privilege" ColumnName="privilege" />
+          <ScalarProperty Name="Notes" ColumnName="Notes" />
+          <ScalarProperty Name="PHOTO" ColumnName="PHOTO" />
+          <ScalarProperty Name="MVerifyPass" ColumnName="MVerifyPass" />
+          <ScalarProperty Name="LUNCHDURATION" ColumnName="LUNCHDURATION" />
+          <ScalarProperty Name="PASSWORD" ColumnName="PASSWORD" />
+          <ScalarProperty Name="MINZU" ColumnName="MINZU" />
+          <ScalarProperty Name="HOLIDAY" ColumnName="HOLIDAY" />
+          <ScalarProperty Name="SEP" ColumnName="SEP" />
+          <ScalarProperty Name="OVERTIME" ColumnName="OVERTIME" />
+          <ScalarProperty Name="OUTEARLY" ColumnName="OUTEARLY" />
+          <ScalarProperty Name="INLATE" ColumnName="INLATE" />
+          <ScalarProperty Name="ATT" ColumnName="ATT" />
+          <ScalarProperty Name="SECURITYFLAGS" ColumnName="SECURITYFLAGS" />
+          <ScalarProperty Name="DEFAULTDEPTID" ColumnName="DEFAULTDEPTID" />
+          <ScalarProperty Name="VERIFICATIONMETHOD" ColumnName="VERIFICATIONMETHOD" />
+          <ScalarProperty Name="FPHONE" ColumnName="FPHONE" />
+          <ScalarProperty Name="OPHONE" ColumnName="OPHONE" />
+          <ScalarProperty Name="ZIP" ColumnName="ZIP" />
+          <ScalarProperty Name="STATE" ColumnName="STATE" />
+          <ScalarProperty Name="CITY" ColumnName="CITY" />
+          <ScalarProperty Name="STREET" ColumnName="STREET" />
+          <ScalarProperty Name="HIREDDAY" ColumnName="HIREDDAY" />
+          <ScalarProperty Name="BIRTHDAY" ColumnName="BIRTHDAY" />
+          <ScalarProperty Name="PAGER" ColumnName="PAGER" />
+          <ScalarProperty Name="TITLE" ColumnName="TITLE" />
+          <ScalarProperty Name="GENDER" ColumnName="GENDER" />
+          <ScalarProperty Name="NAME" ColumnName="NAME" />
+          <ScalarProperty Name="SSN" ColumnName="SSN" />
+          <ScalarProperty Name="BADGENUMBER" ColumnName="BADGENUMBER" />
+          <ScalarProperty Name="USERID" ColumnName="USERID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="UserUpdates">
+      <EntityTypeMapping TypeName="gla43158_QLSXCW3Model.UserUpdates">
+        <MappingFragment StoreEntitySet="UserUpdates">
+          <ScalarProperty Name="BadgeNumber" ColumnName="BadgeNumber" />
+          <ScalarProperty Name="UpdateId" ColumnName="UpdateId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="UserUsedSClasses">
+      <EntityTypeMapping TypeName="gla43158_QLSXCW3Model.UserUsedSClasses">
+        <MappingFragment StoreEntitySet="UserUsedSClasses">
+          <ScalarProperty Name="SchId" ColumnName="SchId" />
+          <ScalarProperty Name="UserId" ColumnName="UserId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="EmOpLog">
+      <EntityTypeMapping TypeName="gla43158_QLSXCW3Model.EmOpLog">
+        <MappingFragment StoreEntitySet="EmOpLog">
+          <ScalarProperty Name="SensorId" ColumnName="SensorId" />
+          <ScalarProperty Name="Params4" ColumnName="Params4" />
+          <ScalarProperty Name="Params3" ColumnName="Params3" />
+          <ScalarProperty Name="Params2" ColumnName="Params2" />
+          <ScalarProperty Name="Params1" ColumnName="Params1" />
+          <ScalarProperty Name="manipulationID" ColumnName="manipulationID" />
+          <ScalarProperty Name="OperateTime" ColumnName="OperateTime" />
+          <ScalarProperty Name="USERID" ColumnName="USERID" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ServerLog">
+      <EntityTypeMapping TypeName="gla43158_QLSXCW3Model.ServerLog">
+        <MappingFragment StoreEntitySet="ServerLog">
+          <ScalarProperty Name="OPERATOR" ColumnName="OPERATOR" />
+          <ScalarProperty Name="SENSORID" ColumnName="SENSORID" />
+          <ScalarProperty Name="EVENTTIME" ColumnName="EVENTTIME" />
+          <ScalarProperty Name="parameter" ColumnName="parameter" />
+          <ScalarProperty Name="EnrollNumber" ColumnName="EnrollNumber" />
+          <ScalarProperty Name="USERID" ColumnName="USERID" />
+          <ScalarProperty Name="EVENT" ColumnName="EVENT" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="UsersMachines">
+      <EntityTypeMapping TypeName="gla43158_QLSXCW3Model.UsersMachines">
+        <MappingFragment StoreEntitySet="UsersMachines">
+          <ScalarProperty Name="DEVICEID" ColumnName="DEVICEID" />
+          <ScalarProperty Name="USERID" ColumnName="USERID" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

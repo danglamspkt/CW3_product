@@ -1,0 +1,25 @@
+﻿<UserControl x:Class="Cw3_Product.UserControlKho.KhoHomeUC"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:Cw3_Product.UserControlKho"
+             mc:Ignorable="d" 
+             
+             xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+            TextElement.Foreground="{DynamicResource MaterialDesignBody}"            
+            TextElement.FontWeight="Medium"
+            TextElement.FontSize="14"
+             
+             d:DesignHeight="750" d:DesignWidth="1500">
+    <Grid Margin="0 -30 0 0">
+        <Image VerticalAlignment="Center" HorizontalAlignment="Center" Stretch="UniformToFill" Source="/UserControlKho/WarehouseBackground.jpg"></Image>
+        <TextBlock VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="100" FontWeight="Bold">
+            <TextBlock.Foreground>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="#FF231E67" Offset="1"/>
+                    <GradientStop Color="#FFBD7145" Offset="0"/>
+                </LinearGradientBrush>
+            </TextBlock.Foreground>Warehouse</TextBlock>
+    </Grid>
+</UserControl>

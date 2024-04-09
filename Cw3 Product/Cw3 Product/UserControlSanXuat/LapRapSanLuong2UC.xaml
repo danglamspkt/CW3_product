@@ -1,0 +1,267 @@
+﻿<UserControl x:Class="Cw3_Product.UserControlSanXuat.LapRapSanLuong2UC"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:Cw3_Product.UserControlSanXuat"
+             mc:Ignorable="d"
+             
+             xmlns:i="http://schemas.microsoft.com/expression/2010/interactivity"
+             
+             xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+            TextElement.Foreground="{DynamicResource MaterialDesignBody}"            
+            TextElement.FontWeight="Medium"
+            TextElement.FontSize="12"
+             
+             DataContext="{StaticResource LrPhieuSlVM}"
+             
+             d:DesignHeight="620" d:DesignWidth="1600">    
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="auto"></RowDefinition>
+            <RowDefinition Height="auto"></RowDefinition>
+            <RowDefinition></RowDefinition>
+        </Grid.RowDefinitions>
+
+        <WrapPanel Grid.Row="0" Orientation="Horizontal" Margin="10 5 0 5" HorizontalAlignment="Left">
+            <Button Content="Tạo mới" Command="{Binding TaoDon}" VerticalAlignment="Center" Width="90" Margin="20 0 20 0" Background="Blue" Foreground="White"></Button>
+            <Button Content="Xác nhận" Command="{Binding XacNhan}" VerticalAlignment="Center" Width="90" Margin="20 0 20 0" Background="Blue" Foreground="White">
+                <Button.CommandParameter>
+                    <MultiBinding Converter="{StaticResource myConverter}">
+                        <MultiBinding.Bindings>
+                            <Binding ElementName="PhieuSanLuong" />
+                            <Binding ElementName="PhieuPhe"/>
+                        </MultiBinding.Bindings>
+                    </MultiBinding>
+                </Button.CommandParameter>
+            </Button>
+            <Button Content="Huỷ" Command="{Binding HuyDon}" VerticalAlignment="Center" Width="90" Margin="20 0 20 0" Background="Blue" Foreground="White">
+                <Button.CommandParameter>
+                    <MultiBinding Converter="{StaticResource myConverter}">
+                        <MultiBinding.Bindings>
+                            <Binding ElementName="PhieuSanLuong" />
+                            <Binding ElementName="PhieuPhe"/>
+                        </MultiBinding.Bindings>
+                    </MultiBinding>
+                </Button.CommandParameter>
+            </Button>
+            <DatePicker SelectedDate="{Binding LrSlNgay, UpdateSourceTrigger=PropertyChanged, Mode=TwoWay, StringFormat='dd/MM/yyyy>'}" IsEnabled="{Binding LrSlnew}" materialDesign:HintAssist.Hint="Ngày làm" Width="180" materialDesign:TextFieldAssist.HasClearButton="True" Style="{StaticResource MaterialDesignFloatingHintDatePicker}" Margin="5 0 5 0" IsTodayHighlighted="True">
+                <i:Interaction.Triggers>
+                    <i:EventTrigger EventName="SelectedDateChanged">
+                        <i:InvokeCommandAction Command="{Binding LrSldatechange}"/>
+                    </i:EventTrigger>
+                </i:Interaction.Triggers>
+            </DatePicker>
+            <ComboBox Text="{Binding LrSlCa}" IsEnabled="{Binding FlagNew}" VerticalAlignment="Center" materialDesign:HintAssist.Hint="Ca làm việc" Width="140" materialDesign:ComboBoxAssist.MaxLength="10" materialDesign:HintAssist.HintOpacity=".26" Style="{StaticResource MaterialDesignFloatingHintComboBox}" Margin="5 0 5 0">
+                <ComboBoxItem Content="Ngày"/>
+                <ComboBoxItem Content="Đêm"/>
+            </ComboBox>
+            <TextBox Text="{Binding LrSlChuyenLr, UpdateSourceTrigger=PropertyChanged, Mode=TwoWay}" IsEnabled="{Binding FlagNew}" VerticalAlignment="Center" materialDesign:HintAssist.Hint="Chuyền lắp ráp" Width="140" Style="{StaticResource MaterialDesignFloatingHintTextBox}" Margin="5 0 5 0"/>
+            <TextBox Text="{Binding LrSlId, UpdateSourceTrigger=PropertyChanged, Mode=TwoWay}" IsEnabled="{Binding FlagNew}" IsReadOnly="True" VerticalAlignment="Center" materialDesign:HintAssist.Hint="Mã Phiếu" Width="140" Style="{StaticResource MaterialDesignFloatingHintTextBox}" Margin="5 0 5 0"/>
+        </WrapPanel>
+
+        <Separator Grid.Row="1" Foreground="LightGray" Background="Black"  Margin="0 0 0 0"></Separator>
+
+
+        <Grid Grid.Row="2" Background="LightGray">
+            <materialDesign:Card materialDesign:ShadowAssist.ShadowEdges="All"
+                                 materialDesign:ShadowAssist.ShadowDepth="Depth3"
+                                 UniformCornerRadius="10"
+                             Margin="20">
+                <ScrollViewer HorizontalScrollBarVisibility="Auto" VerticalScrollBarVisibility="Auto">
+                    <StackPanel>
+                        <TabControl  materialDesign:ColorZoneAssist.Background="{DynamicResource MaterialDesignCardBackground}"
+                                 materialDesign:ColorZoneAssist.Foreground="Red"
+                                 materialDesign:ColorZoneAssist.Mode="Custom"
+                                 HorizontalContentAlignment ="Left"
+                                 x:Name="tabcontrol">
+                            <TabItem Header="Phiếu ghi chép sản xuất hằng ngày" IsEnabled="{Binding FlagNew}" IsSelected="True">
+                                <Grid>
+                                    <Grid.RowDefinitions>
+                                        <RowDefinition Height="auto"></RowDefinition>
+                                        <RowDefinition></RowDefinition>
+                                        <RowDefinition></RowDefinition>
+                                    </Grid.RowDefinitions>
+                                    <StackPanel Grid.Row="0" Orientation="Horizontal" Margin="10 8 8 8">
+                                        <TextBlock Text="STT" Width="80" TextAlignment="Center"></TextBlock>
+                                        <Separator Width="20" RenderTransformOrigin="0.5,0.5">
+                                            <Separator.RenderTransform>
+                                                <TransformGroup>
+                                                    <ScaleTransform/>
+                                                    <SkewTransform/>
+                                                    <RotateTransform Angle="90"/>
+                                                    <TranslateTransform/>
+                                                </TransformGroup>
+                                            </Separator.RenderTransform>
+                                        </Separator>
+                                        <TextBlock Text="Số lô" Width="200" TextAlignment="Center"></TextBlock>
+                                        <Separator Width="20" RenderTransformOrigin="0.5,0.5">
+                                            <Separator.RenderTransform>
+                                                <TransformGroup>
+                                                    <ScaleTransform/>
+                                                    <SkewTransform/>
+                                                    <RotateTransform Angle="90"/>
+                                                    <TranslateTransform/>
+                                                </TransformGroup>
+                                            </Separator.RenderTransform>
+                                        </Separator>
+                                        <TextBlock Text="Mã Bánh xe" Width="150" TextAlignment="Center"></TextBlock>
+                                        <Separator Width="20" RenderTransformOrigin="0.5,0.5">
+                                            <Separator.RenderTransform>
+                                                <TransformGroup>
+                                                    <ScaleTransform/>
+                                                    <SkewTransform/>
+                                                    <RotateTransform Angle="90"/>
+                                                    <TranslateTransform/>
+                                                </TransformGroup>
+                                            </Separator.RenderTransform>
+                                        </Separator>
+                                        <TextBlock Text="Đơn vị"  Width="150" TextAlignment="Center"></TextBlock>
+                                        <Separator Width="20" RenderTransformOrigin="0.5,0.5">
+                                            <Separator.RenderTransform>
+                                                <TransformGroup>
+                                                    <ScaleTransform/>
+                                                    <SkewTransform/>
+                                                    <RotateTransform Angle="90"/>
+                                                    <TranslateTransform/>
+                                                </TransformGroup>
+                                            </Separator.RenderTransform>
+                                        </Separator>
+                                        <TextBlock Text="Số Lượng" Width="130" TextAlignment="Center"></TextBlock>
+                                        <Separator Width="20" RenderTransformOrigin="0.5,0.5">
+                                            <Separator.RenderTransform>
+                                                <TransformGroup>
+                                                    <ScaleTransform/>
+                                                    <SkewTransform/>
+                                                    <RotateTransform Angle="90"/>
+                                                    <TranslateTransform/>
+                                                </TransformGroup>
+                                            </Separator.RenderTransform>
+                                        </Separator>
+                                        <TextBlock Text="Phế" Width="130" TextAlignment="Center"></TextBlock>
+
+
+                                    </StackPanel>
+
+                                    <StackPanel Grid.Row="1" x:Name="PhieuSanLuong"/>
+
+
+                                    <StackPanel Grid.Row="2" Orientation="Horizontal">
+                                        <Button IsEnabled="{Binding FlagNew}" 
+                                        VerticalAlignment="Top"
+                                        HorizontalAlignment="Left"
+                                        Content="Thêm mã hàng"
+                                        Background="Transparent"
+                                        BorderBrush="Transparent" 
+                                        Padding="0,0,0,0"
+                                        Margin="8 0 10 0"
+                                        Command="{Binding ThemMaSanLuong}"
+                                        CommandParameter="{Binding ElementName=PhieuSanLuong}"/>
+                                        <Button IsEnabled="{Binding FlagNew}"
+                                        VerticalAlignment="Top"
+                                        HorizontalAlignment="Left"
+                                        Content="Xóa mã Hàng"
+                                        Background="Transparent"
+                                        BorderBrush="Transparent" 
+                                        Padding="0,0,0,0"
+                                        Margin="8 0 10 0"
+                                        Command="{Binding XoaMaSanLuong}"
+                                        CommandParameter="{Binding ElementName=PhieuSanLuong}"/>
+                                    </StackPanel>
+
+                                </Grid>
+
+                            </TabItem>
+                            <TabItem Header="Phiếu ghi chép phế linh kiện" IsEnabled="{Binding FlagNew}" >
+
+                                <Grid>
+                                    <Grid.RowDefinitions>
+                                        <RowDefinition Height="auto"></RowDefinition>
+                                        <RowDefinition></RowDefinition>
+                                        <RowDefinition></RowDefinition>
+                                    </Grid.RowDefinitions>
+                                    <StackPanel Grid.Row="0" Orientation="Horizontal" Margin="10 8 8 8">
+                                        <TextBlock Text="STT" Width="80" TextAlignment="Center"></TextBlock>
+                                        <Separator Width="20" RenderTransformOrigin="0.5,0.5">
+                                            <Separator.RenderTransform>
+                                                <TransformGroup>
+                                                    <ScaleTransform/>
+                                                    <SkewTransform/>
+                                                    <RotateTransform Angle="90"/>
+                                                    <TranslateTransform/>
+                                                </TransformGroup>
+                                            </Separator.RenderTransform>
+                                        </Separator>
+                                        <TextBlock Text="Số lô" Width="200" TextAlignment="Center"></TextBlock>
+                                        <Separator Width="20" RenderTransformOrigin="0.5,0.5">
+                                            <Separator.RenderTransform>
+                                                <TransformGroup>
+                                                    <ScaleTransform/>
+                                                    <SkewTransform/>
+                                                    <RotateTransform Angle="90"/>
+                                                    <TranslateTransform/>
+                                                </TransformGroup>
+                                            </Separator.RenderTransform>
+                                        </Separator>
+                                        <TextBlock Text="Số họa" Width="150" TextAlignment="Center"></TextBlock>
+                                        <Separator Width="20" RenderTransformOrigin="0.5,0.5">
+                                            <Separator.RenderTransform>
+                                                <TransformGroup>
+                                                    <ScaleTransform/>
+                                                    <SkewTransform/>
+                                                    <RotateTransform Angle="90"/>
+                                                    <TranslateTransform/>
+                                                </TransformGroup>
+                                            </Separator.RenderTransform>
+                                        </Separator>
+                                        <TextBlock Text="Phế" Width="130" TextAlignment="Center"></TextBlock>
+                                        <Separator Width="20" RenderTransformOrigin="0.5,0.5">
+                                            <Separator.RenderTransform>
+                                                <TransformGroup>
+                                                    <ScaleTransform/>
+                                                    <SkewTransform/>
+                                                    <RotateTransform Angle="90"/>
+                                                    <TranslateTransform/>
+                                                </TransformGroup>
+                                            </Separator.RenderTransform>
+                                        </Separator>
+                                        <TextBlock Text="Nguyên nhân" Width="250" TextAlignment="Center"></TextBlock>
+
+
+                                    </StackPanel>
+                                    <StackPanel Grid.Row="1" x:Name="PhieuPhe"/>
+                                    <StackPanel Grid.Row="2" Orientation="Horizontal">
+                                        <Button IsEnabled="{Binding FlagNew}" 
+                                        VerticalAlignment="Top"
+                                        HorizontalAlignment="Left"
+                                        Content="Thêm mã hàng"
+                                        Background="Transparent"
+                                        BorderBrush="Transparent" 
+                                        Padding="0,0,0,0"
+                                        Margin="8 0 10 0"
+                                        Command="{Binding ThemMaPhe}"
+                                        CommandParameter="{Binding ElementName=PhieuPhe}"/>
+                                        <Button IsEnabled="{Binding FlagNew}"
+                                        VerticalAlignment="Top"
+                                        HorizontalAlignment="Left"
+                                        Content="Xóa mã Hàng"
+                                        Background="Transparent"
+                                        BorderBrush="Transparent" 
+                                        Padding="0,0,0,0"
+                                        Margin="8 0 10 0"
+                                        Command="{Binding XoaMaPhe}"
+                                        CommandParameter="{Binding ElementName=PhieuPhe}"/>
+                                    </StackPanel>
+                                </Grid>
+
+
+
+                            </TabItem>
+                        </TabControl>
+                    </StackPanel>
+                </ScrollViewer>
+                
+            </materialDesign:Card>
+        </Grid>
+    </Grid>
+</UserControl>

@@ -1,0 +1,18 @@
+﻿<UserControl x:Class="Cw3_Product.UserControlBaoTri.LichSuSuaChua"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:Cw3_Product.UserControlBaoTri"
+             mc:Ignorable="d" 
+             
+             xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+            TextElement.Foreground="{DynamicResource MaterialDesignBody}"            
+            TextElement.FontWeight="Medium"
+            TextElement.FontSize="14"
+             
+             d:DesignHeight="720" d:DesignWidth="1500">
+    <Grid>
+        <TextBlock HorizontalAlignment="Center" VerticalAlignment="Center">Lịch sử sửa chữa</TextBlock>
+    </Grid>
+</UserControl>

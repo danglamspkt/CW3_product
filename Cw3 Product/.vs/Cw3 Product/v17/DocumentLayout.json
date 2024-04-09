@@ -1,0 +1,168 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\WPF\\Cw3 Product\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{89BED8DF-0687-4D28-BFB9-605FA2D356C2}|Cw3 Product\\Cw3 Product.csproj|c:\\wpf\\cw3 product\\cw3 product\\app.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{89BED8DF-0687-4D28-BFB9-605FA2D356C2}|Cw3 Product\\Cw3 Product.csproj|solutionrelative:cw3 product\\app.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{89BED8DF-0687-4D28-BFB9-605FA2D356C2}|Cw3 Product\\Cw3 Product.csproj|c:\\wpf\\cw3 product\\cw3 product\\resourcexaml\\mainresource.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{89BED8DF-0687-4D28-BFB9-605FA2D356C2}|Cw3 Product\\Cw3 Product.csproj|solutionrelative:cw3 product\\resourcexaml\\mainresource.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{89BED8DF-0687-4D28-BFB9-605FA2D356C2}|Cw3 Product\\Cw3 Product.csproj|C:\\WPF\\Cw3 Product\\cw3 product\\viewmodel\\kehoachviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{89BED8DF-0687-4D28-BFB9-605FA2D356C2}|Cw3 Product\\Cw3 Product.csproj|solutionrelative:cw3 product\\viewmodel\\kehoachviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{89BED8DF-0687-4D28-BFB9-605FA2D356C2}|Cw3 Product\\Cw3 Product.csproj|C:\\WPF\\Cw3 Product\\cw3 product\\viewmodel\\nhansuviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{89BED8DF-0687-4D28-BFB9-605FA2D356C2}|Cw3 Product\\Cw3 Product.csproj|solutionrelative:cw3 product\\viewmodel\\nhansuviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{89BED8DF-0687-4D28-BFB9-605FA2D356C2}|Cw3 Product\\Cw3 Product.csproj|C:\\WPF\\Cw3 Product\\cw3 product\\usercontrolkho\\phieunhapkholinhkienuc.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{89BED8DF-0687-4D28-BFB9-605FA2D356C2}|Cw3 Product\\Cw3 Product.csproj|solutionrelative:cw3 product\\usercontrolkho\\phieunhapkholinhkienuc.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{89BED8DF-0687-4D28-BFB9-605FA2D356C2}|Cw3 Product\\Cw3 Product.csproj|C:\\WPF\\Cw3 Product\\cw3 product\\usercontrolnhansu\\nhansuchitietwd.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{89BED8DF-0687-4D28-BFB9-605FA2D356C2}|Cw3 Product\\Cw3 Product.csproj|solutionrelative:cw3 product\\usercontrolnhansu\\nhansuchitietwd.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{89BED8DF-0687-4D28-BFB9-605FA2D356C2}|Cw3 Product\\Cw3 Product.csproj|C:\\WPF\\Cw3 Product\\cw3 product\\usercontrolnhansu\\dsnhansuuc.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{89BED8DF-0687-4D28-BFB9-605FA2D356C2}|Cw3 Product\\Cw3 Product.csproj|solutionrelative:cw3 product\\usercontrolnhansu\\dsnhansuuc.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{89BED8DF-0687-4D28-BFB9-605FA2D356C2}|Cw3 Product\\Cw3 Product.csproj|C:\\WPF\\Cw3 Product\\cw3 product\\usercontrolsanxuat\\gcdksanluonguc.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{89BED8DF-0687-4D28-BFB9-605FA2D356C2}|Cw3 Product\\Cw3 Product.csproj|solutionrelative:cw3 product\\usercontrolsanxuat\\gcdksanluonguc.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{89BED8DF-0687-4D28-BFB9-605FA2D356C2}|Cw3 Product\\Cw3 Product.csproj|C:\\WPF\\Cw3 Product\\cw3 product\\usercontrolmenu\\nhansuuc.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{89BED8DF-0687-4D28-BFB9-605FA2D356C2}|Cw3 Product\\Cw3 Product.csproj|solutionrelative:cw3 product\\usercontrolmenu\\nhansuuc.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 353,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "App.config",
+              "DocumentMoniker": "C:\\WPF\\Cw3 Product\\Cw3 Product\\App.config",
+              "RelativeDocumentMoniker": "Cw3 Product\\App.config",
+              "ToolTip": "C:\\WPF\\Cw3 Product\\Cw3 Product\\App.config",
+              "RelativeToolTip": "Cw3 Product\\App.config",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABIAAABlAQAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
+              "WhenOpened": "2024-04-09T08:15:00.036Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "MainResource.xaml",
+              "DocumentMoniker": "C:\\WPF\\Cw3 Product\\Cw3 Product\\ResourceXAML\\MainResource.xaml",
+              "RelativeDocumentMoniker": "Cw3 Product\\ResourceXAML\\MainResource.xaml",
+              "ToolTip": "C:\\WPF\\Cw3 Product\\Cw3 Product\\ResourceXAML\\MainResource.xaml",
+              "RelativeToolTip": "Cw3 Product\\ResourceXAML\\MainResource.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-04-02T02:30:03.214Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "KeHoachViewModel.cs",
+              "DocumentMoniker": "C:\\WPF\\Cw3 Product\\Cw3 Product\\ViewModel\\KeHoachViewModel.cs",
+              "RelativeDocumentMoniker": "Cw3 Product\\ViewModel\\KeHoachViewModel.cs",
+              "ToolTip": "C:\\WPF\\Cw3 Product\\Cw3 Product\\ViewModel\\KeHoachViewModel.cs",
+              "RelativeToolTip": "Cw3 Product\\ViewModel\\KeHoachViewModel.cs",
+              "ViewState": "AQIAAK8BAAAAAAAAAAAQwLcBAABIAAAA",
+              "Icon": "00000000-0000-0000-0000-000000000000.000000|iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAADtSURBVDhPYxgFCHDh4YX/sQtj/6u3qP9XblL\u002BHzk/8j9UiuHtx7f/VZpVwHxkNggwgohLjy79D18SzmAua86QZJbEwM/Bz3D91XWGCNMIRpAGo34jsGJkwMrMynCn9g5YP0PK0pT/3tO9/3/58gVuMjLA5wImEHH68WkGN3U3Bh4eHoiJJACwAb/\u002B/gI7CRuAeeH3398M8g3ycDayKxjC5oX9D54TjNX5IIDPC2Ann7x78n/E4ggGDw0PhgiDCLBrLj2/xJBhl0HQS3AFe67t\u002BT/lyBSGO2/uMHCxcTHYK9szdAd2kxwmIw8wMAAAESl0qwYO77cAAAAASUVORK5CYII=",
+              "WhenOpened": "2024-03-29T02:59:19.535Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "NhanSuViewModel.cs",
+              "DocumentMoniker": "C:\\WPF\\Cw3 Product\\Cw3 Product\\ViewModel\\NhanSuViewModel.cs",
+              "RelativeDocumentMoniker": "Cw3 Product\\ViewModel\\NhanSuViewModel.cs",
+              "ToolTip": "C:\\WPF\\Cw3 Product\\Cw3 Product\\ViewModel\\NhanSuViewModel.cs",
+              "RelativeToolTip": "Cw3 Product\\ViewModel\\NhanSuViewModel.cs",
+              "ViewState": "AQIAAGgAAAAAAAAAAAAowH0AAAAJAAAA",
+              "Icon": "00000000-0000-0000-0000-000000000000.000000|iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAADtSURBVDhPYxgFCHDh4YX/sQtj/6u3qP9XblL\u002BHzk/8j9UiuHtx7f/VZpVwHxkNggwgohLjy79D18SzmAua86QZJbEwM/Bz3D91XWGCNMIRpAGo34jsGJkwMrMynCn9g5YP0PK0pT/3tO9/3/58gVuMjLA5wImEHH68WkGN3U3Bh4eHoiJJACwAb/\u002B/gI7CRuAeeH3398M8g3ycDayKxjC5oX9D54TjNX5IIDPC2Ann7x78n/E4ggGDw0PhgiDCLBrLj2/xJBhl0HQS3AFe67t\u002BT/lyBSGO2/uMHCxcTHYK9szdAd2kxwmIw8wMAAAESl0qwYO77cAAAAASUVORK5CYII=",
+              "WhenOpened": "2024-03-29T02:59:19.613Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "PhieuNhapKhoLinhKienUC.xaml",
+              "DocumentMoniker": "C:\\WPF\\Cw3 Product\\Cw3 Product\\UserControlKho\\PhieuNhapKhoLinhKienUC.xaml",
+              "RelativeDocumentMoniker": "Cw3 Product\\UserControlKho\\PhieuNhapKhoLinhKienUC.xaml",
+              "ToolTip": "C:\\WPF\\Cw3 Product\\Cw3 Product\\UserControlKho\\PhieuNhapKhoLinhKienUC.xaml",
+              "RelativeToolTip": "Cw3 Product\\UserControlKho\\PhieuNhapKhoLinhKienUC.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-03-29T02:59:19.614Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "GcDkSanLuongUC.xaml",
+              "DocumentMoniker": "C:\\WPF\\Cw3 Product\\Cw3 Product\\UserControlSanXuat\\GcDkSanLuongUC.xaml",
+              "RelativeDocumentMoniker": "Cw3 Product\\UserControlSanXuat\\GcDkSanLuongUC.xaml",
+              "ToolTip": "C:\\WPF\\Cw3 Product\\Cw3 Product\\UserControlSanXuat\\GcDkSanLuongUC.xaml",
+              "RelativeToolTip": "Cw3 Product\\UserControlSanXuat\\GcDkSanLuongUC.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-03-29T02:59:19.615Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "NhanSuChiTietWD.xaml",
+              "DocumentMoniker": "C:\\WPF\\Cw3 Product\\Cw3 Product\\UserControlNhanSu\\NhanSuChiTietWD.xaml",
+              "RelativeDocumentMoniker": "Cw3 Product\\UserControlNhanSu\\NhanSuChiTietWD.xaml",
+              "ToolTip": "C:\\WPF\\Cw3 Product\\Cw3 Product\\UserControlNhanSu\\NhanSuChiTietWD.xaml",
+              "RelativeToolTip": "Cw3 Product\\UserControlNhanSu\\NhanSuChiTietWD.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-03-29T02:59:19.615Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "DSNhanSuUC.xaml",
+              "DocumentMoniker": "C:\\WPF\\Cw3 Product\\Cw3 Product\\UserControlNhanSu\\DSNhanSuUC.xaml",
+              "RelativeDocumentMoniker": "Cw3 Product\\UserControlNhanSu\\DSNhanSuUC.xaml",
+              "ToolTip": "C:\\WPF\\Cw3 Product\\Cw3 Product\\UserControlNhanSu\\DSNhanSuUC.xaml",
+              "RelativeToolTip": "Cw3 Product\\UserControlNhanSu\\DSNhanSuUC.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-03-29T02:59:19.616Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "NhanSuUC.xaml",
+              "DocumentMoniker": "C:\\WPF\\Cw3 Product\\Cw3 Product\\UserControlMenu\\NhanSuUC.xaml",
+              "RelativeDocumentMoniker": "Cw3 Product\\UserControlMenu\\NhanSuUC.xaml",
+              "ToolTip": "C:\\WPF\\Cw3 Product\\Cw3 Product\\UserControlMenu\\NhanSuUC.xaml",
+              "RelativeToolTip": "Cw3 Product\\UserControlMenu\\NhanSuUC.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-03-29T02:59:19.616Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

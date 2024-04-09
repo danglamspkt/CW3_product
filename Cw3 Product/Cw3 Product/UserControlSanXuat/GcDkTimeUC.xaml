@@ -1,0 +1,38 @@
+﻿<UserControl x:Class="Cw3_Product.UserControlSanXuat.GcDkTimeUC"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:Cw3_Product.UserControlSanXuat"
+             mc:Ignorable="d" 
+             
+             xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+            TextElement.Foreground="{DynamicResource MaterialDesignBody}"            
+            TextElement.FontWeight="Medium"
+            TextElement.FontSize="14"
+             
+             DataContext="{StaticResource GcDkChiTietVM}"
+             
+             d:DesignHeight="720" d:DesignWidth="1500">
+    <Grid>
+
+        <materialDesign:Card materialDesign:ShadowAssist.ShadowEdges="All"
+                             materialDesign:ShadowAssist.ShadowDepth="Depth3"
+                             UniformCornerRadius="10">
+            <DataGrid AutoGenerateColumns="False" ItemsSource="{Binding TimeList}" SelectedItem="{Binding SelectedItemTime, Mode=TwoWay}" Background="White" CanUserAddRows="False" CanUserDeleteRows="False">
+                <DataGrid.Columns>
+                    <DataGridTextColumn Header="STT" Binding="{Binding IdEnTime}" Width="80"/>
+                    <DataGridTextColumn Header="Mã phiếu" Binding="{Binding MaPhieu}" Width="120"/>
+                    <DataGridTextColumn Header="Ngày" Binding="{Binding Ngay, StringFormat=dd/MM/yyyy}" Width="120"/>
+                    <DataGridTextColumn Header="Ca lv" Binding="{Binding CaLv}" Width="80"/>
+                    <DataGridTextColumn Header="Mã máy" Binding="{Binding MaMay}" Width="100"/>
+                    <DataGridTextColumn Header="Nhân viên" Binding="{Binding NhanVien}" Width="170"/>
+                    <DataGridTextColumn Header="Thời gian&#13;bắt đầu" Binding="{Binding BatDau}" Width="120"/>
+                    <DataGridTextColumn Header="Thời gian&#13;kết thúc"  Binding="{Binding KetThuc}" Width="120"/>
+                    <DataGridTextColumn Header="Lý do" Binding="{Binding LyDo}" Width="250"/>
+                </DataGrid.Columns>
+            </DataGrid>
+        </materialDesign:Card>
+    </Grid>
+</UserControl>
+

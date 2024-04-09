@@ -1,0 +1,81 @@
+﻿<UserControl x:Class="Cw3_Product.UserControlKho.SoDoKhoThanhPhamUC"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:Cw3_Product.UserControlKho"
+             mc:Ignorable="d" 
+             
+             xmlns:i="http://schemas.microsoft.com/expression/2010/interactivity"
+             
+             xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+            TextElement.Foreground="{DynamicResource MaterialDesignBody}"            
+            TextElement.FontWeight="Medium"
+            TextElement.FontSize="12"
+             
+             DataContext="{StaticResource SoDoKhoTpVM}"
+             
+             d:DesignHeight="620" d:DesignWidth="1600">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="auto"/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <StackPanel Orientation="Horizontal" HorizontalAlignment="Left">
+            <Button Content="Update" Command="{Binding updatecommand}"></Button>
+            <TextBox Text="{Binding SoLo1, UpdateSourceTrigger=PropertyChanged, Mode=TwoWay}" VerticalAlignment="Center" materialDesign:HintAssist.Hint="Số lô" Width="190" Style="{StaticResource MaterialDesignFloatingHintTextBox}" Margin="10 0 5 0">
+                <i:Interaction.Triggers>
+                    <i:EventTrigger EventName="TextChanged">
+                        <i:InvokeCommandAction Command="{Binding valuechangecommand}"/>
+                    </i:EventTrigger>
+                </i:Interaction.Triggers>
+            </TextBox>
+            <TextBox Text="{Binding MaTp1, UpdateSourceTrigger=PropertyChanged, Mode=TwoWay}" VerticalAlignment="Center" materialDesign:HintAssist.Hint="Mã bánh xe" Width="140" Style="{StaticResource MaterialDesignFloatingHintTextBox}" Margin="10 0 5 0">
+                <i:Interaction.Triggers>
+                    <i:EventTrigger EventName="TextChanged">
+                        <i:InvokeCommandAction Command="{Binding valuechangecommand}"/>
+                    </i:EventTrigger>
+                </i:Interaction.Triggers>
+            </TextBox>
+            <TextBox Text="{Binding DisplayName1, UpdateSourceTrigger=PropertyChanged, Mode=TwoWay}" VerticalAlignment="Center" materialDesign:HintAssist.Hint="Display Name" Width="190" Style="{StaticResource MaterialDesignFloatingHintTextBox}" Margin="10 0 5 0">
+                <i:Interaction.Triggers>
+                    <i:EventTrigger EventName="TextChanged">
+                        <i:InvokeCommandAction Command="{Binding valuechangecommand}"/>
+                    </i:EventTrigger>
+                </i:Interaction.Triggers>
+            </TextBox>
+            <TextBox Text="{Binding ViTri, UpdateSourceTrigger=PropertyChanged, Mode=TwoWay}" VerticalAlignment="Center" materialDesign:HintAssist.Hint="Vị trí" Width="100" Style="{StaticResource MaterialDesignFloatingHintTextBox}" Margin="10 0 5 0">
+                <i:Interaction.Triggers>
+                    <i:EventTrigger EventName="TextChanged">
+                        <i:InvokeCommandAction Command="{Binding valuechangecommand}"/>
+                    </i:EventTrigger>
+                </i:Interaction.Triggers>
+            </TextBox>
+        </StackPanel>
+        <Grid Grid.Row="1" Background="LightGray">
+            <materialDesign:Card materialDesign:ShadowAssist.ShadowEdges="All"
+                                 materialDesign:ShadowAssist.ShadowDepth="Depth3"
+                                 UniformCornerRadius="10"
+                             Margin="20">
+                
+                            <ListView ItemsSource="{Binding TonKholist}">
+                                <ListView.View>
+                                    <GridView>
+                                        <GridViewColumn Header="STT" DisplayMemberBinding="{Binding STT}" Width="100"/>
+                                        <GridViewColumn Header="Số lô 1" DisplayMemberBinding="{Binding SoLo1}" Width="200"/>
+                                        <GridViewColumn Header="Mã bánh xe 1" DisplayMemberBinding="{Binding MaTp1}" Width="150"/>
+                                        <GridViewColumn Header="Display Name 1" DisplayMemberBinding="{Binding DisplayName1}" Width="250"/>
+                                        <GridViewColumn Header="Số lượng 1" DisplayMemberBinding="{Binding SoLuong1, StringFormat=\{0:#\,#.\}}" Width="150"/>
+                                        <GridViewColumn Header="Số lô 2" DisplayMemberBinding="{Binding SoLo2}" Width="200"/>
+                                        <GridViewColumn Header="Mã bánh xe 2" DisplayMemberBinding="{Binding MaTp2}" Width="150"/>
+                                        <GridViewColumn Header="Display Name 2" DisplayMemberBinding="{Binding DisplayName2}" Width="250"/>
+                                        <GridViewColumn Header="Số lượng 2" DisplayMemberBinding="{Binding SoLuong2, StringFormat=\{0:#\,#.\}}" Width="150"/>
+                                        <GridViewColumn Header="Vị trí" DisplayMemberBinding="{Binding ViTri}" Width="150"/>
+                                    </GridView>
+                                </ListView.View>
+                            </ListView>
+                        
+            </materialDesign:Card>
+        </Grid>
+    </Grid>
+</UserControl>

@@ -1,0 +1,281 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="465ee048dffb4b50b4ebfe9329fba0fa" Name="Diagram1" ZoomLevel="95">
+        <EntityTypeShape EntityType="gla43158_QLSXCW3Model.BaoDuong" Width="1.5" PointX="5.25" PointY="11.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="gla43158_QLSXCW3Model.BaoTri" Width="1.5" PointX="5.25" PointY="14.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="gla43158_QLSXCW3Model.BomLk" Width="1.5" PointX="3" PointY="19.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="gla43158_QLSXCW3Model.BomLkTp" Width="1.5" PointX="8.25" PointY="29" IsExpanded="true" />
+        <EntityTypeShape EntityType="gla43158_QLSXCW3Model.BomNl" Width="1.5" PointX="3" PointY="28.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="gla43158_QLSXCW3Model.BomTp" Width="1.5" PointX="3" PointY="38.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="gla43158_QLSXCW3Model.BoPhan" Width="1.5" PointX="0.75" PointY="13.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="gla43158_QLSXCW3Model.Customer" Width="1.5" PointX="6.75" PointY="46.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="gla43158_QLSXCW3Model.DKNguyenLieu" Width="1.5" PointX="5.25" PointY="23" IsExpanded="true" />
+        <EntityTypeShape EntityType="gla43158_QLSXCW3Model.DKSanXuat" Width="1.5" PointX="8.25" PointY="23.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="gla43158_QLSXCW3Model.DonHangTp" Width="1.5" PointX="5.25" PointY="32.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="gla43158_QLSXCW3Model.DonXuatHangTP" Width="1.5" PointX="8.25" PointY="36.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="gla43158_QLSXCW3Model.EPNguyenLieu" Width="1.5" PointX="5.25" PointY="26.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="gla43158_QLSXCW3Model.EPSanXuat" Width="1.5" PointX="8.25" PointY="19" IsExpanded="true" />
+        <EntityTypeShape EntityType="gla43158_QLSXCW3Model.HanNguyenLieu" Width="1.5" PointX="5.25" PointY="29.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="gla43158_QLSXCW3Model.HanSanXuat" Width="1.5" PointX="5.25" PointY="18.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="gla43158_QLSXCW3Model.KHBaoDuong" Width="1.5" PointX="3" PointY="11.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="gla43158_QLSXCW3Model.Kho" Width="1.5" PointX="9" PointY="15.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="gla43158_QLSXCW3Model.LrNguyenLieu" Width="1.5" PointX="5.25" PointY="36" IsExpanded="true" />
+        <EntityTypeShape EntityType="gla43158_QLSXCW3Model.LrSanXuat" Width="1.5" PointX="10.5" PointY="33" IsExpanded="true" />
+        <EntityTypeShape EntityType="gla43158_QLSXCW3Model.NhanSu" Width="1.5" PointX="2.875" PointY="7.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="gla43158_QLSXCW3Model.NhomMay" Width="1.5" PointX="0.75" PointY="16.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="gla43158_QLSXCW3Model.OutputInfo" Width="1.5" PointX="11.25" PointY="28.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="gla43158_QLSXCW3Model.Outputt" Width="1.5" PointX="9" PointY="46.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="gla43158_QLSXCW3Model.SonNguyenLieu" Width="1.5" PointX="5.25" PointY="42.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="gla43158_QLSXCW3Model.Supplier" Width="1.5" PointX="3.75" PointY="50.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="gla43158_QLSXCW3Model.TaiSanCoDinh" Width="1.5" PointX="3" PointY="14" IsExpanded="true" />
+        <EntityTypeShape EntityType="gla43158_QLSXCW3Model.Unit" Width="1.5" PointX="0.75" PointY="28.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="gla43158_QLSXCW3Model.XuatTp" Width="1.5" PointX="10.5" PointY="38.25" IsExpanded="true" />
+        <AssociationConnector Association="gla43158_QLSXCW3Model.FK__BaoDuong__IdKHBa__778AC167" ManuallyRouted="false" />
+        <AssociationConnector Association="gla43158_QLSXCW3Model.FK__BaoDuong__MaMay__787EE5A0" ManuallyRouted="false" />
+        <AssociationConnector Association="gla43158_QLSXCW3Model.FK__BaoTri__MaMay__797309D9" ManuallyRouted="false" />
+        <AssociationConnector Association="gla43158_QLSXCW3Model.FK__BomLk__IdU__7A672E12" ManuallyRouted="false" />
+        <AssociationConnector Association="gla43158_QLSXCW3Model.FK__BomLkTp__SoHoa__7D439ABD" ManuallyRouted="false" />
+        <AssociationConnector Association="gla43158_QLSXCW3Model.FK__DKSanXuat__SoHoa__02FC7413" ManuallyRouted="false" />
+        <AssociationConnector Association="gla43158_QLSXCW3Model.FK__EPSanXuat__SoHoa__0A9D95DB" ManuallyRouted="false" />
+        <AssociationConnector Association="gla43158_QLSXCW3Model.FK__HanSanXua__SoHoa__0D7A0286" ManuallyRouted="false" />
+        <AssociationConnector Association="gla43158_QLSXCW3Model.FK__BomLkTp__MaMuaHa__7B5B524B" ManuallyRouted="false" />
+        <AssociationConnector Association="gla43158_QLSXCW3Model.FK__BomLkTp__MaTp__7C4F7684" ManuallyRouted="false" />
+        <AssociationConnector Association="gla43158_QLSXCW3Model.FK__BomNl__IdU__7E37BEF6" ManuallyRouted="false" />
+        <AssociationConnector Association="gla43158_QLSXCW3Model.FK__DKNguyenL__MaMua__00200768" ManuallyRouted="false" />
+        <AssociationConnector Association="gla43158_QLSXCW3Model.FK__EPNguyenL__MaMua__07C12930" ManuallyRouted="false" />
+        <AssociationConnector Association="gla43158_QLSXCW3Model.FK__HanNguyen__MaMua__0B91BA14" ManuallyRouted="false" />
+        <AssociationConnector Association="gla43158_QLSXCW3Model.FK__LrNguyenL__MaMua__151B244E" ManuallyRouted="false" />
+        <AssociationConnector Association="gla43158_QLSXCW3Model.FK__OutputInf__MaMua__1CBC4616" ManuallyRouted="false" />
+        <AssociationConnector Association="gla43158_QLSXCW3Model.FK__SonNguyen__MaMua__1F98B2C1" ManuallyRouted="false" />
+        <AssociationConnector Association="gla43158_QLSXCW3Model.FK__BomTp__IdU__7F2BE32F" ManuallyRouted="false" />
+        <AssociationConnector Association="gla43158_QLSXCW3Model.FK__DonHangTp__MaTp__04E4BC85" ManuallyRouted="false" />
+        <AssociationConnector Association="gla43158_QLSXCW3Model.FK__DonXuatHan__MaTp__05D8E0BE" ManuallyRouted="false" />
+        <AssociationConnector Association="gla43158_QLSXCW3Model.FK__LrSanXuat__MaTp__17036CC0" ManuallyRouted="false" />
+        <AssociationConnector Association="gla43158_QLSXCW3Model.FK__XuatTp__MaTp__2739D489" ManuallyRouted="false" />
+        <AssociationConnector Association="gla43158_QLSXCW3Model.FK__NhanSu__MaBp__18EBB532" ManuallyRouted="false" />
+        <AssociationConnector Association="gla43158_QLSXCW3Model.FK__NhomMay__MaBp__19DFD96B" ManuallyRouted="false" />
+        <AssociationConnector Association="gla43158_QLSXCW3Model.FK__TaiSanCoDi__MaBp__236943A5" ManuallyRouted="false" />
+        <AssociationConnector Association="gla43158_QLSXCW3Model.FK__Outputt__IdCus__1EA48E88" ManuallyRouted="false" />
+        <AssociationConnector Association="gla43158_QLSXCW3Model.FK__DKSanXuat__IdU__01142BA1" ManuallyRouted="false" />
+        <AssociationConnector Association="gla43158_QLSXCW3Model.FK__DKSanXuat__MaMay__02084FDA" ManuallyRouted="false" />
+        <AssociationConnector Association="gla43158_QLSXCW3Model.FK__DonHangTp__IdU__03F0984C" ManuallyRouted="false" />
+        <AssociationConnector Association="gla43158_QLSXCW3Model.FK__LrSanXuat__SoLo__17F790F9" ManuallyRouted="false" />
+        <AssociationConnector Association="gla43158_QLSXCW3Model.FK__XuatTp__SoLo__282DF8C2" ManuallyRouted="false" />
+        <AssociationConnector Association="gla43158_QLSXCW3Model.FK__DonXuatHang__IdU__06CD04F7" ManuallyRouted="false" />
+        <AssociationConnector Association="gla43158_QLSXCW3Model.FK__EPSanXuat__IdU__08B54D69" ManuallyRouted="false" />
+        <AssociationConnector Association="gla43158_QLSXCW3Model.FK__EPSanXuat__MaMay__09A971A2" ManuallyRouted="false" />
+        <AssociationConnector Association="gla43158_QLSXCW3Model.FK__HanSanXua__MaMay__0C85DE4D" ManuallyRouted="false" />
+        <AssociationConnector Association="gla43158_QLSXCW3Model.FK__HanSanXuat__IdU__0E6E26BF" ManuallyRouted="false" />
+        <AssociationConnector Association="gla43158_QLSXCW3Model.FK__KHBaoDuon__IdNho__14270015" ManuallyRouted="false" />
+        <AssociationConnector Association="gla43158_QLSXCW3Model.FK__OutputInf__MaKho__1BC821DD" ManuallyRouted="false" />
+        <AssociationConnector Association="gla43158_QLSXCW3Model.FK__XuatTp__MaKho__2645B050" ManuallyRouted="false" />
+        <AssociationConnector Association="gla43158_QLSXCW3Model.FK__LrSanXuat__IdU__160F4887" ManuallyRouted="false" />
+        <AssociationConnector Association="gla43158_QLSXCW3Model.FK__TaiSanCoD__IdNho__22751F6C" ManuallyRouted="false" />
+        <AssociationConnector Association="gla43158_QLSXCW3Model.FK__OutputInf__IdPhi__1AD3FDA4" ManuallyRouted="false" />
+        <AssociationConnector Association="gla43158_QLSXCW3Model.FK__OutputInfo__IdU__1DB06A4F" ManuallyRouted="false" />
+        <AssociationConnector Association="gla43158_QLSXCW3Model.FK__XuatTp__IdU__25518C17" ManuallyRouted="false" />
+        <AssociationConnector Association="gla43158_QLSXCW3Model.FK__DKSanXuat__SoLo__3A4CA8FD" />
+        <EntityTypeShape EntityType="gla43158_QLSXCW3Model.DKKiemTra" Width="1.5" PointX="11.25" PointY="16.375" />
+        <AssociationConnector Association="gla43158_QLSXCW3Model.FK__DKKiemTra__SoHoa__73852659" />
+        <AssociationConnector Association="gla43158_QLSXCW3Model.FK__DKKiemTra__MaMay__72910220" />
+        <EntityTypeShape EntityType="gla43158_QLSXCW3Model.DkThoiGian" Width="1.5" PointX="5.25" PointY="7.5" />
+        <AssociationConnector Association="gla43158_QLSXCW3Model.FK__DkThoiGia__MaMay__1B9317B3" />
+        <EntityTypeShape EntityType="gla43158_QLSXCW3Model.EPNhietDo" Width="1.5" PointX="5.25" PointY="0.875" />
+        <EntityTypeShape EntityType="gla43158_QLSXCW3Model.EPThemNL" Width="1.5" PointX="5.25" PointY="53.75" />
+        <EntityTypeShape EntityType="gla43158_QLSXCW3Model.EPThoiGian" Width="1.5" PointX="5.25" PointY="57.75" />
+        <AssociationConnector Association="gla43158_QLSXCW3Model.FK__EPNhietDo__MaMay__336AA144" />
+        <AssociationConnector Association="gla43158_QLSXCW3Model.FK__EPThemNL__MaMay__3CF40B7E" />
+        <AssociationConnector Association="gla43158_QLSXCW3Model.FK__EPThoiGia__MaMay__36470DEF" />
+        <EntityTypeShape EntityType="gla43158_QLSXCW3Model.EPKiemTra" Width="1.5" PointX="11.25" PointY="10.625" />
+        <AssociationConnector Association="gla43158_QLSXCW3Model.FK__EPKiemTra__SoHoa__3A179ED3" />
+        <AssociationConnector Association="gla43158_QLSXCW3Model.FK__EPKiemTra__MaMay__39237A9A" />
+        <EntityTypeShape EntityType="gla43158_QLSXCW3Model.EPBaoDuong" Width="1.5" PointX="5.25" PointY="61.75" />
+        <AssociationConnector Association="gla43158_QLSXCW3Model.FK__EPBaoDuon__MaMay__42ACE4D4" />
+        <EntityTypeShape EntityType="gla43158_QLSXCW3Model.UserRole" Width="1.5" PointX="7.375" PointY="1.25" />
+        <EntityTypeShape EntityType="gla43158_QLSXCW3Model.Users" Width="1.5" PointX="9.625" PointY="0.875" />
+        <AssociationConnector Association="gla43158_QLSXCW3Model.FK__Users__IdRole__7167D3BD" />
+        <AssociationConnector Association="gla43158_QLSXCW3Model.FK__BaoDuong__UserNa__7814D14C" />
+        <AssociationConnector Association="gla43158_QLSXCW3Model.FK__BaoTri__UserName__7908F585" />
+        <AssociationConnector Association="gla43158_QLSXCW3Model.FK__BomLk__UserName__74444068" />
+        <AssociationConnector Association="gla43158_QLSXCW3Model.FK__BomLkTp__UserNam__753864A1" />
+        <AssociationConnector Association="gla43158_QLSXCW3Model.FK__BomNl__UserName__762C88DA" />
+        <AssociationConnector Association="gla43158_QLSXCW3Model.FK__BomTp__UserName__7720AD13" />
+        <AssociationConnector Association="gla43158_QLSXCW3Model.FK__BoPhan__UserName__79FD19BE" />
+        <AssociationConnector Association="gla43158_QLSXCW3Model.FK__Kho__MaBp__1A69E950" />
+        <AssociationConnector Association="gla43158_QLSXCW3Model.FK__Customer__UserNa__7AF13DF7" />
+        <AssociationConnector Association="gla43158_QLSXCW3Model.FK__DKKiemTra__UserN__7BE56230" />
+        <AssociationConnector Association="gla43158_QLSXCW3Model.FK__DKNguyenL__UserN__7CD98669" />
+        <AssociationConnector Association="gla43158_QLSXCW3Model.FK__DKSanXuat__UserN__7DCDAAA2" />
+        <AssociationConnector Association="gla43158_QLSXCW3Model.FK__DkThoiGia__UserN__7EC1CEDB" />
+        <AssociationConnector Association="gla43158_QLSXCW3Model.FK__DonHangTp__UserN__7FB5F314" />
+        <AssociationConnector Association="gla43158_QLSXCW3Model.FK__DonXuatHa__UserN__00AA174D" />
+        <AssociationConnector Association="gla43158_QLSXCW3Model.FK__EPBaoDuon__UserN__019E3B86" />
+        <AssociationConnector Association="gla43158_QLSXCW3Model.FK__EPKiemTra__UserN__02925FBF" />
+        <AssociationConnector Association="gla43158_QLSXCW3Model.FK__EPNguyenL__UserN__038683F8" />
+        <AssociationConnector Association="gla43158_QLSXCW3Model.FK__EPNhietDo__UserN__047AA831" />
+        <AssociationConnector Association="gla43158_QLSXCW3Model.FK__EPSanXuat__UserN__056ECC6A" />
+        <AssociationConnector Association="gla43158_QLSXCW3Model.FK__EPThemNL__UserNa__0662F0A3" />
+        <AssociationConnector Association="gla43158_QLSXCW3Model.FK__EPThoiGia__UserN__075714DC" />
+        <AssociationConnector Association="gla43158_QLSXCW3Model.FK__HanNguyen__UserN__084B3915" />
+        <AssociationConnector Association="gla43158_QLSXCW3Model.FK__HanSanXua__UserN__093F5D4E" />
+        <AssociationConnector Association="gla43158_QLSXCW3Model.FK__KHBaoDuon__UserN__0C1BC9F9" />
+        <AssociationConnector Association="gla43158_QLSXCW3Model.FK__Kho__UserName__0D0FEE32" />
+        <AssociationConnector Association="gla43158_QLSXCW3Model.FK__LrNguyenL__UserN__0FEC5ADD" />
+        <AssociationConnector Association="gla43158_QLSXCW3Model.FK__LrSanXuat__UserN__0EF836A4" />
+        <AssociationConnector Association="gla43158_QLSXCW3Model.FK__NhanSu__UserName__10E07F16" />
+        <AssociationConnector Association="gla43158_QLSXCW3Model.FK__NhomMay__UserNam__11D4A34F" />
+        <AssociationConnector Association="gla43158_QLSXCW3Model.FK__OutputInf__UserN__12C8C788" />
+        <AssociationConnector Association="gla43158_QLSXCW3Model.FK__Outputt__UserNam__13BCEBC1" />
+        <AssociationConnector Association="gla43158_QLSXCW3Model.FK__SonNguyen__UserN__14B10FFA" />
+        <AssociationConnector Association="gla43158_QLSXCW3Model.FK__Supplier__UserNa__1699586C" />
+        <AssociationConnector Association="gla43158_QLSXCW3Model.FK__TaiSanCoD__UserN__178D7CA5" />
+        <AssociationConnector Association="gla43158_QLSXCW3Model.FK__Unit__UserName__1881A0DE" />
+        <AssociationConnector Association="gla43158_QLSXCW3Model.FK__XuatTp__UserName__1975C517" />
+        <EntityTypeShape EntityType="gla43158_QLSXCW3Model.KhoLinhKienInputInfo" Width="1.5" PointX="19.125" PointY="18.625" />
+        <EntityTypeShape EntityType="gla43158_QLSXCW3Model.KhoLinhKienOutput" Width="1.5" PointX="13.875" PointY="31" />
+        <EntityTypeShape EntityType="gla43158_QLSXCW3Model.KhoLinhKienOutputInfo" Width="1.5" PointX="16.875" PointY="16.625" />
+        <EntityTypeShape EntityType="gla43158_QLSXCW3Model.KhoNgoaiSXInput" Width="1.5" PointX="21.875" PointY="20.75" />
+        <EntityTypeShape EntityType="gla43158_QLSXCW3Model.KhoNgoaiSXInputInfo" Width="1.5" PointX="13.875" PointY="16.625" />
+        <EntityTypeShape EntityType="gla43158_QLSXCW3Model.KhoNgoaiSXOutput" Width="1.5" PointX="19.875" PointY="25" />
+        <EntityTypeShape EntityType="gla43158_QLSXCW3Model.KhoNgoaiSXOutputInfo" Width="1.5" PointX="13.875" PointY="11.625" />
+        <EntityTypeShape EntityType="gla43158_QLSXCW3Model.KhoNguyenLieuInput" Width="1.5" PointX="12.875" PointY="35.75" />
+        <EntityTypeShape EntityType="gla43158_QLSXCW3Model.KhoNguyenLieuInputInfo" Width="1.5" PointX="16.875" PointY="11.625" />
+        <EntityTypeShape EntityType="gla43158_QLSXCW3Model.KhoNguyenLieuOutput" Width="1.5" PointX="16.875" PointY="32" />
+        <EntityTypeShape EntityType="gla43158_QLSXCW3Model.KhoNguyenLieuOutputInfo" Width="1.5" PointX="13.875" PointY="21.625" />
+        <EntityTypeShape EntityType="gla43158_QLSXCW3Model.KhoThanhPhamInput" Width="1.5" PointX="19.875" PointY="33.75" />
+        <EntityTypeShape EntityType="gla43158_QLSXCW3Model.KhoThanhPhamOutput" Width="1.5" PointX="19.875" PointY="29" />
+        <AssociationConnector Association="gla43158_QLSXCW3Model.FK__KhoLinhKi__SoHoa__58671BC9" />
+        <AssociationConnector Association="gla43158_QLSXCW3Model.FK__KhoLinhKi__SoHoa__7D98A078" />
+        <AssociationConnector Association="gla43158_QLSXCW3Model.FK__KhoNguyen__MaMua__0BE6BFCF" />
+        <AssociationConnector Association="gla43158_QLSXCW3Model.FK__KhoNguyen__MaMua__5D2BD0E6" />
+        <AssociationConnector Association="gla43158_QLSXCW3Model.FK__KhoLinhKi__IdCus__79C80F94" />
+        <AssociationConnector Association="gla43158_QLSXCW3Model.FK__KhoNgoaiS__IdCus__025D5595" />
+        <AssociationConnector Association="gla43158_QLSXCW3Model.FK__KhoNguyen__IdCus__062DE679" />
+        <AssociationConnector Association="gla43158_QLSXCW3Model.FK__KhoLinhKi__MaKho__5772F790" />
+        <AssociationConnector Association="gla43158_QLSXCW3Model.FK__KhoLinhKi__MaKho__7CA47C3F" />
+        <AssociationConnector Association="gla43158_QLSXCW3Model.FK__KhoNgoaiS__MaKho__2C538F61" />
+        <AssociationConnector Association="gla43158_QLSXCW3Model.FK__KhoNgoaiS__MaKho__731B1205" />
+        <AssociationConnector Association="gla43158_QLSXCW3Model.FK__KhoNguyen__MaKho__0AF29B96" />
+        <AssociationConnector Association="gla43158_QLSXCW3Model.FK__KhoNguyen__MaKho__5C37ACAD" />
+        <AssociationConnector Association="gla43158_QLSXCW3Model.FK__KhoLinhKi__UserN__558AAF1E" />
+        <AssociationConnector Association="gla43158_QLSXCW3Model.FK__KhoLinhKien__IdU__567ED357" />
+        <AssociationConnector Association="gla43158_QLSXCW3Model.FK__KhoLinhKi__MaPhi__278EDA44" />
+        <AssociationConnector Association="gla43158_QLSXCW3Model.FK__KhoLinhKi__UserN__78D3EB5B" />
+        <AssociationConnector Association="gla43158_QLSXCW3Model.FK__KhoLinhKi__UserN__7ABC33CD" />
+        <AssociationConnector Association="gla43158_QLSXCW3Model.FK__KhoLinhKien__IdU__7BB05806" />
+        <AssociationConnector Association="gla43158_QLSXCW3Model.FK__KhoNgoaiS__IdSup__6E565CE8" />
+        <AssociationConnector Association="gla43158_QLSXCW3Model.FK__KhoNgoaiS__MaPhi__740F363E" />
+        <AssociationConnector Association="gla43158_QLSXCW3Model.FK__KhoNgoaiS__UserN__6D6238AF" />
+        <AssociationConnector Association="gla43158_QLSXCW3Model.FK__KhoNgoaiS__UserN__7132C993" />
+        <AssociationConnector Association="gla43158_QLSXCW3Model.FK__KhoNgoaiSXI__IdU__7226EDCC" />
+        <AssociationConnector Association="gla43158_QLSXCW3Model.FK__KhoNgoaiS__MaPhi__2D47B39A" />
+        <AssociationConnector Association="gla43158_QLSXCW3Model.FK__KhoNgoaiS__UserN__0169315C" />
+        <AssociationConnector Association="gla43158_QLSXCW3Model.FK__KhoNgoaiS__UserN__2A6B46EF" />
+        <AssociationConnector Association="gla43158_QLSXCW3Model.FK__KhoNgoaiSXO__IdU__2B5F6B28" />
+        <AssociationConnector Association="gla43158_QLSXCW3Model.FK__KhoNguyen__IdSup__361203C5" />
+        <AssociationConnector Association="gla43158_QLSXCW3Model.FK__KhoNguyen__MaPhi__5E1FF51F" />
+        <AssociationConnector Association="gla43158_QLSXCW3Model.FK__KhoNguyen__UserN__351DDF8C" />
+        <AssociationConnector Association="gla43158_QLSXCW3Model.FK__KhoNguyen__UserN__5A4F643B" />
+        <AssociationConnector Association="gla43158_QLSXCW3Model.FK__KhoNguyenLi__IdU__5B438874" />
+        <AssociationConnector Association="gla43158_QLSXCW3Model.FK__KhoNguyen__MaPhi__269AB60B" />
+        <AssociationConnector Association="gla43158_QLSXCW3Model.FK__KhoNguyen__UserN__0539C240" />
+        <AssociationConnector Association="gla43158_QLSXCW3Model.FK__KhoNguyen__UserN__090A5324" />
+        <AssociationConnector Association="gla43158_QLSXCW3Model.FK__KhoNguyenLi__IdU__09FE775D" />
+        <AssociationConnector Association="gla43158_QLSXCW3Model.FK__KhoThanhP__IdSup__61F08603" />
+        <AssociationConnector Association="gla43158_QLSXCW3Model.FK__KhoThanhP__UserN__60FC61CA" />
+        <AssociationConnector Association="gla43158_QLSXCW3Model.FK__KhoThanhP__UserN__0FB750B3" />
+        <EntityTypeShape EntityType="gla43158_QLSXCW3Model.MaHangSame" Width="1.5" PointX="11.875" PointY="6.375" />
+        <AssociationConnector Association="gla43158_QLSXCW3Model.FK__MaHangSam__UserN__0E04126B" />
+        <EntityTypeShape EntityType="gla43158_QLSXCW3Model.KhoLinhKienInput" Width="1.5" PointX="13.875" PointY="26.75" />
+        <AssociationConnector Association="gla43158_QLSXCW3Model.FK__KhoLinhKi__IdSup__220B0B18" />
+        <AssociationConnector Association="gla43158_QLSXCW3Model.FK__KhoLinhKi__MaPhi__6991A7CB" />
+        <AssociationConnector Association="gla43158_QLSXCW3Model.FK__KhoLinhKi__UserN__2116E6DF" />
+        <AssociationConnector Association="gla43158_QLSXCW3Model.FK__KhoLinhKie__SoLo__5EDF0F2E" />
+        <AssociationConnector Association="gla43158_QLSXCW3Model.FK__KhoNguyenL__SoLo__5DEAEAF5" />
+        <AssociationConnector Association="gla43158_QLSXCW3Model.FK__DKNguyenLi__SoLo__2D12A970" />
+        <AssociationConnector Association="gla43158_QLSXCW3Model.FK__LrNguyenLi__SoLo__32CB82C6" />
+        <EntityTypeShape EntityType="gla43158_QLSXCW3Model.DKNguyenLieuLK" Width="1.5" PointX="19.875" PointY="13.875" />
+        <EntityTypeShape EntityType="gla43158_QLSXCW3Model.KhoThanhPhamInputInfo" Width="1.5" PointX="24.125" PointY="20.75" />
+        <EntityTypeShape EntityType="gla43158_QLSXCW3Model.LrNguyenLieuLk" Width="1.5" PointX="16.875" PointY="22.875" />
+        <AssociationConnector Association="gla43158_QLSXCW3Model.FK__DKNguyenL__SoHoa__2FEF161B" />
+        <AssociationConnector Association="gla43158_QLSXCW3Model.FK__LrNguyenL__SoHoa__35A7EF71" />
+        <AssociationConnector Association="gla43158_QLSXCW3Model.FK__KhoThanhP__MaTp1__153B1FDF" />
+        <AssociationConnector Association="gla43158_QLSXCW3Model.FK__KhoThanhP__MaTp2__190BB0C3" />
+        <AssociationConnector Association="gla43158_QLSXCW3Model.FK__KhoThanhP__IdCus__2A363CC5" />
+        <AssociationConnector Association="gla43158_QLSXCW3Model.FK__DKNguyenL__UserN__30E33A54" />
+        <AssociationConnector Association="gla43158_QLSXCW3Model.FK__DKNguyenLi__SoLo__31D75E8D" />
+        <AssociationConnector Association="gla43158_QLSXCW3Model.FK__KhoThanhP__SoLo1__17236851" />
+        <AssociationConnector Association="gla43158_QLSXCW3Model.FK__KhoThanhP__SoLo2__18178C8A" />
+        <AssociationConnector Association="gla43158_QLSXCW3Model.FK__LrNguyenLi__SoLo__379037E3" />
+        <AssociationConnector Association="gla43158_QLSXCW3Model.FK__KhoThanhP__MaKho__116A8EFB" />
+        <AssociationConnector Association="gla43158_QLSXCW3Model.FK__KhoThanhP__MaPhi__125EB334" />
+        <AssociationConnector Association="gla43158_QLSXCW3Model.FK__KhoThanhP__UserN__10766AC2" />
+        <AssociationConnector Association="gla43158_QLSXCW3Model.FK__KhoThanhPh__IdU1__1352D76D" />
+        <AssociationConnector Association="gla43158_QLSXCW3Model.FK__KhoThanhPh__IdU2__1446FBA6" />
+        <AssociationConnector Association="gla43158_QLSXCW3Model.FK__LrNguyenL__UserN__369C13AA" />
+        <EntityTypeShape EntityType="gla43158_QLSXCW3Model.EPPhatLieu" Width="1.5" PointX="19.875" PointY="9.125" />
+        <AssociationConnector Association="gla43158_QLSXCW3Model.FK__EPPhatLie__SoHoa__4119A21D" />
+        <AssociationConnector Association="gla43158_QLSXCW3Model.FK__EPPhatLieu__MaBp__420DC656" />
+        <AssociationConnector Association="gla43158_QLSXCW3Model.FK__EPPhatLie__UserN__3F3159AB" />
+        <AssociationConnector Association="gla43158_QLSXCW3Model.FK__EPPhatLieu__IdU__40257DE4" />
+        <EntityTypeShape EntityType="gla43158_QLSXCW3Model.KhoThanhPhamOutputInfo" Width="1.5" PointX="22.5" PointY="13.75" />
+        <EntityTypeShape EntityType="gla43158_QLSXCW3Model.SonKiemTra" Width="1.5" PointX="0.75" PointY="0.75" />
+        <AssociationConnector Association="gla43158_QLSXCW3Model.FK__KhoThanhP__MaTp1__0ABD916C" />
+        <AssociationConnector Association="gla43158_QLSXCW3Model.FK__KhoThanhP__MaTp2__19FFD4FC" />
+        <AssociationConnector Association="gla43158_QLSXCW3Model.FK__KhoThanhP__SoLo1__0CA5D9DE" />
+        <AssociationConnector Association="gla43158_QLSXCW3Model.FK__KhoThanhP__SoLo2__0D99FE17" />
+        <AssociationConnector Association="gla43158_QLSXCW3Model.FK__KhoThanhP__MaKho__06ED0088" />
+        <AssociationConnector Association="gla43158_QLSXCW3Model.FK__KhoThanhP__MaPhi__07E124C1" />
+        <AssociationConnector Association="gla43158_QLSXCW3Model.FK__KhoThanhP__UserN__05F8DC4F" />
+        <AssociationConnector Association="gla43158_QLSXCW3Model.FK__KhoThanhPh__IdU1__08D548FA" />
+        <AssociationConnector Association="gla43158_QLSXCW3Model.FK__KhoThanhPh__IdU2__09C96D33" />
+        <EntityTypeShape EntityType="gla43158_QLSXCW3Model.SonSanXuat" Width="1.5" PointX="14.875" PointY="6.375" />
+        <AssociationConnector Association="gla43158_QLSXCW3Model.FK__SonSanXua__SoHoa__664B26CC" />
+        <AssociationConnector Association="gla43158_QLSXCW3Model.FK__SonSanXuat__SoLo__68336F3E" />
+        <AssociationConnector Association="gla43158_QLSXCW3Model.FK__SonSanXua__UserN__65570293" />
+        <AssociationConnector Association="gla43158_QLSXCW3Model.FK__SonSanXuat__IdU__673F4B05" />
+        <EntityTypeShape EntityType="gla43158_QLSXCW3Model.ACGroup" Width="1.5" PointX="12.375" PointY="0.75" />
+        <EntityTypeShape EntityType="gla43158_QLSXCW3Model.ACTimeZones" Width="1.5" PointX="14.375" PointY="0.75" />
+        <EntityTypeShape EntityType="gla43158_QLSXCW3Model.ACUnlockComb" Width="1.5" PointX="16.375" PointY="0.75" />
+        <EntityTypeShape EntityType="gla43158_QLSXCW3Model.AlarmLog" Width="1.5" PointX="17.375" PointY="4.75" />
+        <EntityTypeShape EntityType="gla43158_QLSXCW3Model.AttParam" Width="1.5" PointX="18.375" PointY="0.75" />
+        <EntityTypeShape EntityType="gla43158_QLSXCW3Model.AuditedExc" Width="1.5" PointX="19.375" PointY="3.75" />
+        <EntityTypeShape EntityType="gla43158_QLSXCW3Model.AUTHDEVICE" Width="1.5" PointX="20.375" PointY="0.75" />
+        <EntityTypeShape EntityType="gla43158_QLSXCW3Model.CHECKEXACT" Width="1.5" PointX="21.375" PointY="3.75" />
+        <EntityTypeShape EntityType="gla43158_QLSXCW3Model.CHECKINOUT" Width="1.5" PointX="10.375" PointY="21.75" />
+        <EntityTypeShape EntityType="gla43158_QLSXCW3Model.DEPARTMENTS" Width="1.5" PointX="22.375" PointY="8.75" />
+        <EntityTypeShape EntityType="gla43158_QLSXCW3Model.DeptUsedSchs" Width="1.5" PointX="22.375" PointY="0.75" />
+        <EntityTypeShape EntityType="gla43158_QLSXCW3Model.FaceTemp" Width="1.5" PointX="23.375" PointY="3.75" />
+        <EntityTypeShape EntityType="gla43158_QLSXCW3Model.HOLIDAYS" Width="1.5" PointX="24.375" PointY="7.75" />
+        <EntityTypeShape EntityType="gla43158_QLSXCW3Model.LeaveClass" Width="1.5" PointX="25.375" PointY="0.75" />
+        <EntityTypeShape EntityType="gla43158_QLSXCW3Model.LeaveClass1" Width="1.5" PointX="25.375" PointY="12.75" />
+        <EntityTypeShape EntityType="gla43158_QLSXCW3Model.Machines" Width="1.5" PointX="26.375" PointY="4.75" />
+        <EntityTypeShape EntityType="gla43158_QLSXCW3Model.NUM_RUN" Width="1.5" PointX="10.375" PointY="25.75" />
+        <EntityTypeShape EntityType="gla43158_QLSXCW3Model.NUM_RUN_DEIL" Width="1.5" PointX="26.375" PointY="17.75" />
+        <EntityTypeShape EntityType="gla43158_QLSXCW3Model.ReportItem" Width="1.5" PointX="26.375" PointY="21.75" />
+        <EntityTypeShape EntityType="gla43158_QLSXCW3Model.SchClass" Width="1.5" PointX="26.375" PointY="25.75" />
+        <EntityTypeShape EntityType="gla43158_QLSXCW3Model.SECURITYDETAILS" Width="1.5" PointX="27.375" PointY="0.75" />
+        <EntityTypeShape EntityType="gla43158_QLSXCW3Model.SHIFT" Width="1.5" PointX="28.375" PointY="4.75" />
+        <EntityTypeShape EntityType="gla43158_QLSXCW3Model.SystemLog" Width="1.5" PointX="27.375" PointY="12.75" />
+        <EntityTypeShape EntityType="gla43158_QLSXCW3Model.TBSMSALLOT" Width="1.5" PointX="16.375" PointY="27.75" />
+        <EntityTypeShape EntityType="gla43158_QLSXCW3Model.TBSMSINFO" Width="1.5" PointX="28.375" PointY="15.75" />
+        <EntityTypeShape EntityType="gla43158_QLSXCW3Model.TEMPLATE" Width="1.5" PointX="28.375" PointY="19.75" />
+        <EntityTypeShape EntityType="gla43158_QLSXCW3Model.USER_OF_RUN" Width="1.5" PointX="22.375" PointY="28.75" />
+        <EntityTypeShape EntityType="gla43158_QLSXCW3Model.USER_SPEDAY" Width="1.5" PointX="28.375" PointY="24.75" />
+        <EntityTypeShape EntityType="gla43158_QLSXCW3Model.USER_TEMP_SCH" Width="1.5" PointX="28.375" PointY="27.75" />
+        <EntityTypeShape EntityType="gla43158_QLSXCW3Model.UserACMachines" Width="1.5" PointX="29.375" PointY="0.75" />
+        <EntityTypeShape EntityType="gla43158_QLSXCW3Model.UserACPrivilege" Width="1.5" PointX="29.375" PointY="10.75" />
+        <EntityTypeShape EntityType="gla43158_QLSXCW3Model.USERINFO" Width="1.5" PointX="30.375" PointY="14.75" />
+        <EntityTypeShape EntityType="gla43158_QLSXCW3Model.UserUpdates" Width="1.5" PointX="30.375" PointY="3.75" />
+        <EntityTypeShape EntityType="gla43158_QLSXCW3Model.UserUsedSClasses" Width="1.5" PointX="30.375" PointY="6.75" />
+        <EntityTypeShape EntityType="gla43158_QLSXCW3Model.EmOpLog" Width="1.5" PointX="30.375" PointY="26.75" />
+        <EntityTypeShape EntityType="gla43158_QLSXCW3Model.ServerLog" Width="1.5" PointX="30.375" PointY="30.75" />
+        <EntityTypeShape EntityType="gla43158_QLSXCW3Model.UsersMachines" Width="1.5" PointX="31.375" PointY="0.75" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

@@ -1,0 +1,72 @@
+﻿<UserControl
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:Cw3_Product.UserControlKeHoach"
+             
+             xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+            xmlns:dxc="http://schemas.devexpress.com/winfx/2008/xaml/charts" xmlns:ViewModel="clr-namespace:Cw3_Product.ViewModel" x:Class="Cw3_Product.UserControlKeHoach.SltdUC"
+             mc:Ignorable="d"
+             
+            TextElement.Foreground="{DynamicResource MaterialDesignBody}"            
+            TextElement.FontWeight="Medium"
+            TextElement.FontSize="14"
+             
+             DataContext="{StaticResource KehoachVM}"
+             
+             d:DesignHeight="720" d:DesignWidth="1500">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+
+        <StackPanel Grid.Row="0" Orientation="Horizontal" Margin="25 5 0 5">
+            
+        </StackPanel>
+        <Separator Grid.Row="2"/>
+
+        <materialDesign:Card Grid.Row="3"
+                             materialDesign:ShadowAssist.ShadowEdges="All"
+                             materialDesign:ShadowAssist.ShadowDepth="Depth3"
+                             UniformCornerRadius="10">
+            <DataGrid AutoGenerateColumns="False" ItemsSource="{Binding KhtdList}" IsReadOnly="True" Background="White">
+                <DataGrid.Columns>
+                    <DataGridTextColumn Header="STT" Binding="{Binding STT}" Width="100"/>
+                    <DataGridTextColumn Header="Ngày lên đơn" Binding="{Binding NgayLenDon, StringFormat=dd/MM/yyyy}" Width="150"/>
+                    <DataGridTextColumn Header="Mã bánh xe" Binding="{Binding MaBx}" Width="150"/>
+                    <DataGridTextColumn Header="Số lô" Binding="{Binding SoLo}" Width="200"/>
+                    <DataGridTextColumn Header="Số lượng" Binding="{Binding SoLuong, StringFormat=\{0:#\,#.\}}" Width="140"/>
+                    <DataGridTextColumn Header="Đơn vị" Binding="{Binding IdU}" Width="100"/>
+                    <DataGridTextColumn Header="Lắp ráp" Binding="{Binding Laprap, StringFormat=\{0:#\,#.\}}" Width="140"/>
+                    <DataGridTextColumn Header="Còn lại"  Binding="{Binding ConLai, StringFormat=\{0:#\,#.\}}" Width="140"/>
+                    <DataGridTextColumn Header="Xuất hàng" Binding="{Binding XuatHang, StringFormat=\{0:#\,#.\}}" Width="140"/>
+                    <DataGridTextColumn Header="Tồn kho" Binding="{Binding TonKho, StringFormat=\{0:#\,#.\}}" Width="140"/>
+                    <DataGridTextColumn Header="Tình trạng" Binding="{Binding TinhTrangDon}" Width="140"/>
+                </DataGrid.Columns>
+            </DataGrid>
+            
+            
+            
+            <!--<ListView  ItemsSource="{Binding KhtdList}">
+                <ListView.View>
+                    <GridView>
+                        <GridViewColumn Header="STT" DisplayMemberBinding="{Binding STT}" Width="100"/>
+                        <GridViewColumn Header="Ngày lên đơn" DisplayMemberBinding="{Binding NgayLenDon, StringFormat=dd/MM/yyyy}" Width="150"/>
+                        <GridViewColumn Header="Mã bánh xe" DisplayMemberBinding="{Binding MaBx}" Width="150"/>
+                        <GridViewColumn Header="Số lô" DisplayMemberBinding="{Binding SoLo}" Width="200"/>
+                        <GridViewColumn Header="Số lượng" DisplayMemberBinding="{Binding SoLuong, StringFormat=\{0:#\,#.\}}" Width="140"/>
+                        <GridViewColumn Header="Lắp ráp" DisplayMemberBinding="{Binding Laprap, StringFormat=\{0:#\,#.\}}" Width="140"/>
+                        <GridViewColumn Header="Còn lại"  DisplayMemberBinding="{Binding ConLai, StringFormat=\{0:#\,#.\}}" Width="140"/>
+                        <GridViewColumn Header="Xuất hàng" DisplayMemberBinding="{Binding XuatHang, StringFormat=\{0:#\,#.\}}" Width="140"/>
+                        <GridViewColumn Header="Tồn kho" DisplayMemberBinding="{Binding TonKho, StringFormat=\{0:#\,#.\}}" Width="140"/>
+                        <GridViewColumn Header="Tình trạng" DisplayMemberBinding="{Binding TinhTrangDon}" Width="140"/>
+                    </GridView>
+                </ListView.View>
+            </ListView>-->
+        </materialDesign:Card>
+    </Grid>
+</UserControl>

@@ -1,0 +1,77 @@
+﻿<UserControl x:Class="Cw3_Product.UserControlBaoTri.ThucHienBaoDuongUC"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:Cw3_Product.UserControlBaoTri"
+             mc:Ignorable="d"
+             
+             xmlns:i="http://schemas.microsoft.com/expression/2010/interactivity"
+             
+             xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+            TextElement.Foreground="{DynamicResource MaterialDesignBody}"            
+            TextElement.FontWeight="Medium"
+            TextElement.FontSize="14"
+             
+             DataContext="{StaticResource BaoTriVM}"
+             
+             d:DesignHeight="720" d:DesignWidth="1500">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="auto"></RowDefinition>
+            <RowDefinition Height="auto"></RowDefinition>
+            <RowDefinition Height="auto"></RowDefinition>
+            <RowDefinition></RowDefinition>
+        </Grid.RowDefinitions>
+
+        <StackPanel Grid.Row="0" Orientation="Horizontal" Margin="30 5 0 5">
+            <TextBox Text="{Binding bdIdBaoDuong, UpdateSourceTrigger=PropertyChanged, Mode=TwoWay}" VerticalAlignment="Center" materialDesign:HintAssist.Hint="STT" Width="140" Style="{StaticResource MaterialDesignFloatingHintTextBox}" Margin="5 0 5 0"/>
+            <DatePicker SelectedDate="{Binding bdNgay, UpdateSourceTrigger=PropertyChanged, Mode=TwoWay, StringFormat='dd/MM/yyyy>'}" materialDesign:HintAssist.Hint="Ngày làm" Width="140" materialDesign:TextFieldAssist.HasClearButton="True" Style="{StaticResource MaterialDesignFloatingHintDatePicker}" Margin="5 0 5 0" IsTodayHighlighted="True"/>
+            <ComboBox Name="makehoach" SelectionChanged="makehoach_SelectionChanged"  DisplayMemberPath="IdKHBaoduong" ItemsSource="{Binding KHBaoDuongList}" Text="{Binding bdIdKhBaoDuong}" VerticalAlignment="Center" materialDesign:HintAssist.Hint="Mã Kế hoạch" Width="140" materialDesign:HintAssist.HintOpacity=".26" IsEditable="True" Style="{StaticResource MaterialDesignFloatingHintComboBox}" Margin="5 0 5 0"/>
+            <ComboBox Name="bdcbbMaMay" DisplayMemberPath="MaMay" ItemsSource="{Binding TaiSanCoDinhList}" Text="{Binding bdMaMay}" VerticalAlignment="Center" materialDesign:HintAssist.Hint="Mã Máy" Width="140" materialDesign:ComboBoxAssist.MaxLength="10" materialDesign:HintAssist.HintOpacity=".26" Style="{StaticResource MaterialDesignFloatingHintComboBox}" Margin="5 0 5 0">
+                <i:Interaction.Triggers>
+                    <i:EventTrigger EventName="DropDownOpened">
+                        <i:InvokeCommandAction Command="{Binding bdcbbMaMay}" 
+                                CommandParameter="{Binding ElementName=bdcbbMaMay}"/>
+                    </i:EventTrigger>
+                </i:Interaction.Triggers>
+            </ComboBox>
+            <TextBox Text="{Binding bdTinhTrang, UpdateSourceTrigger=PropertyChanged, Mode=TwoWay}" VerticalAlignment="Center" materialDesign:HintAssist.Hint="Tình Trạng" Width="240" Style="{StaticResource MaterialDesignFloatingHintTextBox}" Margin="5 0 5 0"/>
+        </StackPanel>
+
+        <Grid Grid.Row="1">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition></ColumnDefinition>
+                <ColumnDefinition></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+            <StackPanel Grid.Column="0" Orientation="Horizontal" Margin="0 5 0 5">
+                <Button Content="Thêm" Command="{Binding addcommandbd}" VerticalAlignment="Center" Margin="20 0 20 0"></Button>
+                <Button Content="Sửa" Command="{Binding editcommandbd}" VerticalAlignment="Center" Margin="20 0 20 0"></Button>
+                <Button Content="Xóa" Command="{Binding deletecommandbd}" VerticalAlignment="Center" Margin="20 0 20 0"></Button>
+            </StackPanel>
+            <StackPanel Grid.Column="1" Orientation="Horizontal" Margin="0 5 0 5" HorizontalAlignment="Right">
+                <Button Content="Clear" Command="{Binding Clearbd}" VerticalAlignment="Center" Margin="20 0 20 0"></Button>
+            </StackPanel>
+        </Grid>
+
+        <Separator Grid.Row="2"></Separator>
+
+        <materialDesign:Card Grid.Row="3"
+                                 materialDesign:ShadowAssist.ShadowEdges="All"
+                                 materialDesign:ShadowAssist.ShadowDepth="Depth3"
+                                 UniformCornerRadius="10">
+            <ListView  ItemsSource="{Binding BaoDuongList}" SelectedItem="{Binding SelectedItembd, Mode=OneWayToSource}">
+                <ListView.View>
+                    <GridView>
+                        <GridViewColumn Header="STT" DisplayMemberBinding="{Binding IdBaoduong}" Width="150"></GridViewColumn>
+                        <GridViewColumn Header="Ngày làm" DisplayMemberBinding="{Binding Ngay, StringFormat='dd/MM/yyyy'}" Width="150"></GridViewColumn>
+                        <GridViewColumn Header="Mã Kế hoạch" DisplayMemberBinding="{Binding IdKHBaoDuong}" Width="150"></GridViewColumn>
+                        <GridViewColumn Header="Mã Máy" DisplayMemberBinding="{Binding MaMay}" Width="150"></GridViewColumn>
+                        <GridViewColumn Header="Tình trạng" DisplayMemberBinding="{Binding TinhTrang}" Width="250"></GridViewColumn>
+                    </GridView>
+                </ListView.View>
+            </ListView>
+        </materialDesign:Card>
+
+    </Grid>
+</UserControl>

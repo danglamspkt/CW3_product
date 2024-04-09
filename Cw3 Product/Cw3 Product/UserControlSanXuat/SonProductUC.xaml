@@ -1,0 +1,42 @@
+﻿<UserControl x:Class="Cw3_Product.UserControlSanXuat.SonProductUC"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:Cw3_Product.UserControlSanXuat"
+             mc:Ignorable="d" 
+             
+             xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+            TextElement.Foreground="{DynamicResource MaterialDesignBody}"            
+            TextElement.FontWeight="Medium"
+            TextElement.FontSize="14"
+             
+             DataContext="{StaticResource SonChiTietVM}"
+             
+             d:DesignHeight="720" d:DesignWidth="1500">
+    <Grid>
+
+        <materialDesign:Card materialDesign:ShadowAssist.ShadowEdges="All"
+                             materialDesign:ShadowAssist.ShadowDepth="Depth3"
+                             UniformCornerRadius="10">
+            <DataGrid AutoGenerateColumns="False" ItemsSource="{Binding SanLuongList}" SelectedItem="{Binding SelectedItemSl, Mode=TwoWay}" Background="White" CanUserAddRows="False" CanUserDeleteRows="False">
+                <DataGrid.Columns>
+                    <DataGridTextColumn Header="STT" Binding="{Binding IdSxDk}" Width="80"/>
+                    <DataGridTextColumn Header="Mã phiếu" Binding="{Binding MaPhieu}" Width="120"/>
+                    <DataGridTextColumn Header="Ngày" Binding="{Binding Ngay, StringFormat=dd/MM/yyyy}" Width="120"/>
+                    <DataGridTextColumn Header="Ca lv" Binding="{Binding CaLv}" Width="80"/>
+                    <DataGridTextColumn Header="Mã máy" Binding="{Binding MaMay}" Width="100"/>
+                    <DataGridTextColumn Header="Nhân viên" Binding="{Binding NhanVien}" Width="170"/>
+                    <DataGridTextColumn Header="Thời gian&#13;bắt đầu" Binding="{Binding hourstart}" Width="120"/>
+                    <DataGridTextColumn Header="Thời gian&#13;kết thúc"  Binding="{Binding hourend}" Width="120"/>
+                    <DataGridTextColumn Header="Số lô" Binding="{Binding SoLo}" Width="200"/>
+                    <DataGridTextColumn Header="Số họa" Binding="{Binding SoHoa}" Width="120"/>
+                    <DataGridTextColumn Header="Số lượng&#13;trên máy" Binding="{Binding SoLuong, StringFormat=\{0:#\,#.\}}" Width="120"/>
+                    <DataGridTextColumn Header="Đơn vị" Binding="{Binding IdU, StringFormat=\{0:#\,#.\}}" Width="80"/>
+                    <DataGridTextColumn Header="Phế" Binding="{Binding Phe, StringFormat=\{0:#\,#.\}}" Width="120"/>
+                    <DataGridTextColumn Header="Nguyên nhân" Binding="{Binding NguyenNhan}" Width="120"/>
+                </DataGrid.Columns>
+            </DataGrid>
+        </materialDesign:Card>
+    </Grid>
+</UserControl>

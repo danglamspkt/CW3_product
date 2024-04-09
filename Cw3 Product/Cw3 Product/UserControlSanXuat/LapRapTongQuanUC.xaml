@@ -1,0 +1,100 @@
+﻿<UserControl x:Class="Cw3_Product.UserControlSanXuat.LapRapTongQuanUC"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:Cw3_Product.UserControlSanXuat"
+                          mc:Ignorable="d" 
+             
+             xmlns:i="http://schemas.microsoft.com/expression/2010/interactivity"
+             
+             xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+            TextElement.Foreground="{DynamicResource MaterialDesignBody}"            
+            TextElement.FontWeight="Medium"
+            TextElement.FontSize="12"
+             
+             DataContext="{StaticResource SXTongQuanLrVM}"
+             
+             d:DesignHeight="620" d:DesignWidth="1600">
+    <Grid>
+        <Grid Grid.Row="2" Background="LightGray">
+            <materialDesign:Card materialDesign:ShadowAssist.ShadowEdges="All"
+                                 materialDesign:ShadowAssist.ShadowDepth="Depth3"
+                                 UniformCornerRadius="10"
+                             Margin="20">
+                <ScrollViewer HorizontalScrollBarVisibility="Auto" VerticalScrollBarVisibility="Auto">
+                    <StackPanel>
+                        <TabControl materialDesign:ColorZoneAssist.Background="{DynamicResource MaterialDesignCardBackground}"
+                                    materialDesign:ColorZoneAssist.Foreground="Red"
+                                    materialDesign:ColorZoneAssist.Mode="Custom"
+                                    HorizontalContentAlignment ="Left">
+                            <TabItem Header="Sản xuất" IsSelected="True">
+                                <Grid>
+                                    <Grid.RowDefinitions>
+                                        <RowDefinition Height="auto"/>
+                                        <RowDefinition/>
+                                    </Grid.RowDefinitions>
+                                    <StackPanel Grid.Row="0" Orientation="Horizontal" HorizontalAlignment="Left">
+                                        <Button Content="update" Command="{Binding updatecommand}"></Button>
+                                    </StackPanel>
+                                    <materialDesign:Card Grid.Row="1">
+                                        <ListView ItemsSource="{Binding SanXuatList}">
+                                            <ListView.View>
+                                                <GridView>
+                                                    <GridViewColumn Header="STT" DisplayMemberBinding="{Binding STT}" Width="100"/>
+                                                    <GridViewColumn Header="Số lô" DisplayMemberBinding="{Binding SoLo}" Width="200"/>
+                                                    <GridViewColumn Header="Mã bánh xe" DisplayMemberBinding="{Binding MaTp}" Width="150"/>
+                                                    <GridViewColumn Header="Display name" DisplayMemberBinding="{Binding DisplayName}" Width="200"/>
+                                                    <GridViewColumn Header="Đơn vị" DisplayMemberBinding="{Binding IdU}" Width="150"/>
+                                                    <GridViewColumn Header="Số lượng cần" DisplayMemberBinding="{Binding SoLuongCan, StringFormat=\{0:#\,#.\}}" Width="150"/>
+                                                    <GridViewColumn Header="Số lượng làm" DisplayMemberBinding="{Binding SoLuongLam, StringFormat=\{0:#\,#.\}}" Width="150"/>
+                                                    <GridViewColumn Header="Làm thêm" DisplayMemberBinding="{Binding LamThem, StringFormat=\{0:#\,#.\}}" Width="150"/>
+                                                </GridView>
+                                            </ListView.View>
+                                        </ListView>
+                                    </materialDesign:Card>
+                                    
+
+                                </Grid>
+
+                            </TabItem>
+                            <TabItem Header="Lãnh liệu">
+                                <Grid>
+                                    <Grid.RowDefinitions>
+                                        <RowDefinition Height="auto"/>
+                                        <RowDefinition/>
+                                    </Grid.RowDefinitions>
+                                    <StackPanel Grid.Row="0" Orientation="Horizontal" HorizontalAlignment="Center">
+                                        <ComboBox x:Name="combobox" DisplayMemberPath="SoLo" ItemsSource="{Binding Sololist}" SelectedItem="{Binding SelectedItem, Mode=OneWayToSource}" Text="{Binding SoLo}" VerticalAlignment="Center" materialDesign:HintAssist.Hint="Số lô" Width="200" materialDesign:HintAssist.HintOpacity=".26" Style="{StaticResource MaterialDesignFloatingHintComboBox}" Margin="5 0 5 0" IsTabStop="True">
+                                            <i:Interaction.Triggers>
+                                                <i:EventTrigger EventName="SelectionChanged">
+                                                    <i:InvokeCommandAction Command="{Binding solochanged}" CommandParameter="{Binding ElementName=combobox}"/>
+                                                </i:EventTrigger>
+                                            </i:Interaction.Triggers>
+                                        </ComboBox>
+                                        <TextBox Text="{Binding MaTp, UpdateSourceTrigger=PropertyChanged, Mode=TwoWay}" IsEnabled="{Binding FlagNew}" IsReadOnly="True" VerticalAlignment="Center" materialDesign:HintAssist.Hint="Mã bánh xe" Width="150" Style="{StaticResource MaterialDesignFloatingHintTextBox}" Margin="5 0 5 0"/>
+                                    </StackPanel>
+                                    <materialDesign:Card Grid.Row="1">
+                                        <ListView Grid.Row="1" ItemsSource="{Binding NguyenLieuList}">
+                                            <ListView.View>
+                                                <GridView>
+                                                    <GridViewColumn Header="STT" DisplayMemberBinding="{Binding STT}" Width="100"/>
+                                                    <GridViewColumn Header="Số họa" DisplayMemberBinding="{Binding SoHoa}" Width="150"/>
+                                                    <GridViewColumn Header="Display Name" DisplayMemberBinding="{Binding DisplayName}" Width="200"/>
+                                                    <GridViewColumn Header="Hệ số" DisplayMemberBinding="{Binding HeSo}" Width="120"/>
+                                                    <GridViewColumn Header="Số lượng cần" DisplayMemberBinding="{Binding SoLuongCan, StringFormat=\{0:#\,#.\}}" Width="150"/>
+                                                    <GridViewColumn Header="Số lượng lãnh" DisplayMemberBinding="{Binding SoLuongLanh, StringFormat=\{0:#\,#.\}}" Width="150"/>
+                                                    <GridViewColumn Header="Lãnh thêm" DisplayMemberBinding="{Binding LanhThem, StringFormat=\{0:#\,#.\}}" Width="150"/>
+                                                </GridView>
+                                            </ListView.View>
+                                        </ListView>
+                                    </materialDesign:Card>
+                                </Grid>
+                            </TabItem>
+                        </TabControl>
+                    </StackPanel>
+                </ScrollViewer>
+            </materialDesign:Card>
+        </Grid>
+    </Grid>
+</UserControl>

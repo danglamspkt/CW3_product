@@ -1,0 +1,98 @@
+﻿<UserControl x:Class="Cw3_Product.UserControlMenu.BOMUC"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:Cw3_Product.UserControlMenu"
+             mc:Ignorable="d" 
+             
+             xmlns:i="http://schemas.microsoft.com/expression/2010/interactivity"
+             
+              xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+            TextElement.Foreground="{DynamicResource MaterialDesignBody}"            
+            TextElement.FontWeight="Medium"
+            TextElement.FontSize="14"
+             
+             DataContext="{StaticResource BomVM}"
+             
+             d:DesignHeight="800" d:DesignWidth="1500">
+  
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="50"></RowDefinition>
+            <RowDefinition></RowDefinition>
+        </Grid.RowDefinitions>
+
+        <!--Tabbar-->
+        <Grid Grid.Row="0">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="300"></ColumnDefinition>
+                <ColumnDefinition></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+
+            <Grid Grid.Column="0">
+                <TextBlock Text="B.O.M"
+                           x:Name="txbTitle"                           
+                           VerticalAlignment="Center"
+                           FontSize="25"
+                           Foreground="White"
+                           TextAlignment="Left"
+                           Margin="110 0 0 0">                    
+                    <i:Interaction.Triggers>
+                        <i:EventTrigger EventName="MouseLeftButtonDown">
+                            <i:InvokeCommandAction Command="{Binding Homedata}" 
+                                CommandParameter="{Binding ElementName=UCBOM}"/>
+                        </i:EventTrigger>
+                    </i:Interaction.Triggers>
+                </TextBlock>
+            </Grid>
+
+            <Menu Grid.Column="1"
+                  VerticalAlignment="Center"
+                  materialDesign:MenuAssist.TopLevelMenuItemHeight="25">
+                <MenuItem Header="Tổng quan" Foreground="White">
+                    <MenuItem x:Name="BomTH" Command="{Binding BomTHdata}" CommandParameter="{Binding ElementName=UCBOM}" Header="B.O.M Tổng hợp"  Foreground="Black" Icon="{materialDesign:PackIcon Kind=MonitorScreenshot}"/>
+                    <MenuItem x:Name="BomLkTp" Command="{Binding BomLkTpdata}" CommandParameter="{Binding ElementName=UCBOM}" Header="B.O.M Linh Kiện - Thành Phẩm"  Foreground="Black" Icon="{materialDesign:PackIcon Kind=MonitorScreenshot}"/>
+                    
+                </MenuItem>
+                <MenuItem Header="B.O.M Nguyên liệu" Foreground="White">
+                    <MenuItem x:Name="NLNew" Command="{Binding BomNldata}" CommandParameter="{Binding ElementName=UCBOM}" Header="Chi tiết" Foreground="Black" Icon="{materialDesign:PackIcon Kind=Pencil}"/>
+
+                </MenuItem>
+                <MenuItem Header="B.O.M Linh kiện" Foreground="White">
+                    <MenuItem x:Name="LKNew" Command="{Binding BomLkdata}" CommandParameter="{Binding ElementName=UCBOM}" Header="Chi tiết" Foreground="Black" Icon="{materialDesign:PackIcon Kind=Pencil}"/>
+                    
+
+                </MenuItem>
+                <MenuItem Header="B.O.M Thành phẩm" Foreground="White">
+                    <MenuItem x:Name="TPNew" Command="{Binding BomTpdata}" CommandParameter="{Binding ElementName=UCBOM}" Header="Chi tiết" Foreground="Black" Icon="{materialDesign:PackIcon Kind=Pencil}"/>
+                    
+                </MenuItem>
+                <MenuItem Header="Đơn vị" Foreground="White">
+                    <MenuItem x:Name="UnitNew" Command="{Binding Unitdata}" CommandParameter="{Binding ElementName=UCBOM}" Header="Chi tiết" Foreground="Black" Icon="{materialDesign:PackIcon Kind=Pencil}"/>
+                    
+                </MenuItem>
+            </Menu>
+        </Grid>
+
+        <!--MainScreen-->
+        <Grid Grid.Row="1" >
+            <Grid.RowDefinitions>
+                <RowDefinition Height="30"></RowDefinition>
+                <RowDefinition></RowDefinition>
+            </Grid.RowDefinitions>
+
+            <Grid Grid.Row="0">
+                <StackPanel Orientation="Horizontal" Margin="5 5 0 0">
+                    <TextBlock x:Name="txbKehoach1" Text="{Binding txbTitle1}" FontSize="18" Foreground="Gray"></TextBlock>
+                    <TextBlock x:Name="txbKehoach2" Text="{Binding txbTitle2}" FontSize="18" Foreground="Gray"></TextBlock>
+                    <TextBlock x:Name="txbKehoach3" Text="{Binding txbTitle3}" FontSize="18" Foreground="Black"></TextBlock>
+                </StackPanel>
+
+            </Grid>
+            <Grid Grid.Row="1" x:Name="UCBOM">
+
+            </Grid>
+        </Grid>
+    </Grid>
+</UserControl>

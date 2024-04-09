@@ -1,0 +1,47 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:viewmodel="clr-namespace:Cw3_Product.ViewModel">
+    
+    <viewmodel:MainViewModel x:Key="MainVM"></viewmodel:MainViewModel>
+    <viewmodel:LoginViewModel x:Key="LoginVM"></viewmodel:LoginViewModel>
+    <viewmodel:KeHoachViewModel x:Key="KehoachVM"></viewmodel:KeHoachViewModel>
+    <viewmodel:BomViewModel x:Key="BomVM"></viewmodel:BomViewModel>
+    <viewmodel:NhanSuViewModel x:Key="NhanSuVM"></viewmodel:NhanSuViewModel>
+    <viewmodel:BaoTriViewModel x:Key="BaoTriVM"></viewmodel:BaoTriViewModel>
+    <viewmodel:SanXuatViewModel x:Key="SanXuatVM"></viewmodel:SanXuatViewModel>
+    <viewmodel:KhoHomeViewModel x:Key="KhoHomeVM"></viewmodel:KhoHomeViewModel>
+    <viewmodel:KhoOutputViewModel x:Key="KhoOutputVM"></viewmodel:KhoOutputViewModel>
+    <viewmodel:TestViewModel x:Key="testVM"></viewmodel:TestViewModel>
+    <viewmodel:LapRapPhieuSlViewModel x:Key="LrPhieuSlVM"></viewmodel:LapRapPhieuSlViewModel>
+    <viewmodel:Converter x:Key="myConverter"></viewmodel:Converter>
+    <viewmodel:DapKhuonPhieuSlViewModel x:Key="DkPhieuSlVM"></viewmodel:DapKhuonPhieuSlViewModel>
+    <viewmodel:ConverterDk x:Key="myConverterDk"></viewmodel:ConverterDk>
+    <viewmodel:EpNhuaPhieuSLViewModel x:Key="EnPhieuSlVM"></viewmodel:EpNhuaPhieuSLViewModel>
+    <viewmodel:ConverterEn x:Key="myConverterEn"></viewmodel:ConverterEn>
+    <viewmodel:KhoInputNLViewModel x:Key="KhoInputNlVM"></viewmodel:KhoInputNLViewModel>
+    <viewmodel:SuplierViewModel x:Key="SupVM"></viewmodel:SuplierViewModel>
+    <viewmodel:CustomerViewModel x:Key="CusVM"></viewmodel:CustomerViewModel>
+    <viewmodel:KhoOutputNlViewModel x:Key="KhoOutputNlVM"></viewmodel:KhoOutputNlViewModel>
+    <viewmodel:KhoInputLkViewModel x:Key="KhoInputLkVM"></viewmodel:KhoInputLkViewModel>
+    <viewmodel:KhoOutputLkViewModel x:Key="KhoOutputLkVM"></viewmodel:KhoOutputLkViewModel>
+    <viewmodel:KhoInputTpViewModel x:Key="KhoInputTpVM"></viewmodel:KhoInputTpViewModel>
+    <viewmodel:KhoOutputTpViewModel x:Key="KhoOutputTpVM"></viewmodel:KhoOutputTpViewModel>
+    <viewmodel:SXTongQuanDkUC x:Key="SXTongQuanDkVM"></viewmodel:SXTongQuanDkUC>
+    <viewmodel:SXTongQuanEnViewModel x:Key="SXTongQuanEnVM"></viewmodel:SXTongQuanEnViewModel>
+    <viewmodel:SXTongQuanLrViewModel x:Key="SXTongQuanLrVM"></viewmodel:SXTongQuanLrViewModel>
+    <viewmodel:TonKhoNlViewModel x:Key="KhoTonNlVM"></viewmodel:TonKhoNlViewModel>
+    <viewmodel:TonKhoLkViewModel x:Key="KhoTonLkVM"></viewmodel:TonKhoLkViewModel>
+    <viewmodel:TonKhoTpViewModel x:Key="KhoTonTpVM"></viewmodel:TonKhoTpViewModel>
+    <viewmodel:SoDoKhoLkViewModel x:Key="SoDoKhoLkVM"></viewmodel:SoDoKhoLkViewModel>
+    <viewmodel:SoDoKhoNlViewModel x:Key="SoDoKhoNlVM"></viewmodel:SoDoKhoNlViewModel>
+    <viewmodel:SoDoKhoTpViewModel x:Key="SoDoKhoTpVM"></viewmodel:SoDoKhoTpViewModel>
+    <viewmodel:GcEnSxChiTietViewModel x:Key="GcEnChiTietVM"></viewmodel:GcEnSxChiTietViewModel>
+    <viewmodel:SonPhieuSlViewModel x:Key="SonPhieuSlVM"></viewmodel:SonPhieuSlViewModel>
+    <viewmodel:DapKhuonChiTietViewModel x:Key="GcDkChiTietVM"></viewmodel:DapKhuonChiTietViewModel>
+    <viewmodel:SonChiTietViewModel x:Key="SonChiTietVM"></viewmodel:SonChiTietViewModel>
+    <viewmodel:BOMTongQuanViewModel x:Key="BOMHHTongQuan"></viewmodel:BOMTongQuanViewModel>
+    <viewmodel:BOMNguyenLieuViewModel x:Key="BOMHHNguyenLieu"></viewmodel:BOMNguyenLieuViewModel>
+    <viewmodel:BOMLinhKienViewModel x:Key="BOMHHLinhKien"></viewmodel:BOMLinhKienViewModel>
+    
+    
+</ResourceDictionary>

@@ -1,0 +1,120 @@
+﻿<UserControl x:Class="Cw3_Product.UserControlMenu.SanXuatUC"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:Cw3_Product.UserControlMenu"
+             xmlns:sx="clr-namespace:Cw3_Product.UserControlSanXuat"
+             mc:Ignorable="d" 
+             
+             xmlns:i="http://schemas.microsoft.com/expression/2010/interactivity"
+             
+             xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+            TextElement.Foreground="{DynamicResource MaterialDesignBody}"            
+            TextElement.FontWeight="Medium"
+            TextElement.FontSize="14"
+            FontFamily="{materialDesign:MaterialDesignFont}"
+             DataContext="{StaticResource SanXuatVM}"
+             
+             d:DesignHeight="800" d:DesignWidth="1500">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="50"></RowDefinition>
+            <RowDefinition></RowDefinition>
+        </Grid.RowDefinitions>
+
+        <!--Tabbar-->
+        <Grid Grid.Row="0">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="300"></ColumnDefinition>
+                <ColumnDefinition></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+
+            <Grid Grid.Column="0">
+                <TextBlock Text="Sản xuất"
+                           x:Name="txbTitle"
+                           VerticalAlignment="Center"
+                           FontSize="25"
+                           Foreground="White"
+                           TextAlignment="Left"
+                           Margin="110 0 0 0">
+                    <i:Interaction.Triggers>
+                        <i:EventTrigger EventName="MouseLeftButtonDown">
+                            <i:InvokeCommandAction Command="{Binding Homedata}" 
+                                CommandParameter="{Binding ElementName=UCSanXuat}"/>
+                        </i:EventTrigger>
+                    </i:Interaction.Triggers>
+                </TextBlock>
+            </Grid>
+
+
+            <StackPanel Orientation="Horizontal" Grid.Column="1">
+                <Menu Grid.Column="1"
+                  VerticalAlignment="Center"
+                  materialDesign:MenuAssist.TopLevelMenuItemHeight="25">
+                    <MenuItem Header="Tổng quan" Foreground="White">
+                        <MenuItem Command="{Binding GcDkInfoData}" CommandParameter="{Binding ElementName=UCSanXuat}" Header="Sản lượng Dập khuôn" Foreground="Black" Icon="{materialDesign:PackIcon Kind=MonitorScreenshot}"/>
+                        <MenuItem Command="{Binding GcEnInfoData}" CommandParameter="{Binding ElementName=UCSanXuat}" Header="Sản lượng Ép nhựa" Foreground="Black" Icon="{materialDesign:PackIcon Kind=MonitorScreenshot}"/>
+                        <!--<MenuItem Command="{Binding HanInfoData}" CommandParameter="{Binding ElementName=UCSanXuat}" Header="Sản lượng Hàn" Foreground="Black" Icon="{materialDesign:PackIcon Kind=MonitorScreenshot}"/>-->
+                        <!--<MenuItem Command="{Binding SonInfoData}" CommandParameter="{Binding ElementName=UCSanXuat}" Header="Sản lượng Sơn" Foreground="Black" Icon="{materialDesign:PackIcon Kind=MonitorScreenshot}"/>-->
+                        <MenuItem Command="{Binding LapRapInfoData}" CommandParameter="{Binding ElementName=UCSanXuat}" Header="Sản lượng Lắp ráp" Foreground="Black" Icon="{materialDesign:PackIcon Kind=MonitorScreenshot}"/>
+                    </MenuItem>
+                    <MenuItem Header="Dập khuôn" Foreground="White">
+                        <MenuItem Command="{Binding GcDkSanLuongData}" CommandParameter="{Binding ElementName=UCSanXuat}" Header="Phiếu nhập sản lượng hằng ngày" Foreground="Black" Icon="{materialDesign:PackIcon Kind=LayersPlus}"/>
+                        <MenuItem Command="{Binding GcDkProductData}" CommandParameter="{Binding ElementName=UCSanXuat}" Header="Biểu sản lượng" Foreground="Black" Icon="{materialDesign:PackIcon Kind=LayersPlus}"/>
+                        <MenuItem Command="{Binding GcDkTimeData}" CommandParameter="{Binding ElementName=UCSanXuat}" Header="Biểu thời gian dừng máy" Foreground="Black" Icon="{materialDesign:PackIcon Kind=LayersPlus}"/>
+                        <MenuItem Command="{Binding GcDkCheckData}" CommandParameter="{Binding ElementName=UCSanXuat}" Header="Biểu kiểm tra linh kiện" Foreground="Black" Icon="{materialDesign:PackIcon Kind=LayersPlus}"/>
+                    </MenuItem>
+                    <MenuItem Header="Ép nhựa" Foreground="White">
+                        <MenuItem Command="{Binding GcEnSanLuongData}" CommandParameter="{Binding ElementName=UCSanXuat}" Header="Phiếu nhập sản lượng hằng ngày" Foreground="Black" Icon="{materialDesign:PackIcon Kind=LayersPlus}"/>
+                        <MenuItem Command="{Binding GcEnNhietDoData}" CommandParameter="{Binding ElementName=UCSanXuat}" Header="Biểu nhiệt độ" Foreground="Black" Icon="{materialDesign:PackIcon Kind=CoolantTemperature}"/>
+                        <MenuItem Command="{Binding GcEnProductData}" CommandParameter="{Binding ElementName=UCSanXuat}" Header="Biểu sản lượng" Foreground="Black" Icon="{materialDesign:PackIcon Kind=Warehouse}"/>
+                        <MenuItem Command="{Binding GcEnThoiGianData}" CommandParameter="{Binding ElementName=UCSanXuat}" Header="Biểu thời gian dừng máy" Foreground="Black" Icon="{materialDesign:PackIcon Kind=ClockTimeFour}"/>
+                        <MenuItem Command="{Binding GcEnCheckData}" CommandParameter="{Binding ElementName=UCSanXuat}" Header="Biểu kiểm tra linh kiện" Foreground="Black" Icon="{materialDesign:PackIcon Kind=ReceiptTextCheck}"/>
+                        <MenuItem Command="{Binding GcEnThemNlData}" CommandParameter="{Binding ElementName=UCSanXuat}" Header="Biểu thêm nguyên liệu" Foreground="Black" Icon="{materialDesign:PackIcon Kind=TableColumnPlusBefore}"/>
+                        <MenuItem Command="{Binding GcEnBaoDuongData}" CommandParameter="{Binding ElementName=UCSanXuat}" Header="Biểu kiểm tra máy móc hằng ngày" Foreground="Black" Icon="{materialDesign:PackIcon Kind=TableCheck}"/>
+                    </MenuItem>
+                    <MenuItem Header="Hàn" Foreground="White">
+                        <!--<MenuItem Command="{Binding HanInPutData}" CommandParameter="{Binding ElementName=UCSanXuat}" Header="Nhập liệu" Foreground="Black" Icon="{materialDesign:PackIcon Kind=Import}"/>-->
+                        <!--<MenuItem Command="{Binding HanOutPutData}" CommandParameter="{Binding ElementName=UCSanXuat}" Header="Trả liệu" Foreground="Black" Icon="{materialDesign:PackIcon Kind=Export}"/>-->
+                        <!--<MenuItem Command="{Binding HanProductData}" CommandParameter="{Binding ElementName=UCSanXuat}" Header="Nhập sản lượng" Foreground="Black" Icon="{materialDesign:PackIcon Kind=LayersPlus}"/>-->
+                        <!--<MenuItem Command="{Binding HanSanLuongData}" CommandParameter="{Binding ElementName=UCSanXuat}" Header="Biểu sản lượng hằng ngày" Foreground="Black" Icon="{materialDesign:PackIcon Kind=LayersPlus}"/>-->
+                    </MenuItem>
+                    <MenuItem Header="Sơn" Foreground="White">
+                        <MenuItem Command="{Binding SonSanLuongData}" CommandParameter="{Binding ElementName=UCSanXuat}" Header="Phiếu nhập sản lượng hằng ngày" Foreground="Black" Icon="{materialDesign:PackIcon Kind=LayersPlus}"/>
+                        <MenuItem Command="{Binding SonProductData}" CommandParameter="{Binding ElementName=UCSanXuat}" Header="Biểu sản lượng" Foreground="Black" Icon="{materialDesign:PackIcon Kind=LayersPlus}"/>
+                        <!--<MenuItem Command="{Binding SonInPutData}" CommandParameter="{Binding ElementName=UCSanXuat}" Header="Nhập liệu" Foreground="Black" Icon="{materialDesign:PackIcon Kind=Import}"/>-->
+                        <!--<MenuItem Command="{Binding SonOutPutData}" CommandParameter="{Binding ElementName=UCSanXuat}" Header="Trả liệu" Foreground="Black" Icon="{materialDesign:PackIcon Kind=Export}"/>-->
+                    </MenuItem>
+                    <MenuItem Header="Lắp ráp" Foreground="White">
+                        <!--<MenuItem Command="{Binding LapRapSanLuongData}" CommandParameter="{Binding ElementName=UCSanXuat}" Header="Biểu sản lượng hằng ngày" Foreground="Black" Icon="{materialDesign:PackIcon Kind=LayersPlus}"/>-->
+                        <MenuItem Command="{Binding LapRapSanLuong2Data}" CommandParameter="{Binding ElementName=UCSanXuat}" Header="Biểu sản lượng hằng ngày" Foreground="Black" Icon="{materialDesign:PackIcon Kind=LayersPlus}"/>
+                        <MenuItem Command="{Binding LapRapNguyenLieuData}" CommandParameter="{Binding ElementName=UCSanXuat}" Header="Nguyên liệu" Foreground="Black" Icon="{materialDesign:PackIcon Kind=Import}"/>
+                        <MenuItem Command="{Binding LapRapProductData}" CommandParameter="{Binding ElementName=UCSanXuat}" Header="Sản xuất" Foreground="Black" Icon="{materialDesign:PackIcon Kind=LayersPlus}"/>
+                    </MenuItem>
+                </Menu>
+            </StackPanel>
+            
+        </Grid>
+
+        <!--MainScreen-->
+        <Grid Grid.Row="1">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="30"></RowDefinition>
+                <RowDefinition></RowDefinition>
+            </Grid.RowDefinitions>
+
+            <Grid Grid.Row="0">
+                <StackPanel Orientation="Horizontal" Margin="5 5 0 0">
+                    <TextBlock x:Name="txbKehoach1" Text="{Binding txbTitle1}" Foreground="Gray" FontSize="18"></TextBlock>
+                    <TextBlock x:Name="txbKehoach2" Text="{Binding txbTitle2}" Foreground="Gray" FontSize="18"></TextBlock>
+                    <TextBlock x:Name="txbKehoach3" Text="{Binding txbTitle3}" Foreground="Black" FontSize="18"></TextBlock>
+                </StackPanel>
+
+            </Grid>
+            <Grid Grid.Row="1" x:Name="UCSanXuat">
+
+            </Grid>
+        </Grid>
+    </Grid>
+</UserControl>

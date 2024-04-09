@@ -1,0 +1,51 @@
+﻿<UserControl x:Class="Cw3_Product.UserControlSanXuat.GcEnBaoDuongUC"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:Cw3_Product.UserControlSanXuat"
+             mc:Ignorable="d" 
+             
+             xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+            TextElement.Foreground="{DynamicResource MaterialDesignBody}"            
+            TextElement.FontWeight="Medium"
+            TextElement.FontSize="14"
+             
+             DataContext="{StaticResource GcEnChiTietVM}"
+             
+             d:DesignHeight="720" d:DesignWidth="1500">
+    <Grid>
+
+        <materialDesign:Card materialDesign:ShadowAssist.ShadowEdges="All"
+                             materialDesign:ShadowAssist.ShadowDepth="Depth3"
+                             UniformCornerRadius="10">
+            <DataGrid AutoGenerateColumns="False" ItemsSource="{Binding BaoDuongList}" SelectedItem="{Binding SelectedItemBaoDuong, Mode=TwoWay}" Background="White" CanUserAddRows="False" CanUserDeleteRows="False">
+                <DataGrid.Columns>
+                    <DataGridTextColumn Header="STT" Binding="{Binding IdEnVeSinh}" Width="80"/>
+                    <DataGridTextColumn Header="Mã phiếu" Binding="{Binding MaPhieu}" Width="120"/>
+                    <DataGridTextColumn Header="Ngày" Binding="{Binding Ngay, StringFormat=dd/MM/yyyy}" Width="120"/>
+                    <DataGridTextColumn Header="Ca lv" Binding="{Binding CaLv}" Width="80"/>
+                    <DataGridTextColumn Header="Mã máy" Binding="{Binding MaMay}" Width="100"/>
+                    <DataGridTextColumn Header="Nhân viên" Binding="{Binding NhanVien}" Width="180"/>
+                    <DataGridCheckBoxColumn Header="An toàn&#13;Thiết bị" Binding="{Binding AnToanThietBi}" Width="120"/>
+                    <DataGridCheckBoxColumn Header="Công tắc&#13;hành trình" Binding="{Binding CongTacHanhTrinh}" Width="120"/>
+                    <DataGridCheckBoxColumn Header="Đai điện trở&#13;đầu dò nhiệt" Binding="{Binding DauDotNhiet}" Width="120"/>
+                    <DataGridCheckBoxColumn Header="Hệ thống&#13;khí nén" Binding="{Binding KhiNen}" Width="120"/>
+                    <DataGridCheckBoxColumn Header="Ống nước&#13;làm mát" Binding="{Binding OngNuoc}" Width="120"/>
+                    <DataGridCheckBoxColumn Header="Hệ thống&#13;bôi trơn" Binding="{Binding BoiTron}" Width="120"/>
+                    <DataGridCheckBoxColumn Header="Bồn chứa&#13;dầu thủy lực" Binding="{Binding DauThuyLuc}" Width="120"/>
+                    <DataGridCheckBoxColumn Header="Robot&#13;gắp đuôi keo" Binding="{Binding Robot}" Width="120"/>
+                    <DataGridCheckBoxColumn Header="Máy&#13;sấy nhựa" Binding="{Binding MaySay}" Width="120"/>
+                    <DataGridCheckBoxColumn Header="Máy&#13;hút nhựa" Binding="{Binding MayHut}" Width="120"/>
+                    <DataGridCheckBoxColumn Header="Bu lông&#13;con tán" Binding="{Binding BulongConTan}" Width="120"/>
+                    <DataGridCheckBoxColumn Header="Quạt&#13;làm mát" Binding="{Binding QuatLamMat}" Width="120"/>
+                    <DataGridCheckBoxColumn Header="Nước làm mát&#13;dầu thủy lực" Binding="{Binding NuocLamMatDau}" Width="120"/>
+                    <DataGridCheckBoxColumn Header="Tình trạng&#13;hoạt động máy" Binding="{Binding MayBinhThuong}" Width="120"/>
+                    <DataGridCheckBoxColumn Header="Sắp xếp&#13;dụng cụ" Binding="{Binding SapXepDungCu}" Width="120"/>
+                    <DataGridCheckBoxColumn Header="Vệ sinh&#13;S3" Binding="{Binding VeSinhMay}" Width="120"/>
+                    
+                </DataGrid.Columns>
+            </DataGrid>
+        </materialDesign:Card>
+    </Grid>
+</UserControl>

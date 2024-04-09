@@ -1,0 +1,111 @@
+﻿<UserControl x:Class="Cw3_Product.UserControlMenu.KhoUC"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:Cw3_Product.UserControlMenu"
+             mc:Ignorable="d" 
+             
+             xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+            TextElement.Foreground="{DynamicResource MaterialDesignBody}"            
+            TextElement.FontWeight="Medium"
+            TextElement.FontSize="14"
+             
+             DataContext="{StaticResource KhoHomeVM}"
+             
+             d:DesignHeight="800" d:DesignWidth="1500">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="50"></RowDefinition>
+            <RowDefinition></RowDefinition>
+        </Grid.RowDefinitions>
+        
+
+        <!--Tabbar-->
+        <Grid Grid.Row="0">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="300"></ColumnDefinition>
+                <ColumnDefinition></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+
+            <Grid Grid.Column="0">
+                <TextBlock Text="Kho"
+                           x:Name="txbTitle"
+                           VerticalAlignment="Center"
+                           FontSize="25"
+                           Foreground="White"
+                           TextAlignment="Left"
+                           Margin="110 0 0 0">
+                </TextBlock>
+            </Grid>
+
+            <Menu Grid.Column="1"
+                  VerticalAlignment="Center"
+                  materialDesign:MenuAssist.TopLevelMenuItemHeight="25">
+                <MenuItem Header="Tổng quan" Foreground="White">
+                    <MenuItem Command="{Binding SoDoNlData}" CommandParameter="{Binding ElementName=UCKho}" Header="Sơ đồ kho nguyên liệu"  Foreground="Black" Icon="{materialDesign:PackIcon Kind=Map}"/>
+                    <MenuItem Command="{Binding SoDoLkData}" CommandParameter="{Binding ElementName=UCKho}" Header="Sơ đồ kho linh kiện"  Foreground="Black" Icon="{materialDesign:PackIcon Kind=Map}"/>
+                    <!--<MenuItem Header="Sơ đồ kho linh kiện ngoài"  Foreground="Black" Icon="{materialDesign:PackIcon Kind=Map}"/>-->
+                    <MenuItem Command="{Binding SoDoTpData}" CommandParameter="{Binding ElementName=UCKho}" Header="Sơ đồ kho thành phẩm"  Foreground="Black" Icon="{materialDesign:PackIcon Kind=Map}"/>
+                    <MenuItem Command="{Binding TonKhoNlData}" CommandParameter="{Binding ElementName=UCKho}" Header="Tồn kho nguyên liệu"  Foreground="Black" Icon="{materialDesign:PackIcon Kind=Cube}"/>
+                    <MenuItem Command="{Binding TonKhoLkData}" CommandParameter="{Binding ElementName=UCKho}" Header="Tồn kho linh kiện"  Foreground="Black" Icon="{materialDesign:PackIcon Kind=Cube}"/>
+                    <!--<MenuItem Header="Tồn kho linh kiện ngoài"  Foreground="Black" Icon="{materialDesign:PackIcon Kind=Cube}"/>-->
+                    <MenuItem Command="{Binding TonKhoTpData}" CommandParameter="{Binding ElementName=UCKho}" Header="Tồn kho thành phẩm"  Foreground="Black" Icon="{materialDesign:PackIcon Kind=Cube}"/>                    
+                </MenuItem>
+
+                <MenuItem Header="BOM hao hụt" Foreground="White">
+                    <MenuItem Command="{Binding BOMHHTongQuanData}" CommandParameter="{Binding ElementName=UCKho}" Header="BOM hao hụt tổng quan" Foreground="Black" Icon="{materialDesign:PackIcon Kind=GoogleCircles}"/>
+                    <MenuItem Command="{Binding BOMHHNguyenLieuData}" CommandParameter="{Binding ElementName=UCKho}" Header="BOM hao hụt nguyên liệu" Foreground="Black" Icon="{materialDesign:PackIcon Kind=CubeOutline}"/>
+                    <MenuItem Command="{Binding BOMHHLinhKienData}" CommandParameter="{Binding ElementName=UCKho}" Header="BOM hao hụt linh kiện" Foreground="Black" Icon="{materialDesign:PackIcon Kind=Tire}"/>
+                </MenuItem>
+
+                <MenuItem Header="Nhập kho" Foreground="White">
+                    <MenuItem Command="{Binding InputNLData}" CommandParameter="{Binding ElementName=UCKho}" Header="Phiếu nhập nguyên liệu" Foreground="Black" Icon="{materialDesign:PackIcon Kind=GoogleCircles}"/>
+                    <MenuItem Command="{Binding InputLkData}" CommandParameter="{Binding ElementName=UCKho}" Header="Phiếu nhập linh kiện" Foreground="Black" Icon="{materialDesign:PackIcon Kind=CubeOutline}"/>
+                    <!--<MenuItem Header="Nhập kho linh kiện ngoài" Foreground="Black" Icon="{materialDesign:PackIcon Kind=Cube}"/>-->
+                    <MenuItem Command="{Binding InputTpData}" CommandParameter="{Binding ElementName=UCKho}" Header="Phiếu nhập thành phẩm" Foreground="Black" Icon="{materialDesign:PackIcon Kind=Tire}"/>                    
+                </MenuItem>
+                
+                <MenuItem Header="Xuất kho" Foreground="White">
+                    <MenuItem Command="{Binding OutputNLData}" CommandParameter="{Binding ElementName=UCKho}" Header="Phiếu xuất nguyên liệu" Foreground="Black" Icon="{materialDesign:PackIcon Kind=GoogleCircles}"/>
+                    <MenuItem Command="{Binding OutputLkData}" CommandParameter="{Binding ElementName=UCKho}" Header="Phiếu xuất linh kiện" Foreground="Black" Icon="{materialDesign:PackIcon Kind=CubeOutline}"/>
+                    <!--<MenuItem Header="Xuất kho linh kiện ngoài" Foreground="Black" Icon="{materialDesign:PackIcon Kind=Cube}"/>-->
+                    <MenuItem Command="{Binding OutputTpData}" CommandParameter="{Binding ElementName=UCKho}" Header="Phiếu xuất thành phẩm" Foreground="Black" Icon="{materialDesign:PackIcon Kind=Tire}"/>
+                    <MenuItem Command="{Binding OutputTP2Data}" CommandParameter="{Binding ElementName=UCKho}" Header="Xuất kho thành phẩm" Foreground="Black" Icon="{materialDesign:PackIcon Kind=Tire}"/>
+                </MenuItem>               
+                
+                <MenuItem Header="Nhà cung cấp" Foreground="White">
+                    <MenuItem Command="{Binding SuplierData}" CommandParameter="{Binding ElementName=UCKho}" Header="Tra cứu" Foreground="Black" Icon="{materialDesign:PackIcon Kind=Import}"/>
+                    <!--<MenuItem Header="Tra cứu" Foreground="Black" Icon="{materialDesign:PackIcon Kind=Export}"/>-->
+                    <!--<MenuItem Header="Sửa đổi" Foreground="Black" Icon="{materialDesign:PackIcon Kind=LayersPlus}"/>-->
+                </MenuItem>
+                
+                <MenuItem Header="Khách hàng" Foreground="White">
+                    <MenuItem Command="{Binding CustomerData}" CommandParameter="{Binding ElementName=UCKho}" Header="Tra cứu" Foreground="Black" Icon="{materialDesign:PackIcon Kind=Import}"/>
+                    <!--<MenuItem Header="Tra cứu" Foreground="Black" Icon="{materialDesign:PackIcon Kind=Export}"/>-->
+                    <!--<MenuItem Header="Sửa đổi" Foreground="Black" Icon="{materialDesign:PackIcon Kind=LayersPlus}"/>-->
+                </MenuItem>
+            </Menu>
+        </Grid>
+
+        <!--MainScreen-->
+        <Grid Grid.Row="1">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="30"></RowDefinition>
+                <RowDefinition></RowDefinition>
+            </Grid.RowDefinitions>
+
+            <Grid Grid.Row="0">
+                <StackPanel Orientation="Horizontal" Margin="5 5 0 0">
+                    <TextBlock Text="{Binding txbTitle1}" Foreground="Gray" FontSize="18"></TextBlock>
+                    <TextBlock Text="{Binding txbTitle2}" Foreground="Gray" FontSize="18"></TextBlock>
+                    <TextBlock Text="{Binding txbTitle3}" Foreground="Black" FontSize="18"></TextBlock>
+                </StackPanel>
+
+            </Grid>
+            <Grid Grid.Row="1" x:Name="UCKho">
+
+            </Grid>
+        </Grid>
+    </Grid>
+</UserControl>

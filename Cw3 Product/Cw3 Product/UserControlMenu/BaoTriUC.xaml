@@ -1,0 +1,94 @@
+﻿<UserControl x:Class="Cw3_Product.UserControlMenu.BaoTriUC"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:Cw3_Product.UserControlMenu"
+             mc:Ignorable="d" 
+             xmlns:uc="clr-namespace:Cw3_Product.UserControlBaoTri"
+             
+             xmlns:i="http://schemas.microsoft.com/expression/2010/interactivity"
+             
+             xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+            TextElement.Foreground="{DynamicResource MaterialDesignBody}"            
+            TextElement.FontWeight="Medium"
+            TextElement.FontSize="14"
+             
+             DataContext="{StaticResource BaoTriVM}"
+             
+             d:DesignHeight="800" d:DesignWidth="1500">
+    
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="50"></RowDefinition>
+            <RowDefinition></RowDefinition>
+        </Grid.RowDefinitions>
+
+        <!--Tabbar-->
+        <Grid Grid.Row="0">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="300"></ColumnDefinition>              
+                <ColumnDefinition></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+
+            <Grid Grid.Column="0">
+                <TextBlock Text="Bảo trì"
+                           x:Name="txbTitle"                           
+                           VerticalAlignment="Center"
+                           FontSize="25"
+                           Foreground="White"
+                           TextAlignment="Left"
+                           Margin="110 0 0 0">
+                    <i:Interaction.Triggers>
+                        <i:EventTrigger EventName="MouseLeftButtonDown">
+                            <i:InvokeCommandAction Command="{Binding Homedata}" 
+                                CommandParameter="{Binding ElementName=UCBaotri}"/>
+                        </i:EventTrigger>
+                    </i:Interaction.Triggers>
+                </TextBlock>
+            </Grid>
+            
+            <Menu Grid.Column="1"
+                  VerticalAlignment="Center"
+                  materialDesign:MenuAssist.TopLevelMenuItemHeight="25">
+                <MenuItem Header="Tài Sản Cố Định" Foreground="White">
+                    <!--<MenuItem x:Name="NhomMay" Command="{Binding NhomMaydata}" CommandParameter="{Binding ElementName=UCBaotri}" Header="Nhóm máy"  Foreground="Black" Icon="{materialDesign:PackIcon Kind=MonitorScreenshot}"/>
+                    <MenuItem x:Name="DSTSCD" Command="{Binding TaiSanCoDinhdata}" CommandParameter="{Binding ElementName=UCBaotri}" Header="Danh sách tài sản cố định"  Foreground="Black" Icon="{materialDesign:PackIcon Kind=MonitorScreenshot}"/>-->
+                </MenuItem>
+                <MenuItem Header="Bảo Dưỡng Máy" Foreground="White">
+                    <!--<MenuItem x:Name="BDNew"  Command="{Binding KHBaoDuongdata}" CommandParameter="{Binding ElementName=UCBaotri}" Header="Đặt lịch bảo dưỡng" Foreground="Black" Icon="{materialDesign:PackIcon Kind=Pencil}"/>
+                    <MenuItem x:Name="BDView" Command="{Binding TraCuuBaoDuongdata}" CommandParameter="{Binding ElementName=UCBaotri}" Header="Tra cứu lịch bảo dưỡng" Foreground="Black" Icon="{materialDesign:PackIcon Kind=MonitorScreenshot}"/>
+                    <MenuItem x:Name="BDEdit" Command="{Binding BaoDuongdata}" CommandParameter="{Binding ElementName=UCBaotri}" Header="Thực hiện bảo dưỡng" Foreground="Black" Icon="{materialDesign:PackIcon Kind=ReceiptTextEditOutline}"/>-->
+                </MenuItem>
+                <MenuItem Header="Bảo Trì Máy" Foreground="White">
+                    <!--<MenuItem x:Name="BTNew" Command="{Binding BaoTridata}" CommandParameter="{Binding ElementName=UCBaotri}" Header="Ghi nhận lỗi máy" Foreground="Black" Icon="{materialDesign:PackIcon Kind=Pencil}"/>
+                    <MenuItem x:Name="BTView" Command="{Binding LichSuSuaChuadata}" CommandParameter="{Binding ElementName=UCBaotri}" Header="Thống kê lỗi" Foreground="Black" Icon="{materialDesign:PackIcon Kind=MonitorScreenshot}"/>-->
+                </MenuItem>
+            </Menu>
+        </Grid>
+
+        <!--MainScreen-->
+        <Grid Grid.Row="1">
+            <Grid >
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="30"></RowDefinition>
+                    <RowDefinition></RowDefinition>
+                </Grid.RowDefinitions>
+
+                <Grid Grid.Row="0">
+                    <StackPanel Orientation="Horizontal" Margin="5 5 0 0">
+                        <TextBlock Text="{Binding txbTitle1}" FontSize="18" Foreground="Gray"></TextBlock>
+                        <TextBlock Text="{Binding txbTitle2}" FontSize="18" Foreground="Gray"></TextBlock>
+                        <TextBlock Text="{Binding txbTitle3}" FontSize="18" Foreground="Black"></TextBlock>
+                    </StackPanel>
+
+                </Grid>
+                <Grid Grid.Row="1" x:Name="UCBaotri">
+
+                </Grid>
+
+            </Grid>
+        </Grid>
+        
+    </Grid>
+</UserControl>
